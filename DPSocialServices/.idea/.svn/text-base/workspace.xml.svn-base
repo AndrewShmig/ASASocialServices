@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="9d13f835-584d-421d-9669-f1b164cca2ac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/DPSocialServices.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DPSocialServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ViewController.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365510811208" ignored="false" />
-    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628284676" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628688495" ignored="false" />
     <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624571052" ignored="false" />
     <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624593952" ignored="false" />
     <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624522915" ignored="false" />
@@ -23,7 +23,7 @@
     <file path="/DPFacebookUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624972817" ignored="false" />
     <file path="/DPFacebookCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624985211" ignored="false" />
     <file path="/DPFacebookCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624991634" ignored="false" />
-    <file path="/README.md" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628070680" ignored="false" />
+    <file path="/README.md" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628708377" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/DPSocialServices/ViewController.h" />
-        <option value="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" />
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h" />
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h" />
@@ -80,6 +76,10 @@
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/README.md" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/README.md" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/README.md" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/README.md" />
       </list>
     </option>
   </component>
@@ -161,12 +161,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/Pictures/1 (1).jpg" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="DPSocialServices" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.DPSocialServices">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="DPSocialServices" TARGET_NAME="DPSocialServices" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="DPSocialServices" RUN_TARGET_NAME="DPSocialServices" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -267,7 +267,15 @@
       <created>1365628099102</created>
       <updated>1365628099102</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="readme file updated">
+      <created>1365628320101</created>
+      <updated>1365628320101</updated>
+    </task>
+    <task id="LOCAL-00012" summary="readme files were added">
+      <created>1365628616102</created>
+      <updated>1365628616102</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -335,7 +343,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme file added" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme files were added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -357,6 +365,8 @@
     <MESSAGE value="исправлены кое-какие вещи" />
     <MESSAGE value="очистил модуль ФБ от прошлого кода" />
     <MESSAGE value="readme file added" />
+    <MESSAGE value="readme file updated" />
+    <MESSAGE value="readme files were added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -364,41 +374,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="74" selection-end="74" vertical-scroll-proportion="0.08510638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="54" selection-start="604" selection-end="604" vertical-scroll-proportion="0.29787233">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="43" selection-start="2772" selection-end="2772" vertical-scroll-proportion="0.44680852">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="29" selection-start="791" selection-end="791" vertical-scroll-proportion="0.40159574">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="29" selection-start="431" selection-end="431" vertical-scroll-proportion="0.23404256">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -469,9 +447,40 @@
         <state line="3" column="26" selection-start="61" selection-end="61" vertical-scroll-proportion="0.06366048" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="43" selection-end="43" vertical-scroll-proportion="0.042440318">
+        <state line="17" column="24" selection-start="457" selection-end="457" vertical-scroll-proportion="0.27659574">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#279#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="23" selection-start="49" selection-end="49" vertical-scroll-proportion="0.04255319">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="46" selection-end="46" vertical-scroll-proportion="0.04255319">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="24" selection-start="51" selection-end="51" vertical-scroll-proportion="0.04255319">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

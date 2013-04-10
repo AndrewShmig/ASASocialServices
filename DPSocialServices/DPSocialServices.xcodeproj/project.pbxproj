@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A9A068D1A849CD44D5DA604 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0E5C1A01C521C00C258A /* README.md */; };
 		1A9A070392E908AE91A10C80 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A09ACCD44FB5AF9940FF7 /* README.md */; };
+		1A9A0A06956F9B86BC60B8B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A013B0842D2B3AE0720E2 /* README.md */; };
 		1A9A0A23CEE05E84D14E48E5 /* 1 (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A056387A96A0B59D38E07 /* 1 (1).jpg */; };
 		1A9A0D39109F27E9AC0BF676 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0CF7C9C886C8A8AE60CC /* README.md */; };
 		7FAB41737304A0FD736C7867 /* NSData+toBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB458FD6F90D12533525D3 /* NSData+toBase64.m */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A9A013B0842D2B3AE0720E2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		1A9A056387A96A0B59D38E07 /* 1 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1 (1).jpg"; sourceTree = "<group>"; };
 		1A9A09ACCD44FB5AF9940FF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		1A9A0CF7C9C886C8A8AE60CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				7FAB49E58A29B941BEAA4CE7 /* TwitterCommunicator */,
 				7FAB42B22F25FDDDD847E0A5 /* FacebookCommunicator */,
 				7FAB4AE7381E0537060B925A /* VkontakteCommunicator */,
+				1A9A013B0842D2B3AE0720E2 /* README.md */,
 			);
 			name = SocialServices;
 			path = DPSocialServices/SocialServices;
@@ -271,6 +274,7 @@
 				1A9A070392E908AE91A10C80 /* README.md in Resources */,
 				1A9A068D1A849CD44D5DA604 /* README.md in Resources */,
 				1A9A0D39109F27E9AC0BF676 /* README.md in Resources */,
+				1A9A0A06956F9B86BC60B8B2 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

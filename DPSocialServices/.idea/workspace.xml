@@ -5,7 +5,7 @@
     <ignored path="DPSocialServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ViewController.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365510811208" ignored="false" />
-    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628611594" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628713566" ignored="false" />
     <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624571052" ignored="false" />
     <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624593952" ignored="false" />
     <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624522915" ignored="false" />
@@ -19,8 +19,7 @@
     <file path="/DPFacebookUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624972817" ignored="false" />
     <file path="/DPFacebookCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624985211" ignored="false" />
     <file path="/DPFacebookCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624991634" ignored="false" />
-    <file path="/README.md" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628598162" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628604194" ignored="false" />
+    <file path="/README.md" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628708377" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h" />
@@ -77,6 +75,7 @@
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/README.md" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/README.md" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/README.md" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/README.md" />
       </list>
     </option>
   </component>
@@ -158,12 +157,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/Pictures/1 (1).jpg" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="DPSocialServices" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.DPSocialServices">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="DPSocialServices" TARGET_NAME="DPSocialServices" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="DPSocialServices" RUN_TARGET_NAME="DPSocialServices" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -272,7 +271,11 @@
       <created>1365628616102</created>
       <updated>1365628616102</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="readme files were added">
+      <created>1365628719101</created>
+      <updated>1365628719101</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -371,15 +374,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="43" selection-start="2772" selection-end="2772" vertical-scroll-proportion="0.44680852">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="29" selection-start="791" selection-end="791" vertical-scroll-proportion="0.40159574">
@@ -480,6 +474,13 @@
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="24" selection-start="51" selection-end="51" vertical-scroll-proportion="0.04255319">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
