@@ -5,7 +5,7 @@
     <ignored path="DPSocialServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ViewController.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365510811208" ignored="false" />
-    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628841864" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628879711" ignored="false" />
     <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624571052" ignored="false" />
     <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624593952" ignored="false" />
     <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624522915" ignored="false" />
@@ -20,7 +20,7 @@
     <file path="/DPFacebookCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624985211" ignored="false" />
     <file path="/DPFacebookCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624991634" ignored="false" />
     <file path="/README.md" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628834474" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628841572" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628879421" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,7 +284,11 @@
       <created>1365628846101</created>
       <updated>1365628846101</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="readme files were added">
+      <created>1365628883101</created>
+      <updated>1365628883101</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -489,7 +493,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="49" selection-end="49" vertical-scroll-proportion="0.04255319">
+        <state line="2" column="20" selection-start="42" selection-end="42" vertical-scroll-proportion="0.04255319">
           <folding />
         </state>
       </provider>
