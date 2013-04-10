@@ -1,6 +1,7 @@
-﻿# DPSocialServices
+# DPSocialServices
 
-[Link](https://github.com/AndrewShmig/ASASocialServices/tree/master/DPSocialServices/DPSocialServices/SocialServices) to SocialServices classes.
+[Ссылка](https://github.com/AndrewShmig/ASASocialServices/tree/master/DPSocialServices/DPSocialServices/SocialServices) на классы DPSocialServices.
 
-Description is in progress...
+
+
 
