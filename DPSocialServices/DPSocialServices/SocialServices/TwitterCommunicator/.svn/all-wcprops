@@ -15,6 +15,12 @@ svn:wc:ra_dav:version-url
 V 132
 /subversion/social-services/!svn/ver/11/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h
 END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/subversion/social-services/!svn/ver/18/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator/README.md
+END
 DPTwitterUserAccount.m
 K 25
 svn:wc:ra_dav:version-url

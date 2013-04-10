@@ -15,6 +15,12 @@ svn:wc:ra_dav:version-url
 V 136
 /subversion/social-services/!svn/ver/14/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m
 END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/subversion/social-services/!svn/ver/18/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/README.md
+END
 DPVkontakteUserAccount.h
 K 25
 svn:wc:ra_dav:version-url
