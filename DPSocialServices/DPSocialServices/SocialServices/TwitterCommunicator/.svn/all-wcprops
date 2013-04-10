@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/subversion/social-services/!svn/ver/6/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator
+END
+DPTwitterUserAccount.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/subversion/social-services/!svn/ver/11/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.h
+END
+DPTwitterCommunicator.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/subversion/social-services/!svn/ver/11/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h
+END
+DPTwitterUserAccount.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/subversion/social-services/!svn/ver/11/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.m
+END
+DPTwitterCommunicator.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/subversion/social-services/!svn/ver/11/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.m
+END

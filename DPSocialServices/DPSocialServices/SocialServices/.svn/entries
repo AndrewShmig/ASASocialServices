@@ -1,0 +1,40 @@
+10
+
+dir
+6
+http://svn.kc/subversion/social-services/DPSocialServices/DPSocialServices/SocialServices
+http://svn.kc/subversion/social-services
+
+
+
+2013-04-09T13:24:44.431040Z
+6
+syfy
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e68bf22-c93d-413b-9e6e-5de89b28a9f7
+
+FacebookCommunicator
+dir
+
+Helpers
+dir
+
+TwitterCommunicator
+dir
+
+VkontakteCommunicator
+dir
+
