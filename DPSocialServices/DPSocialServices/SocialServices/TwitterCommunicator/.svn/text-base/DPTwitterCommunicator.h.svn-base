@@ -28,8 +28,6 @@ static const NSString *kTWITTER_LOGOUT_URL = @"https://api.twitter.com/intent/se
 
 @interface DPTwitterCommunicator : NSObject <UIWebViewDelegate>
 
-@property (nonatomic, weak) UIWebView *webView;
-
 - (id)initWithWebView:(UIWebView *)webView;
 
 - (void)startOnCancelBlock:(void (^)(void))cancelBlock

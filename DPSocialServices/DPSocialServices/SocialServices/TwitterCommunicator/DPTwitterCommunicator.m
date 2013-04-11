@@ -55,8 +55,6 @@ enum
     void (^_accepted_block) (DPTwitterUserAccount *);
 }
 
-@synthesize webView = _inner_web_view;
-
 #pragma mark - Initialization
 
 - (id)initWithWebView:(UIWebView *)webView

@@ -17,17 +17,14 @@
 
 @implementation DPVkontakteCommunicator
 {
-    // данные приложения
     const NSString *_app_id;
     const NSString *_settings;
     NSString *_redirect_url;
     NSString *_display;
 
-    // элементы браузера
     UIWebView *_inner_web_view;
     UIActivityIndicatorView *_activity_indicator;
 
-    // блоки обработки
     void (^_cancel_block) (void);
     void (^_error_block) (NSError *);
     void (^_accepted_block) (DPVkontakteUserAccount *);
@@ -88,7 +85,6 @@
                                                                  _display]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
-    [_inner_web_view setDelegate:self];
     [_inner_web_view loadRequest:request];
 }
 

@@ -13,7 +13,7 @@ DPTwitterCommunicator.h
 K 25
 svn:wc:ra_dav:version-url
 V 132
-/subversion/social-services/!svn/ver/11/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h
+/subversion/social-services/!svn/ver/27/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h
 END
 DPTwitterUserAccount.m
 K 25
@@ -25,5 +25,5 @@ DPTwitterCommunicator.m
 K 25
 svn:wc:ra_dav:version-url
 V 132
-/subversion/social-services/!svn/ver/11/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.m
+/subversion/social-services/!svn/ver/27/DPSocialServices/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.m
 END
