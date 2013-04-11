@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="9d13f835-584d-421d-9669-f1b164cca2ac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/README.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
+    <list default="true" readonly="true" id="9d13f835-584d-421d-9669-f1b164cca2ac" name="Default" comment="наименования методов с CustomOptions были подкорректированы, чтобы вписываться в общую картину модуля">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/README.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/DPSocialServices.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DPSocialServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ViewController.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365510811208" ignored="false" />
-    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365658122148" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365659301274" ignored="false" />
     <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624571052" ignored="false" />
     <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624593952" ignored="false" />
     <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624522915" ignored="false" />
@@ -50,37 +46,7 @@
     <favorites_list name="DPSocialServices" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DPVkontakteUserAccount.h" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="48" selection-start="3842" selection-end="3842" vertical-scroll-proportion="0.7877984">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DPVkontakteCommunicator.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="59" selection-start="4413" selection-end="4413" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DPVkontakteCommunicator.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -98,10 +64,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h" />
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/ViewController.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.h" />
@@ -114,6 +78,8 @@
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/README.md" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/README.md" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.h" />
       </list>
     </option>
   </component>
@@ -148,6 +114,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,24 +128,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SocialServices" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPSocialServices" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SocialServices" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VkontakteCommunicator" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -208,17 +157,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="DirectoryView.Xcode" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/Pictures/1 (1).jpg" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="DPSocialServices" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.DPSocialServices">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="DPSocialServices" TARGET_NAME="DPSocialServices" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="DPSocialServices" RUN_TARGET_NAME="DPSocialServices" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -343,17 +291,29 @@
       <created>1365628883101</created>
       <updated>1365628883101</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="наименования методов с CustomOptions были подкорректированы, чтобы вписываться в общую картину модуля">
+      <created>1365658166101</created>
+      <updated>1365658166101</updated>
+    </task>
+    <task id="LOCAL-00018" summary="наименования методов с CustomOptions были подкорректированы, чтобы вписываться в общую картину модуля">
+      <created>1365658264102</created>
+      <updated>1365658264102</updated>
+    </task>
+    <task id="LOCAL-00019" summary="наименования методов с CustomOptions были подкорректированы, чтобы вписываться в общую картину модуля">
+      <created>1365658529101</created>
+      <updated>1365658529101</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.6705128" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.6705128" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
@@ -411,7 +371,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme files were added" />
+    <option name="LAST_COMMIT_MESSAGE" value="наименования методов с CustomOptions были подкорректированы, чтобы вписываться в общую картину модуля" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -435,6 +395,7 @@
     <MESSAGE value="readme file added" />
     <MESSAGE value="readme file updated" />
     <MESSAGE value="readme files were added" />
+    <MESSAGE value="наименования методов с CustomOptions были подкорректированы, чтобы вписываться в общую картину модуля" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -482,24 +443,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="24" selection-start="457" selection-end="457" vertical-scroll-proportion="0.27659574">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#279#312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="42" selection-end="42" vertical-scroll-proportion="0.04255319">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="338" selection-end="338" vertical-scroll-proportion="0.16976127">
-          <folding>
-            <element signature="e#587#626#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#279#312#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -515,7 +460,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="60" selection-end="60" vertical-scroll-proportion="0.06366048">
+        <state line="3" column="26" selection-start="60" selection-end="60" vertical-scroll-proportion="0.06366048" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="493" selection-end="493" vertical-scroll-proportion="0.29787233">
+          <folding>
+            <element signature="e#587#626#0" expanded="true" />
+            <element signature="n#obtainInfoCustomOptions:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="59" selection-start="4413" selection-end="4413" vertical-scroll-proportion="0.9601064">
           <folding />
         </state>
       </provider>
@@ -529,16 +489,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m">
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="59" selection-start="4413" selection-end="4413" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="63" column="21" selection-start="3101" selection-end="3101" vertical-scroll-proportion="0.3550532">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#336#369#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="48" selection-start="3842" selection-end="3842" vertical-scroll-proportion="0.7877984">
+        <state line="42" column="56" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.40425533">
           <folding />
         </state>
       </provider>
