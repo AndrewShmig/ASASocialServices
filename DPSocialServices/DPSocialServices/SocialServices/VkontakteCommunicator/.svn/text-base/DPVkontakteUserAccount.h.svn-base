@@ -43,7 +43,7 @@ static const NSString *kVKONTAKTE_USER_SEND_MESSAGE_URL = @"https://api.vk.com/m
 - (void)obtainInfoCustomOptions:(NSDictionary *)options;
 
 - (void)postToWall:(NSString *)text;
-- (void)postToWallWithCustomOptions:(NSDictionary *)options;
+- (void)postToWallCustomOptions:(NSDictionary *)options;
 
 - (void)uploadPhoto:(NSString *)photoPath;
 
@@ -52,9 +52,9 @@ static const NSString *kVKONTAKTE_USER_SEND_MESSAGE_URL = @"https://api.vk.com/m
 - (void)sendPrivateMessage:(NSString *)message
                      photo:(NSString *)photoPath
                   toUserId:(NSString *)userId;
-- (void)sendPrivateMessageWithCustomOptions:(NSDictionary *)options;
+- (void)sendPrivateMessageCustomOptions:(NSDictionary *)options;
 
-- (void)obtainLastMessagesWithCustomOptions:(NSDictionary *)options;
+- (void)obtainLastMessagesCustomOptions:(NSDictionary *)options;
 
 - (void)obtainLastSentMessagesCount:(NSUInteger)count;
 - (void)obtainLastSentMessagesCount:(NSUInteger)count
@@ -69,13 +69,13 @@ static const NSString *kVKONTAKTE_USER_SEND_MESSAGE_URL = @"https://api.vk.com/m
 - (void)obtainDialogMessagesWithUser:(NSString *)userId
                                count:(NSUInteger)count
                               offset:(NSUInteger)offset;
-- (void)obtainDialogMessagesWithCustomOptions:(NSDictionary *)options;
+- (void)obtainDialogMessagesCustomOptions:(NSDictionary *)options;
 
 - (void)obtainFriends;
 - (void)obtainFriendsCount:(NSUInteger)count;
 - (void)obtainFriendsCount:(NSUInteger)count
                     offset:(NSUInteger)offset;
-- (void)obtainFriendsWithCustomOptions:(NSDictionary *)options;
+- (void)obtainFriendsCustomOptions:(NSDictionary *)options;
 
 - (void)obtainSubscriptions;
 
@@ -83,6 +83,6 @@ static const NSString *kVKONTAKTE_USER_SEND_MESSAGE_URL = @"https://api.vk.com/m
 - (void)obtainFollowersCount:(NSUInteger)count;
 - (void)obtainFollowersCount:(NSUInteger)count
                       offset:(NSUInteger)offset;
-- (void)obtainFollowersWithCustomOptions:(NSDictionary *)options;
+- (void)obtainFollowersCustomOptions:(NSDictionary *)options;
 
 @end

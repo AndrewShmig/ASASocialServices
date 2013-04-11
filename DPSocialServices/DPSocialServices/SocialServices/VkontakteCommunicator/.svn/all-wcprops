@@ -7,7 +7,7 @@ DPVkontakteUserAccount.m
 K 25
 svn:wc:ra_dav:version-url
 V 135
-/subversion/social-services/!svn/ver/14/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m
+/subversion/social-services/!svn/ver/24/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m
 END
 DPVkontakteCommunicator.m
 K 25
@@ -15,17 +15,11 @@ svn:wc:ra_dav:version-url
 V 136
 /subversion/social-services/!svn/ver/14/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m
 END
-README.md
-K 25
-svn:wc:ra_dav:version-url
-V 120
-/subversion/social-services/!svn/ver/18/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/README.md
-END
 DPVkontakteUserAccount.h
 K 25
 svn:wc:ra_dav:version-url
 V 135
-/subversion/social-services/!svn/ver/13/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h
+/subversion/social-services/!svn/ver/23/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h
 END
 DPVkontakteCommunicator.h
 K 25

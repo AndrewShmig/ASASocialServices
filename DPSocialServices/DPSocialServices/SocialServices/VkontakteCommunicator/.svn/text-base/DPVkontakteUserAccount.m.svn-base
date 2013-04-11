@@ -98,16 +98,6 @@ enum
                  paramsDictionary:options];
 }
 
-- (void)obtainInfoWithCustomOptions:(NSDictionary *)options
-{
-
-    DEBUG_CURRENT_METHOD();
-
-    [self sendVkontakteRequestURL:kVKONTAKTE_USER_INFO_URL
-                       HTTPMethod:@"GET"
-                 paramsDictionary:options];
-}
-
 - (void)obtainInfoForUser:(NSString *)userId
 {
 
@@ -131,7 +121,7 @@ enum
 
 }
 
-- (void)postToWallWithCustomOptions:(NSDictionary *)options
+- (void)postToWallCustomOptions:(NSDictionary *)options
 {
 
     DEBUG_CURRENT_METHOD();
@@ -196,7 +186,7 @@ enum
         [me setSuccessBlock:successBlockCopy];
 
         // отправляем сообщение с опциями
-        [me sendPrivateMessageWithCustomOptions:options];
+        [me sendPrivateMessageCustomOptions:options];
     };
 
     // отправка фотографии на сервер ВК
@@ -204,7 +194,7 @@ enum
 }
 
 
-- (void)sendPrivateMessageWithCustomOptions:(NSDictionary *)options
+- (void)sendPrivateMessageCustomOptions:(NSDictionary *)options
 {
     DEBUG_CURRENT_METHOD();
 
@@ -237,7 +227,7 @@ enum
                                     @"offset" : @(offset)}];
 }
 
-- (void)obtainLastMessagesWithCustomOptions:(NSDictionary *)options
+- (void)obtainLastMessagesCustomOptions:(NSDictionary *)options
 {
 
     DEBUG_CURRENT_METHOD();
@@ -310,7 +300,7 @@ enum
                                     @"offset" : @(offset)}];
 }
 
-- (void)obtainDialogMessagesWithCustomOptions:(NSDictionary *)options
+- (void)obtainDialogMessagesCustomOptions:(NSDictionary *)options
 {
 
     DEBUG_CURRENT_METHOD();
@@ -361,7 +351,7 @@ enum
                                     @"fields" : @"uid,first_name,last_name,sex,bdate,city,country,timezone,photo,photo_medium,photo_big,domain,has_mobile,education"}];
 }
 
-- (void)obtainFriendsWithCustomOptions:(NSDictionary *)options
+- (void)obtainFriendsCustomOptions:(NSDictionary *)options
 {
 
     DEBUG_CURRENT_METHOD();
@@ -418,7 +408,7 @@ enum
                                     @"offset" : @(offset)}];
 }
 
-- (void)obtainFollowersWithCustomOptions:(NSDictionary *)options
+- (void)obtainFollowersCustomOptions:(NSDictionary *)options
 {
 
     DEBUG_CURRENT_METHOD();

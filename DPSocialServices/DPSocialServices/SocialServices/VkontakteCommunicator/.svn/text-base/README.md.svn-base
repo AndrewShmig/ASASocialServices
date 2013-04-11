@@ -1,3 +1,0 @@
-# DPVkontakteCommunicator
-
-# DPVkontakteUserAccount

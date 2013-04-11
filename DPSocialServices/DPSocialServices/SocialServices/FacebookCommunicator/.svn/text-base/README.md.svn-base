@@ -1,3 +1,0 @@
-# DPFacebookCommunicator
-
-# DPFacebookUserAccount

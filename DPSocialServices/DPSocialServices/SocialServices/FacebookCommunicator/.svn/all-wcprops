@@ -15,12 +15,6 @@ svn:wc:ra_dav:version-url
 V 134
 /subversion/social-services/!svn/ver/15/DPSocialServices/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.m
 END
-README.md
-K 25
-svn:wc:ra_dav:version-url
-V 119
-/subversion/social-services/!svn/ver/18/DPSocialServices/DPSocialServices/SocialServices/FacebookCommunicator/README.md
-END
 DPFacebookUserAccount.h
 K 25
 svn:wc:ra_dav:version-url

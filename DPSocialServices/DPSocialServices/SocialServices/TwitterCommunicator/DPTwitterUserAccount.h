@@ -57,23 +57,23 @@ static const NSString *kTWITTER_DESTROY_STATUS_URL = @"https://api.twitter.com/1
 
 - (void)verifyCredentials;
 
-- (void)verifyCredentialsWithCustomOptions:(NSDictionary *)options;
+- (void)verifyCredentialsCustomOptions:(NSDictionary *)options;
 
-- (void)updateProfileWithCustomOptions:(NSDictionary *)options;
+- (void)updateProfileCustomOptions:(NSDictionary *)options;
 
 - (void)obtainFriendsWithCursor:(NSString *)cursor;
 
-- (void)obtainFriendsWithCustomOptions:(NSDictionary *)options;
+- (void)obtainFriendsCustomOptions:(NSDictionary *)options;
 
 - (void)obtainFollowersWithCursor:(NSString *)cursor;
 
-- (void)obtainFollowersWithCursorWithCustomOptions:(NSDictionary *)options;
+- (void)obtainFollowersCustomOptions:(NSDictionary *)options;
 
 - (void)showInfoForUserId:(NSString *)userId;
 
 - (void)showInfoForUserScreenName:(NSString *)screenName;
 
-- (void)showInfoForUserWithCustomOptions:(NSDictionary *)options;
+- (void)showInfoForUserCustomOptions:(NSDictionary *)options;
 
 - (void)obtainUsersInBlock;
 
@@ -83,13 +83,13 @@ static const NSString *kTWITTER_DESTROY_STATUS_URL = @"https://api.twitter.com/1
 
 - (void)blockUserScreenName:(NSString *)screenName;
 
-- (void)blockUserWithCustomOptions:(NSDictionary *)options;
+- (void)blockUserCustomOptions:(NSDictionary *)options;
 
 - (void)unblockUserId:(NSString *)userId;
 
 - (void)unblockUserScreenName:(NSString *)screenName;
 
-- (void)unblockUserWithCustomOptions:(NSDictionary *)options;
+- (void)unblockUserCustomOptions:(NSDictionary *)options;
 
 - (void)obtainDirectMessages;
 
@@ -117,7 +117,7 @@ static const NSString *kTWITTER_DESTROY_STATUS_URL = @"https://api.twitter.com/1
 
 - (void)tweet:(NSString *)text;
 
-- (void)tweetWithCustomOptions:(NSDictionary *)options;
+- (void)tweetCustomOptions:(NSDictionary *)options;
 
 - (void)destroyTweetId:(NSString *)tweetId;
 

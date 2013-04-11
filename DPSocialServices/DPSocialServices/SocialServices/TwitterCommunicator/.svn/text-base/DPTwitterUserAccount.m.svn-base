@@ -143,7 +143,7 @@ enum {
                                   @"skip_statuses"    : @"true"}];
 }
 
-- (void)verifyCredentialsWithCustomOptions:(NSDictionary *)options {
+- (void)verifyCredentialsCustomOptions:(NSDictionary *)options {
 
   DEBUG_CURRENT_METHOD();
 
@@ -152,7 +152,7 @@ enum {
                paramsDictionary:options];
 }
 
-- (void)updateProfileWithCustomOptions:(NSDictionary *)options {
+- (void)updateProfileCustomOptions:(NSDictionary *)options {
 
   DEBUG_CURRENT_METHOD();
 
@@ -282,7 +282,7 @@ enum {
                paramsDictionary:@{@"status" : text}];
 }
 
-- (void)tweetWithCustomOptions:(NSDictionary *)options {
+- (void)tweetCustomOptions:(NSDictionary *)options {
   
   DEBUG_CURRENT_METHOD();
 
@@ -347,7 +347,7 @@ enum {
                                   @"include_user_entities" : @"false"}];
 }
 
-- (void)obtainFriendsWithCustomOptions:(NSDictionary *)options {
+- (void)obtainFriendsCustomOptions:(NSDictionary *)options {
   
   DEBUG_CURRENT_METHOD();
 
@@ -373,7 +373,7 @@ enum {
                                   @"include_entities" : @"false"}];
 }
 
-- (void)showInfoForUserWithCustomOptions:(NSDictionary *)options {
+- (void)showInfoForUserCustomOptions:(NSDictionary *)options {
 
   DEBUG_CURRENT_METHOD();
 
@@ -423,7 +423,7 @@ enum {
                                   @"include_entities" : @"false"}];
 }
 
-- (void)blockUserWithCustomOptions:(NSDictionary *)options {
+- (void)blockUserCustomOptions:(NSDictionary *)options {
 
   DEBUG_CURRENT_METHOD();
 
@@ -454,7 +454,7 @@ enum {
                                   @"skip_statuses"    : @"true"}];
 }
 
-- (void)unblockUserWithCustomOptions:(NSDictionary *)options {
+- (void)unblockUserCustomOptions:(NSDictionary *)options {
 
   DEBUG_CURRENT_METHOD();
 
@@ -477,7 +477,7 @@ enum {
                                   @"include_user_entities" : @"false"}];
 }
 
-- (void)obtainFollowersWithCursorWithCustomOptions:(NSDictionary *)options {
+- (void)obtainFollowersCustomOptions:(NSDictionary *)options {
   
   DEBUG_CURRENT_METHOD();
 
