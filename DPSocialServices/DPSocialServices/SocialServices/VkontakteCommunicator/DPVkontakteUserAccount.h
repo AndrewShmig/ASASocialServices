@@ -444,9 +444,8 @@
 @end
 
 // -----------------------------------------------------------------------------
-// Request methods
+// Request methods, parsing methods etc
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Requests)
-
+@interface DPVkontakteUserAccount(Additions)
 
 @end

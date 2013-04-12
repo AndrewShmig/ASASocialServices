@@ -4,6 +4,7 @@
 //  Created by Andrew Shmig on 18.12.12.
 //
 
+#import <Foundation/Foundation.h>
 #import "DPVkontakteUserAccount.h"
 
 @implementation DPVkontakteUserAccount
@@ -29,12 +30,10 @@
 
         _errorBlock = [^(NSError *error)
         { // default error block
-            DEBUG_INFO(@"[DPVkontakteUserAccount] errorBlock is empty.");
         } copy];
 
         _successBlock = [^(NSDictionary *dictionary)
         { // default success block
-            DEBUG_INFO(@"[DPVkontakteUserAccount] successBlock is empty.");
         } copy];
     }
 
