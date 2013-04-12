@@ -26,13 +26,6 @@ svn:special svn:externals svn:needs-lock
 
 6e68bf22-c93d-413b-9e6e-5de89b28a9f7
 
-AFNetworking
-dir
-
-
-
-add
-
 FacebookCommunicator
 dir
 

@@ -2,26 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="9d13f835-584d-421d-9669-f1b164cca2ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFHTTPClient.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFHTTPClient.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFHTTPRequestOperation.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFHTTPRequestOperation.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFImageRequestOperation.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFImageRequestOperation.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFJSONRequestOperation.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFJSONRequestOperation.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFNetworkActivityIndicatorManager.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFNetworkActivityIndicatorManager.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFNetworking.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFPropertyListRequestOperation.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFPropertyListRequestOperation.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFURLConnectionOperation.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFURLConnectionOperation.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFXMLRequestOperation.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/AFXMLRequestOperation.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/UIImageView+AFNetworking.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/AFNetworking/UIImageView+AFNetworking.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/Extensions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFHTTPClient.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFHTTPClient.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFHTTPRequestOperation.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFHTTPRequestOperation.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFImageRequestOperation.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFImageRequestOperation.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFJSONRequestOperation.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFJSONRequestOperation.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFNetworkActivityIndicatorManager.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFNetworkActivityIndicatorManager.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFNetworking.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFPropertyListRequestOperation.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFPropertyListRequestOperation.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFURLConnectionOperation.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFURLConnectionOperation.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFXMLRequestOperation.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFXMLRequestOperation.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/Extensions/ContextFilterLogFormatter.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/Extensions/ContextFilterLogFormatter.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/DDASLLogger.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/DDASLLogger.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/DDAbstractDatabaseLogger.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/DDAbstractDatabaseLogger.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/DDFileLogger.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/DDFileLogger.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/DDLog.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/DDLog.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/DDTTYLogger.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/DDTTYLogger.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/Extensions/DispatchQueueLogFormatter.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/Extensions/DispatchQueueLogFormatter.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/Lumberjack/Extensions/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/UIImageView+AFNetworking.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/UIImageView+AFNetworking.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/ViewController.h" afterPath="$PROJECT_DIR$/DPSocialServices/ViewController.h" />
@@ -32,7 +49,7 @@
     <ignored path="DPSocialServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ViewController.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365782489829" ignored="false" />
-    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365788355975" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365796224758" ignored="false" />
     <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365794760137" ignored="false" />
     <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365795209187" ignored="false" />
     <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365795140467" ignored="false" />
@@ -70,28 +87,7 @@
     <favorites_list name="DPSocialServices" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DPVkontakteUserAccount.h" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="58" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.63829786">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DPVkontakteUserAccount.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="23" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -159,6 +155,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,17 +216,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="DirectoryView.Xcode" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/AFNetworking-AFNetworking-b3267b8/AFNetworking" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/CocoaLumberjack-master/Lumberjack" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="DPSocialServices" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.DPSocialServices">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="DPSocialServices" TARGET_NAME="DPSocialServices" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="DPSocialServices" RUN_TARGET_NAME="DPSocialServices" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -431,13 +427,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.6705128" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.6705128" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
@@ -447,6 +442,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -559,11 +555,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.403183">
-          <folding>
-            <element signature="e#279#312#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="28" column="22" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.403183" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h">
@@ -659,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="11" selection-start="913" selection-end="913" vertical-scroll-proportion="0.61702126">
@@ -675,9 +660,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="139" selection-end="139" vertical-scroll-proportion="0.084880635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="58" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.63829786">
+        <state line="30" column="58" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.6366048">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
