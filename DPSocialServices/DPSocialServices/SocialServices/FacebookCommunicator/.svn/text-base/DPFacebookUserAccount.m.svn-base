@@ -30,6 +30,12 @@
     self = [super init];
 
     if (self) {
+
+        if(accessToken == nil)
+            @throw [NSException exceptionWithName:@"Access token can not be nil."
+                                           reason:@"accessToken is nil."
+                                         userInfo:@{}];
+
         _accessToken = [accessToken copy];
         _expirationTime = expirationTime;
     }

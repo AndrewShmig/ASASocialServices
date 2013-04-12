@@ -7,7 +7,7 @@ DPFacebookCommunicator.h
 K 25
 svn:wc:ra_dav:version-url
 V 134
-/subversion/social-services/!svn/ver/30/DPSocialServices/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h
+/subversion/social-services/!svn/ver/32/DPSocialServices/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h
 END
 DPFacebookCommunicator.m
 K 25
@@ -25,5 +25,5 @@ DPFacebookUserAccount.m
 K 25
 svn:wc:ra_dav:version-url
 V 133
-/subversion/social-services/!svn/ver/30/DPSocialServices/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m
+/subversion/social-services/!svn/ver/32/DPSocialServices/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m
 END
