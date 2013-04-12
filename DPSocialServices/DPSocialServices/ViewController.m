@@ -32,11 +32,15 @@
 
         [account setSuccessBlock:^(NSDictionary *dictionary)
         {
-            NSLog(@"response from server: %@", dictionary);
+            NSLog(@"%@", dictionary);
         }];
 
-        [account publishToFeedCustomOptions:@{@"message"  : @"Hello from iOS app, second time!",
-                                              @"picture" : @"http://laurencecooper.files.wordpress.com/2011/03/52750.jpg"}];
+        [account obtainFriendsCustomFields:@[@"name",
+                                             @"gender",
+                                             @"location",
+                                             @"cover",
+                                             @"about",
+                                             @"bio"]];
     }];
 }
 
