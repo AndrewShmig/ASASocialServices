@@ -10,18 +10,6 @@
 
 #import <Foundation/Foundation.h>
 
-static const NSString *kVKONTAKTE_USER_INFO_URL = @"https://api.vk.com/method/users.get";
-static const NSString *kVKONTAKTE_USER_SUBSCRIPTIONS_URL = @"https://api.vk.com/method/users.getSubscriptions";
-static const NSString *kVKONTAKTE_USER_FOLLOWERS_URL = @"https://api.vk.com/method/users.getFollowers";
-static const NSString *kVKONTAKTE_USER_FRIENDS_URL = @"https://api.vk.com/method/friends.get";
-static const NSString *kVKONTAKTE_USER_WALL_POST_URL = @"https://api.vk.com/method/wall.post";
-static const NSString *kVKONTAKTE_USER_MESSAGES_URL = @"https://api.vk.com/method/messages.get";
-static const NSString *kVKONTAKTE_USER_MESSAGES_USER_URL = @"https://api.vk.com/method/messages.getHistory";
-static const NSString *kVKONTAKTE_PHOTO_UPLOAD_MESSAGES_SERVER_URL = @"https://api.vk.com/method/photos.getMessagesUploadServer";
-static const NSString *kVKONTAKTE_PHOTO_SAVE_MESSAGES_UPLOADED_URL = @"https://api.vk.com/method/photos.saveMessagesPhoto";
-static const NSString *kVKONTAKTE_USER_SEND_MESSAGE_URL = @"https://api.vk.com/method/messages.send";
-
-
 @interface DPVkontakteUserAccount : NSObject
 
 @property (nonatomic, readonly) NSString *accessToken;
@@ -37,52 +25,73 @@ static const NSString *kVKONTAKTE_USER_SEND_MESSAGE_URL = @"https://api.vk.com/m
 
 - (id)initUserAccountWithAccessToken:(NSString *)accessToken
                               userId:(NSUInteger)userId;
+@end
 
-- (void)obtainInfo;
-- (void)obtainInfoForUser:(NSString *)userId;
-- (void)obtainInfoCustomOptions:(NSDictionary *)options;
+@interface DPVkontakteUserAccount(Users)
+@end
 
-- (void)postToWall:(NSString *)text;
-- (void)postToWallCustomOptions:(NSDictionary *)options;
+@interface DPVkontakteUserAccount(Groups)
+@end
 
-- (void)uploadPhoto:(NSString *)photoPath;
+@interface DPVkontakteUserAccount(Friends)
+@end
 
-- (void)sendPrivateMessage:(NSString *)message
-                  toUserId:(NSString *)userId;
-- (void)sendPrivateMessage:(NSString *)message
-                     photo:(NSString *)photoPath
-                  toUserId:(NSString *)userId;
-- (void)sendPrivateMessageCustomOptions:(NSDictionary *)options;
+@interface DPVkontakteUserAccount(Wall)
+@end
 
-- (void)obtainLastMessagesCustomOptions:(NSDictionary *)options;
+@interface DPVkontakteUserAccount(Photos)
+@end
 
-- (void)obtainLastSentMessagesCount:(NSUInteger)count;
-- (void)obtainLastSentMessagesCount:(NSUInteger)count
-                             offset:(NSUInteger)offset;
-- (void)obtainLastSentUnreadMessagesCount:(NSUInteger)count;
-- (void)obtainLastSentUnreadMessagesCount:(NSUInteger)count
-                                   offset:(NSUInteger)offset;
+@interface DPVkontakteUserAccount(Video)
+@end
 
-- (void)obtainDialogMessagesWithUser:(NSString *)userId;
-- (void)obtainDialogMessagesWithUser:(NSString *)userId
-                               count:(NSUInteger)count;
-- (void)obtainDialogMessagesWithUser:(NSString *)userId
-                               count:(NSUInteger)count
-                              offset:(NSUInteger)offset;
-- (void)obtainDialogMessagesCustomOptions:(NSDictionary *)options;
+@interface DPVkontakteUserAccount(Audio)
+@end
 
-- (void)obtainFriends;
-- (void)obtainFriendsCount:(NSUInteger)count;
-- (void)obtainFriendsCount:(NSUInteger)count
-                    offset:(NSUInteger)offset;
-- (void)obtainFriendsCustomOptions:(NSDictionary *)options;
+@interface DPVkontakteUserAccount(Messages)
+@end
 
-- (void)obtainSubscriptions;
+@interface DPVkontakteUserAccount(Newsfeed)
+@end
 
-- (void)obtainFollowers;
-- (void)obtainFollowersCount:(NSUInteger)count;
-- (void)obtainFollowersCount:(NSUInteger)count
-                      offset:(NSUInteger)offset;
-- (void)obtainFollowersCustomOptions:(NSDictionary *)options;
+@interface DPVkontakteUserAccount(Likes)
+@end
 
+@interface DPVkontakteUserAccount(Account)
+@end
+
+@interface DPVkontakteUserAccount(Status)
+@end
+
+@interface DPVkontakteUserAccount(Pages)
+@end
+
+@interface DPVkontakteUserAccount(Board)
+@end
+
+@interface DPVkontakteUserAccount(Notes)
+@end
+
+@interface DPVkontakteUserAccount(Places)
+@end
+
+@interface DPVkontakteUserAccount(Polls)
+@end
+
+@interface DPVkontakteUserAccount(Docs)
+@end
+
+@interface DPVkontakteUserAccount(Fave)
+@end
+
+@interface DPVkontakteUserAccount(Notifications)
+@end
+
+@interface DPVkontakteUserAccount(Stats)
+@end
+
+@interface DPVkontakteUserAccount(Search)
+@end
+
+@interface DPVkontakteUserAccount(Apps)
 @end
