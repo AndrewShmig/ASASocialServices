@@ -6,12 +6,6 @@
 
 #import "DPVkontakteUserAccount.h"
 
-#define LOG_ON 1
-
-#if LOG_ON == 1
-# define DEBUG_CURRENT_METHOD() NSLog(@"%s", __FUNCTION__)
-#endif
-
 @implementation DPVkontakteUserAccount
 
 @synthesize accessToken = _accessToken;

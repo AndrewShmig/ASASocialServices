@@ -442,3 +442,11 @@
 - (void)appsGetCatalogWithCustomOptions:(NSDictionary *)options;
 
 @end
+
+// -----------------------------------------------------------------------------
+// Request methods
+// -----------------------------------------------------------------------------
+@interface DPVkontakteUserAccount(Requests)
+
+
+@end
