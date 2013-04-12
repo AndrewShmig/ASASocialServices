@@ -19,6 +19,6 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) UIWebView *webView;
-@property (nonatomic, strong) DPTwitterCommunicator *twitter;
+@property (nonatomic, strong) DPFacebookCommunicator *fb;
 
 @end

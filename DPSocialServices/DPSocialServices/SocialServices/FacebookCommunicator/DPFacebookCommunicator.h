@@ -8,8 +8,8 @@
 #import <Foundation/Foundation.h>
 
 static const NSString *kFACEBOOK_APP_ID = @"179674345510190";
-static const NSString *kFACEBOOK_APP_SECRET = @"3688f94c073e79b10f82152b2cc0849e";
-static const NSString *kFACEBOOK_PERMISSIONS = @"";
+static const NSString *kFACEBOOK_APP_SECRET = @"a931a310e63713512ad51f15b9ca36bc";
+static const NSString *kFACEBOOK_PERMISSIONS = @"publish_stream,email,read_mailbox,user_online_presence,friends_online_presence";
 
 @class DPFacebookUserAccount;
 
@@ -19,6 +19,6 @@ static const NSString *kFACEBOOK_PERMISSIONS = @"";
 
 - (void)startOnCancelBlock:(void (^)(void))cancelBlock
               onErrorBlock:(void (^)(NSError *))errorBlock
-            onSuccessBlock:(void (^)(DPVkontakteUserAccount *))acceptedBlock;
+            onSuccessBlock:(void (^)(DPFacebookUserAccount *))acceptedBlock;
 
 @end

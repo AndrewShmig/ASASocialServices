@@ -14,4 +14,7 @@
 
 @interface DPFacebookUserAccount : NSObject
 
+- (id)initWithAccessToken:(NSString *)accessToken
+           expirationTime:(NSUInteger)expirationTime;
+
 @end

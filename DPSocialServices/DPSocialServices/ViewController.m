@@ -11,7 +11,7 @@
 @implementation ViewController
 
 @synthesize webView = _webView;
-@synthesize twitter = _twitter;
+@synthesize fb = _fb;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,21 +21,14 @@
     [_webView setHidden:NO];
     [self.view addSubview:_webView];
 
-    _twitter = [[DPTwitterCommunicator alloc] initWithWebView:_webView];
+    _fb = [[DPFacebookCommunicator alloc] initWithWebView:_webView];
 
-    [_twitter startOnCancelBlock:^{
+    [_fb startOnCancelBlock:^{
         NSLog(@"Cancel");
     } onErrorBlock:^(NSError *error) {
         NSLog(@"Error: %@", error);
-    } onSuccessBlock:^(DPTwitterUserAccount *account) {
+    } onSuccessBlock:^(DPFacebookUserAccount *account) {
         NSLog(@"account:%@", account);
-
-        [account setSuccessBlock:^(NSDictionary *dictionary)
-        {
-            NSLog(@"response: %@", dictionary);
-        }];
-
-        [account obtainFriendsWithCursor:@"-1"];
     }];
 }
 
