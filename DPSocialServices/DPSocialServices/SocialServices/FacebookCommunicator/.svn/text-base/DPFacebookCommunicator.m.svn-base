@@ -46,7 +46,7 @@
         _app_id = kFACEBOOK_APP_ID;
         _app_secret = kFACEBOOK_APP_SECRET;
 
-        // в качестве возвратного адерса можно взять любую строку
+        // в качестве возвратного адреса можно взять любую строку
         _redirect_url = [@"http://digipeople.ru/" encodeURL];
         _state = [self generateState];
         _code = @"";

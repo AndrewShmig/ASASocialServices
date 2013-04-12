@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="9d13f835-584d-421d-9669-f1b164cca2ac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.h" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/ViewController.h" afterPath="$PROJECT_DIR$/DPSocialServices/ViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/ViewController.m" afterPath="$PROJECT_DIR$/DPSocialServices/ViewController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DPSocialServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ViewController.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365746653571" ignored="false" />
-    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365746634378" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365753299909" ignored="false" />
     <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624571052" ignored="false" />
     <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365746689576" ignored="false" />
     <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624522915" ignored="false" />
@@ -25,7 +20,7 @@
     <file path="/DPTwitterUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365623224981" ignored="false" />
     <file path="/DPTwitterUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365623700474" ignored="false" />
     <file path="/DPFacebookUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365750469498" ignored="false" />
-    <file path="/DPFacebookCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365753013452" ignored="false" />
+    <file path="/DPFacebookCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365753552525" ignored="false" />
     <file path="/DPFacebookCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365748568811" ignored="false" />
     <file path="/README.md" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628834474" ignored="false" />
     <file path="/DPFacebookUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365750196008" ignored="false" />
@@ -56,9 +51,7 @@
         <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="38" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#215#246#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,11 +60,7 @@
         <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m">
           <provider selected="true" editor-type-id="text-editor">
             <state line="27" column="27" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#DPFacebookUserAccount#0" expanded="false" />
-                <element signature="n#description#0;n#DPFacebookUserAccount#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,9 +69,7 @@
         <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.h">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="18" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,13 +77,13 @@
       <file leaf-file-name="DPFacebookCommunicator.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="45" selection-start="6289" selection-end="6289" vertical-scroll-proportion="3.6382978">
+            <state line="48" column="38" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.6366048">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#DPFacebookCommunicator#0" expanded="false" />
-                <element signature="n#initWithWebView:#0;n#DPFacebookCommunicator#0" expanded="true" />
                 <element signature="n#startOnCancelBlock:onErrorBlock:onSuccessBlock:#0;n#DPFacebookCommunicator#0" expanded="true" />
                 <element signature="n#webView:shouldStartLoadWithRequest:navigationType:#0;n#DPFacebookCommunicator#0" expanded="true" />
+                <element signature="n#exchangeCodeForAccessToken#0;n#DPFacebookCommunicator#0" expanded="true" />
                 <element signature="n#redirectToLoginDialog#0;n#DPFacebookCommunicator#0" expanded="true" />
               </folding>
             </state>
@@ -106,7 +93,7 @@
       <file leaf-file-name="DPFacebookCommunicator.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="80" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
+            <state line="13" column="29" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -180,6 +167,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -258,17 +246,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="DirectoryView.Xcode" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$USER_HOME$/Pictures/1 (1).jpg" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="DPSocialServices" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.DPSocialServices">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="DPSocialServices" TARGET_NAME="DPSocialServices" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="DPSocialServices" RUN_TARGET_NAME="DPSocialServices" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -421,7 +408,11 @@
       <created>1365703690101</created>
       <updated>1365703690101</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="FacebookCommunicator finished">
+      <created>1365753102102</created>
+      <updated>1365753102102</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -448,7 +439,6 @@
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -462,6 +452,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -509,7 +500,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="FacebookCommunicator was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="FacebookCommunicator finished" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -536,6 +527,7 @@
     <MESSAGE value="наименования методов с CustomOptions были подкорректированы, чтобы вписываться в общую картину модуля" />
     <MESSAGE value="удалили файл README" />
     <MESSAGE value="FacebookCommunicator was added" />
+    <MESSAGE value="FacebookCommunicator finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -651,48 +643,40 @@
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="27" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#DPFacebookUserAccount#0" expanded="false" />
-            <element signature="n#description#0;n#DPFacebookUserAccount#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="38" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#215#246#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="18" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="38" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="80" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
+        <state line="13" column="29" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="45" selection-start="6289" selection-end="6289" vertical-scroll-proportion="3.6382978">
+        <state line="48" column="38" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.6366048">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#DPFacebookCommunicator#0" expanded="false" />
-            <element signature="n#initWithWebView:#0;n#DPFacebookCommunicator#0" expanded="true" />
             <element signature="n#startOnCancelBlock:onErrorBlock:onSuccessBlock:#0;n#DPFacebookCommunicator#0" expanded="true" />
             <element signature="n#webView:shouldStartLoadWithRequest:navigationType:#0;n#DPFacebookCommunicator#0" expanded="true" />
+            <element signature="n#exchangeCodeForAccessToken#0;n#DPFacebookCommunicator#0" expanded="true" />
             <element signature="n#redirectToLoginDialog#0;n#DPFacebookCommunicator#0" expanded="true" />
           </folding>
         </state>
