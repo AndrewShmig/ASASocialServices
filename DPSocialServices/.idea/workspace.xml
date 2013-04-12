@@ -5,9 +5,9 @@
     <ignored path="DPSocialServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ViewController.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365746653571" ignored="false" />
-    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365769500043" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365773151574" ignored="false" />
     <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624571052" ignored="false" />
-    <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365769213585" ignored="false" />
+    <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365772733718" ignored="false" />
     <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624522915" ignored="false" />
     <file path="/DPVkontakteCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365621440316" ignored="false" />
     <file path="/DPVkontakteCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624352281" ignored="false" />
@@ -16,11 +16,12 @@
     <file path="/DPTwitterCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365623768713" ignored="false" />
     <file path="/DPTwitterUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365623224981" ignored="false" />
     <file path="/DPTwitterUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365623700474" ignored="false" />
-    <file path="/DPFacebookUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365769236794" ignored="false" />
+    <file path="/DPFacebookUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365772960958" ignored="false" />
     <file path="/DPFacebookCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365766626157" ignored="false" />
     <file path="/DPFacebookCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365755828780" ignored="false" />
     <file path="/README.md" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628834474" ignored="false" />
-    <file path="/DPFacebookUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365769175049" ignored="false" />
+    <file path="/DPFacebookUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365772682634" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365773151291" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
       <file leaf-file-name="ViewController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="30" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
+            <state line="38" column="61" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -56,8 +57,29 @@
       <file leaf-file-name="DPFacebookUserAccount.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="2670" selection-end="2670" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="245" column="1" selection-start="7599" selection-end="7599" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#134#167#0" expanded="true" />
+                <element signature="e#404#443#0" expanded="true" />
+                <element signature="n#initWithAccessToken:expirationTime:#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#initWithAccessToken:#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainInfo#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainInfoCustomFields:#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainPhoto#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainFriends#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainFriendsCustomFields:#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainDialogWithId:#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainDialogCommentsWithId:#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainDialogCommentsWithId:count:#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainDialogCommentsWithId:count:offset:#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainInboxDialogs#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainInboxDialogsCount:#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainOutboxDialogs#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#obtainOutboxDialogsCount:#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#description#0;n#DPFacebookUserAccount#0" expanded="true" />
+                <element signature="n#sendRequest:#0;n#DPFacebookUserAccount#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,7 +87,7 @@
       <file leaf-file-name="DPFacebookUserAccount.h" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="20" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.5744681">
+            <state line="48" column="54" selection-start="1785" selection-end="1785" vertical-scroll-proportion="0.68085104">
               <folding />
             </state>
           </provider>
@@ -103,8 +125,8 @@
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.h" />
-        <option value="$PROJECT_DIR$/DPSocialServices/ViewController.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m" />
+        <option value="$PROJECT_DIR$/DPSocialServices/ViewController.m" />
       </list>
     </option>
   </component>
@@ -396,7 +418,11 @@
       <created>1365769507101</created>
       <updated>1365769507102</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="FacebookUserAccount methods were added">
+      <created>1365773160100</created>
+      <updated>1365773160100</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -644,23 +670,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="30" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="245" column="1" selection-start="7599" selection-end="7599" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#134#167#0" expanded="true" />
+            <element signature="e#404#443#0" expanded="true" />
+            <element signature="n#initWithAccessToken:expirationTime:#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#initWithAccessToken:#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainInfo#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainInfoCustomFields:#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainPhoto#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainFriends#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainFriendsCustomFields:#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainDialogWithId:#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainDialogCommentsWithId:#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainDialogCommentsWithId:count:#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainDialogCommentsWithId:count:offset:#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainInboxDialogs#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainInboxDialogsCount:#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainOutboxDialogs#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#obtainOutboxDialogsCount:#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#description#0;n#DPFacebookUserAccount#0" expanded="true" />
+            <element signature="n#sendRequest:#0;n#DPFacebookUserAccount#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m">
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="2670" selection-end="2670" vertical-scroll-proportion="0.0">
+        <state line="38" column="61" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="20" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.5744681">
+        <state line="48" column="54" selection-start="1785" selection-end="1785" vertical-scroll-proportion="0.68085104">
           <folding />
         </state>
       </provider>

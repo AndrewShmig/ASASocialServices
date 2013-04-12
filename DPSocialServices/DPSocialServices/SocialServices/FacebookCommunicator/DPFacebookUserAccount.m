@@ -157,7 +157,80 @@
     _successBlock([self sendRequest:request]);
 }
 
-- (void)obtainInboxMessages
+- (void)obtainDialogWithId:(NSString *)dialogId
+{
+    DEBUG_CURRENT_METHOD();
+
+    NSMutableString *urlAsString = [NSMutableString string];
+    [urlAsString appendFormat:@"%@", kFACEBOOK_GRAPH_URL];
+    [urlAsString appendFormat:@"%@", dialogId];
+    [urlAsString appendFormat:@"?access_token=%@", _accessToken];
+
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"GET"];
+
+    _successBlock([self sendRequest:request]);
+}
+
+- (void)obtainDialogCommentsWithId:(NSString *)dialogId
+{
+    DEBUG_CURRENT_METHOD();
+
+    NSMutableString *urlAsString = [NSMutableString string];
+    [urlAsString appendFormat:@"%@", kFACEBOOK_GRAPH_URL];
+    [urlAsString appendFormat:@"%@", dialogId];
+    [urlAsString appendFormat:@"/comments"];
+    [urlAsString appendFormat:@"?access_token=%@", _accessToken];
+
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"GET"];
+
+    _successBlock([self sendRequest:request]);
+}
+
+- (void)obtainDialogCommentsWithId:(NSString *)dialogId count:(NSUInteger)count
+{
+    DEBUG_CURRENT_METHOD();
+
+    NSMutableString *urlAsString = [NSMutableString string];
+    [urlAsString appendFormat:@"%@", kFACEBOOK_GRAPH_URL];
+    [urlAsString appendFormat:@"%@", dialogId];
+    [urlAsString appendFormat:@"/comments"];
+    [urlAsString appendFormat:@"?access_token=%@", _accessToken];
+    [urlAsString appendFormat:@"&limit=&u", count];
+
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"GET"];
+
+    _successBlock([self sendRequest:request]);
+}
+
+- (void)obtainDialogCommentsWithId:(NSString *)dialogId
+                             count:(NSUInteger)count
+                            offset:(NSUInteger)offset
+{
+    DEBUG_CURRENT_METHOD();
+
+    NSMutableString *urlAsString = [NSMutableString string];
+    [urlAsString appendFormat:@"%@", kFACEBOOK_GRAPH_URL];
+    [urlAsString appendFormat:@"%@", dialogId];
+    [urlAsString appendFormat:@"/comments"];
+    [urlAsString appendFormat:@"?access_token=%@", _accessToken];
+    [urlAsString appendFormat:@"&limit=%u", count];
+    [urlAsString appendFormat:@"&offset=%u", offset];
+
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"GET"];
+
+    _successBlock([self sendRequest:request]);
+}
+
+
+- (void)obtainInboxDialogs
 {
     DEBUG_CURRENT_METHOD();
 
@@ -172,7 +245,24 @@
     _successBlock([self sendRequest:request]);
 }
 
-- (void)obtainOutboxMessages
+- (void)obtainInboxDialogsCount:(NSUInteger)count
+{
+    DEBUG_CURRENT_METHOD();
+
+    NSMutableString *urlAsString = [NSMutableString string];
+    [urlAsString appendFormat:@"%@", kFACEBOOK_USER_INBOX_URL];
+    [urlAsString appendFormat:@"?access_token=%@", _accessToken];
+    [urlAsString appendFormat:@"&limit=&u", count];
+
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"GET"];
+
+    _successBlock([self sendRequest:request]);
+}
+
+
+- (void)obtainOutboxDialogs
 {
     DEBUG_CURRENT_METHOD();
 
@@ -187,12 +277,28 @@
     _successBlock([self sendRequest:request]);
 }
 
+- (void)obtainOutboxDialogsCount:(NSUInteger)count
+{
+    DEBUG_CURRENT_METHOD();
+
+    NSMutableString *urlAsString = [NSMutableString string];
+    [urlAsString appendFormat:@"%@", kFACEBOOK_USER_OUTBOX_URL];
+    [urlAsString appendFormat:@"?access_token=%@", _accessToken];
+    [urlAsString appendFormat:@"&limit=&u", count];
+
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"GET"];
+
+    _successBlock([self sendRequest:request]);
+}
+
 
 - (NSString *)description
 {
     DEBUG_CURRENT_METHOD();
 
-    return [NSString stringWithFormat:@"Access token: %@, expires in: %iu",
+    return [NSString stringWithFormat:@"Access token: %@, expires in: &u",
                                       _accessToken,
                                       _expirationTime];
 }
@@ -208,6 +314,9 @@
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request
                                                  returningResponse:&response
                                                              error:&error];
+
+    NSLog(@"response: %@", [NSString stringWithCString:[responseData bytes]
+                                              encoding:NSUTF8StringEncoding]);
 
     if(error != nil) {
         _errorBlock(error);

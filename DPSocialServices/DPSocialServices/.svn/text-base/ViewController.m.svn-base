@@ -35,7 +35,10 @@
             NSLog(@"response from server: %@", dictionary);
         }];
 
-        [account obtainPhoto];
+//        [account obtainDialogCommentsWithId:@"162838120547921"];
+        [account obtainDialogCommentsWithId:@"316482585058025"
+                                      count:3
+                                     offset:1];
     }];
 }
 

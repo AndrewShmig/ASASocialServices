@@ -13,6 +13,7 @@
 #import <Foundation/Foundation.h>
 
 
+static NSString *const kFACEBOOK_GRAPH_URL = @"https://graph.facebook.com/";
 static NSString *const kFACEBOOK_USER_URL = @"https://graph.facebook.com/me";
 static NSString *const kFACEBOOK_USER_FRIENDS_URL = @"https://graph.facebook.com/me/friends";
 static NSString *const kFACEBOOK_USER_INBOX_URL = @"https://graph.facebook.com/me/inbox";
@@ -40,8 +41,17 @@ static NSString *const kFACEBOOK_USER_PHOTO_URL = @"https://graph.facebook.com/m
 - (void)obtainFriends;
 - (void)obtainFriendsCustomFields:(NSArray *)fields;
 
-- (void)obtainInboxMessages;
+- (void)obtainDialogWithId:(NSString *)dialogId;
+- (void)obtainDialogCommentsWithId:(NSString *)dialogId;
+- (void)obtainDialogCommentsWithId:(NSString *)dialogId count:(NSUInteger)count;
+- (void)obtainDialogCommentsWithId:(NSString *)dialogId
+                             count:(NSUInteger)count
+                            offset:(NSUInteger)offset;
 
-- (void)obtainOutboxMessages;
+- (void)obtainInboxDialogs;
+- (void)obtainInboxDialogsCount:(NSUInteger)count;
+
+- (void)obtainOutboxDialogs;
+- (void)obtainOutboxDialogsCount:(NSUInteger)count;
 
 @end
