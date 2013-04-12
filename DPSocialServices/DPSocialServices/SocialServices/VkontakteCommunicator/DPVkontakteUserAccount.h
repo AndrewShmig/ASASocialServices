@@ -2,10 +2,6 @@
 //  DPVkontakteUserAccount.h
 //
 //  Created by Andrew Shmig on 18.12.12.
-//  Copyright (c) 2012 DigiPeople Inc. All rights reserved.
-//
-//  Класс для работы с пользовательским аккаунтом ВК
-//  Инициализация требует 3 параметра: access token, время окончания действия токена и пользовательский айди
 //
 
 #import <Foundation/Foundation.h>
