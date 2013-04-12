@@ -1,5 +1,7 @@
 # ASASocialServices
 
+В поисках примеров? Тогда вам сразу [сюда](https://github.com/AndrewShmig/ASASocialServices/wiki/_pages).
+
 [Основная директория](https://github.com/AndrewShmig/ASASocialServices/tree/master/DPSocialServices/DPSocialServices/SocialServices) модуля.
 
 [Проект](https://github.com/AndrewShmig/ASASocialServices/tree/master/DPSocialServices), который позволяет запустить и проверить [DPSocialServices](https://github.com/AndrewShmig/ASASocialServices/tree/master/DPSocialServices/DPSocialServices/SocialServices) на работоспособность.
