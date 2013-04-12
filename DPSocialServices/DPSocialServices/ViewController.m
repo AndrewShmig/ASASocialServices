@@ -21,9 +21,9 @@
     [_webView setHidden:NO];
     [self.view addSubview:_webView];
 
-    _fb = [[DPVkontakteCommunicator alloc] initWithWebView:_webView];
+    _vk = [[DPVkontakteCommunicator alloc] initWithWebView:_webView];
 
-    [_fb startOnCancelBlock:^{
+    [_vk startOnCancelBlock:^{
         NSLog(@"Cancel");
     } onErrorBlock:^(NSError *error) {
         NSLog(@"Error: %@", error);
