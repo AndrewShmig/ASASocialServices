@@ -35,7 +35,7 @@
     <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365788355975" ignored="false" />
     <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365781707651" ignored="false" />
     <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365788745673" ignored="false" />
-    <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365791082863" ignored="false" />
+    <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365794041224" ignored="false" />
     <file path="/DPVkontakteCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365621440316" ignored="false" />
     <file path="/DPVkontakteCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365624352281" ignored="false" />
     <file path="/a.dummy" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365702891571" ignored="false" />
@@ -74,7 +74,7 @@
       <file leaf-file-name="DPVkontakteUserAccount.h" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="57" selection-start="273" selection-end="273" vertical-scroll-proportion="-0.65782493">
+            <state line="21" column="60" selection-start="692" selection-end="692" vertical-scroll-proportion="0.44562334">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -403,7 +403,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="1" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -638,7 +638,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="57" selection-start="273" selection-end="273" vertical-scroll-proportion="-0.65782493">
+        <state line="21" column="60" selection-start="692" selection-end="692" vertical-scroll-proportion="0.44562334">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

@@ -148,56 +148,297 @@
 
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/video
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Video)
+
+- (void)videoGetWithCustomOptions:(NSDictionary *)options;
+- (void)videoEditWithCustomOptions:(NSDictionary *)options;
+- (void)videoAddWithCustomOptions:(NSDictionary *)options;
+- (void)videoSaveWithCustomOptions:(NSDictionary *)options;
+- (void)videoDeleteWithCustomOptions:(NSDictionary *)options;
+- (void)videoRestoreWithCustomOptions:(NSDictionary *)options;
+- (void)videoSearchWithCustomOptions:(NSDictionary *)options;
+- (void)videoGetUserVideosWithCustomOptions:(NSDictionary *)options;
+- (void)videoGetAlbumsWithCustomOptions:(NSDictionary *)options;
+- (void)videoAddAlbumWithCustomOptions:(NSDictionary *)options;
+- (void)videoEditAlbumWithCustomOptions:(NSDictionary *)options;
+- (void)videoDeleteAlbumWithCustomOptions:(NSDictionary *)options;
+- (void)videoMoveToAlbumWithCustomOptions:(NSDictionary *)options;
+- (void)videoGetCommentsWithCustomOptions:(NSDictionary *)options;
+- (void)videoCreateCommentWithCustomOptions:(NSDictionary *)options;
+- (void)videoDeleteCommentWithCustomOptions:(NSDictionary *)options;
+- (void)videoEditCommentWithCustomOptions:(NSDictionary *)options;
+- (void)videoGetTagsWithCustomOptions:(NSDictionary *)options;
+- (void)videoPutTagWithCustomOptions:(NSDictionary *)options;
+- (void)videoRemoveTagWithCustomOptions:(NSDictionary *)options;
+- (void)videoGetNewTagsWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/audio
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Audio)
+
+- (void)audioGetWithCustomOptions:(NSDictionary *)options;
+- (void)audioGetByIdWithCustomOptions:(NSDictionary *)options;
+- (void)audioGetLyricsWithCustomOptions:(NSDictionary *)options;
+- (void)audioSearchWithCustomOptions:(NSDictionary *)options;
+- (void)audioGetUploadServerWithCustomOptions:(NSDictionary *)options;
+- (void)audioSaveWithCustomOptions:(NSDictionary *)options;
+- (void)audioAddWithCustomOptions:(NSDictionary *)options;
+- (void)audioDeleteWithCustomOptions:(NSDictionary *)options;
+- (void)audioEditWithCustomOptions:(NSDictionary *)options;
+- (void)audioReorderWithCustomOptions:(NSDictionary *)options;
+- (void)audioRestoreWithCustomOptions:(NSDictionary *)options;
+- (void)audioGetAlbumsWithCustomOptions:(NSDictionary *)options;
+- (void)audioAddAlbumWithCustomOptions:(NSDictionary *)options;
+- (void)audioEditAlbumWithCustomOptions:(NSDictionary *)options;
+- (void)audioDeleteAlbumWithCustomOptions:(NSDictionary *)options;
+- (void)audioMoveToAlbumWithCustomOptions:(NSDictionary *)options;
+- (void)audioGetBroadcastWithCustomOptions:(NSDictionary *)options;
+- (void)audioSetBroadcastWithCustomOptions:(NSDictionary *)options;
+- (void)audioGetRecommendationsWithCustomOptions:(NSDictionary *)options;
+- (void)audioGetCountWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/messages
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Messages)
+
+- (void)messagesGetWithCustomOptions:(NSDictionary *)options;
+- (void)messagesGetDialogsWithCustomOptions:(NSDictionary *)options;
+- (void)messagesGetByIdWithCustomOptions:(NSDictionary *)options;
+- (void)messagesSearchWithCustomOptions:(NSDictionary *)options;
+- (void)messagesGetHistoryWithCustomOptions:(NSDictionary *)options;
+- (void)messagesSendWithCustomOptions:(NSDictionary *)options;
+- (void)messagesDeleteWithCustomOptions:(NSDictionary *)options;
+- (void)messagesDeleteDialogWithCustomOptions:(NSDictionary *)options;
+- (void)messagesRestoreWithCustomOptions:(NSDictionary *)options;
+- (void)messagesMarkAsNewWithCustomOptions:(NSDictionary *)options;
+- (void)messagesMarkAsReadWithCustomOptions:(NSDictionary *)options;
+- (void)messagesGetLongPollServerWithCustomOptions:(NSDictionary *)options;
+- (void)messagesGetLongPollHistoryWithCustomOptions:(NSDictionary *)options;
+- (void)messagesCreateChatWithCustomOptions:(NSDictionary *)options;
+- (void)messagesEditChatWithCustomOptions:(NSDictionary *)options;
+- (void)messagesGetChatUsersWithCustomOptions:(NSDictionary *)options;
+- (void)messagesSetActivityWithCustomOptions:(NSDictionary *)options;
+- (void)messagesSearchDialogsWithCustomOptions:(NSDictionary *)options;
+- (void)messagesAddChatUserWithCustomOptions:(NSDictionary *)options;
+- (void)messagesRemoveChatUserWithCustomOptions:(NSDictionary *)options;
+- (void)messagesGetLastActivityWithCustomOptions:(NSDictionary *)options;
+- (void)messagesGetChatWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/newsfeed
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Newsfeed)
+
+- (void)newsfeedGetWithCustomOptions:(NSDictionary *)options;
+- (void)newsfeedGetRecommendedWithCustomOptions:(NSDictionary *)options;
+- (void)newsfeedGetCommentsWithCustomOptions:(NSDictionary *)options;
+- (void)newsfeedGetMentionsWithCustomOptions:(NSDictionary *)options;
+- (void)newsfeedGetBannedWithCustomOptions:(NSDictionary *)options;
+- (void)newsfeedAddBanWithCustomOptions:(NSDictionary *)options;
+- (void)newsfeedDeleteBanWithCustomOptions:(NSDictionary *)options;
+- (void)newsfeedSearchWithCustomOptions:(NSDictionary *)options;
+- (void)newsfeedGetListsWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/likes
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Likes)
+
+- (void)likesGetListWithCustomOptions:(NSDictionary *)options;
+- (void)likesAddWithCustomOptions:(NSDictionary *)options;
+- (void)likesDeleteWithCustomOptions:(NSDictionary *)options;
+- (void)likesIsLikedWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/account
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Account)
+
+- (void)accountGetCountersWithCustomOptions:(NSDictionary *)options;
+- (void)accountSetNameInMenuWithCustomOptions:(NSDictionary *)options;
+- (void)accountSetOnlineWithCustomOptions:(NSDictionary *)options;
+- (void)accountImportContactsWithCustomOptions:(NSDictionary *)options;
+- (void)accountRegisterDeviceWithCustomOptions:(NSDictionary *)options;
+- (void)accountUnregisterDeviceWithCustomOptions:(NSDictionary *)options;
+- (void)accountSetSilenceModeWithCustomOptions:(NSDictionary *)options;
+- (void)accountGetPushSettingsWithCustomOptions:(NSDictionary *)options;
+- (void)accountGetAppPermissionsWithCustomOptions:(NSDictionary *)options;
+- (void)accountGetActiveOffersWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/status
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Status)
+
+- (void)statusGetWithCustomOptions:(NSDictionary *)options;
+- (void)statusSetWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/pages
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Pages)
+
+- (void)pagesGetWithCustomOptions:(NSDictionary *)options;
+- (void)pagesSaveWithCustomOptions:(NSDictionary *)options;
+- (void)pagesSaveAccessWithCustomOptions:(NSDictionary *)options;
+- (void)pagesGetHistoryWithCustomOptions:(NSDictionary *)options;
+- (void)pagesGetTitlesWithCustomOptions:(NSDictionary *)options;
+- (void)pagesGetVersionWithCustomOptions:(NSDictionary *)options;
+- (void)pagesParseWikiWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/board
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Board)
+
+- (void)boardGetTopicsWithCustomOptions:(NSDictionary *)options;
+- (void)boardGetCommentsWithCustomOptions:(NSDictionary *)options;
+- (void)boardAddTopicWithCustomOptions:(NSDictionary *)options;
+- (void)boardAddCommentWithCustomOptions:(NSDictionary *)options;
+- (void)boardDeleteTopicWithCustomOptions:(NSDictionary *)options;
+- (void)boardEditTopicWithCustomOptions:(NSDictionary *)options;
+- (void)boardEditCommentWithCustomOptions:(NSDictionary *)options;
+- (void)boardRestoreCommentWithCustomOptions:(NSDictionary *)options;
+- (void)boardDeleteCommentWithCustomOptions:(NSDictionary *)options;
+- (void)boardOpenTopicWithCustomOptions:(NSDictionary *)options;
+- (void)boardCloseTopicWithCustomOptions:(NSDictionary *)options;
+- (void)boardFixTopicWithCustomOptions:(NSDictionary *)options;
+- (void)boardUnfixTopicWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/notes
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Notes)
+
+- (void)notesGetWithCustomOptions:(NSDictionary *)options;
+- (void)notesGetByIdWithCustomOptions:(NSDictionary *)options;
+- (void)notesGetFriendsNotesWithCustomOptions:(NSDictionary *)options;
+- (void)notesAddWithCustomOptions:(NSDictionary *)options;
+- (void)notesEditWithCustomOptions:(NSDictionary *)options;
+- (void)notesDeleteWithCustomOptions:(NSDictionary *)options;
+- (void)notesGetCommentsWithCustomOptions:(NSDictionary *)options;
+- (void)notesCreateCommentWithCustomOptions:(NSDictionary *)options;
+- (void)notesEditCommentWithCustomOptions:(NSDictionary *)options;
+- (void)notesDeleteCommentWithCustomOptions:(NSDictionary *)options;
+- (void)notesRestoreCommentWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/places
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Places)
+
+- (void)placesAddWithCustomOptions:(NSDictionary *)options;
+- (void)placesGetByIdWithCustomOptions:(NSDictionary *)options;
+- (void)placesSearchWithCustomOptions:(NSDictionary *)options;
+- (void)placesCheckinWithCustomOptions:(NSDictionary *)options;
+- (void)placesGetCheckinsWithCustomOptions:(NSDictionary *)options;
+- (void)placesGetTypesWithCustomOptions:(NSDictionary *)options;
+- (void)placesGetCountriesWithCustomOptions:(NSDictionary *)options;
+- (void)placesGetRegionsWithCustomOptions:(NSDictionary *)options;
+- (void)placesGetStreeByIdWithCustomOptions:(NSDictionary *)options;
+- (void)placesGetCountryByIdWithCustomOptions:(NSDictionary *)options;
+- (void)placesGetCitiesWithCustomOptions:(NSDictionary *)options;
+- (void)placesGetCityByIdWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/polls
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Polls)
+
+- (void)pollsGetByIdWithCustomOptions:(NSDictionary *)options;
+- (void)pollsAddVoteWithCustomOptions:(NSDictionary *)options;
+- (void)pollsDeleteVoteWithCustomOptions:(NSDictionary *)options;
+- (void)pollsGetVotersWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/docs
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Docs)
+
+- (void)docsGetWithCustomOptions:(NSDictionary *)options;
+- (void)docsGetByIdWithCustomOptions:(NSDictionary *)options;
+- (void)docsGetUploadServerWithCustomOptions:(NSDictionary *)options;
+- (void)docsGetWallUploadServerWithCustomOptions:(NSDictionary *)options;
+- (void)docsSaveWithCustomOptions:(NSDictionary *)options;
+- (void)docsDeleteWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/fave
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Fave)
+
+- (void)faveGetUsersWithCustomOptions:(NSDictionary *)options;
+- (void)faveGetPhotosWithCustomOptions:(NSDictionary *)options;
+- (void)faveGetPostsWithCustomOptions:(NSDictionary *)options;
+- (void)faveGetVideosWithCustomOptions:(NSDictionary *)options;
+- (void)faveGetLinksWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/notifications
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Notifications)
+
+- (void)notificationsGetWithCustomOptions:(NSDictionary *)options;
+- (void)notificationsMarkAsViewedWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/stats
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Stats)
+
+- (void)statsGetWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/search
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Search)
+
+- (void)searchGetHintsWithCustomOptions:(NSDictionary *)options;
+
 @end
 
+// -----------------------------------------------------------------------------
+// Documentation: https://vk.com/dev/apps
+// -----------------------------------------------------------------------------
 @interface DPVkontakteUserAccount(Apps)
+
+- (void)appsGetCatalogWithCustomOptions:(NSDictionary *)options;
+
 @end
