@@ -19,6 +19,7 @@ static NSString *const kFACEBOOK_USER_FRIENDS_URL = @"https://graph.facebook.com
 static NSString *const kFACEBOOK_USER_INBOX_URL = @"https://graph.facebook.com/me/inbox";
 static NSString *const kFACEBOOK_USER_OUTBOX_URL = @"https://graph.facebook.com/me/outbox";
 static NSString *const kFACEBOOK_USER_PHOTO_URL = @"https://graph.facebook.com/me/picture";
+static NSString *const kFACEBOOK_USER_FEED_URL = @"https://graph.facebook.com/me/feed";
 
 
 @interface DPFacebookUserAccount : NSObject
@@ -34,9 +35,12 @@ static NSString *const kFACEBOOK_USER_PHOTO_URL = @"https://graph.facebook.com/m
 - (id)initWithAccessToken:(NSString *)accessToken;
 
 - (void)obtainInfo;
-- (void)obtainInfoCustomFields:(NSArray *)fields;
+- (void)obtainInfoFields:(NSArray *)fields;
 
 - (void)obtainPhoto;
+
+- (void)publishToFeed:(NSString *)text;
+- (void)publishToFeedCustomOptions:(NSDictionary *)options;
 
 - (void)obtainFriends;
 - (void)obtainFriendsCustomFields:(NSArray *)fields;

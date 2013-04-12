@@ -70,7 +70,7 @@
     _successBlock([self sendRequest:request]);
 }
 
-- (void)obtainInfoCustomFields:(NSArray *)fields
+- (void)obtainInfoFields:(NSArray *)fields
 {
     DEBUG_CURRENT_METHOD();
 
@@ -113,6 +113,43 @@
 
     _successBlock([self sendRequest:request]);
 }
+
+- (void)publishToFeed:(NSString *)text
+{
+    DEBUG_CURRENT_METHOD();
+
+    NSMutableString *urlAsString = [NSMutableString string];
+    [urlAsString appendFormat:@"%@", kFACEBOOK_USER_FEED_URL];
+    [urlAsString appendFormat:@"?access_token=%@", _accessToken];
+    [urlAsString appendFormat:@"&message=%@", [text encodeURL]];
+
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"POST"];
+
+    _successBlock([self sendRequest:request]);
+}
+
+- (void)publishToFeedCustomOptions:(NSDictionary *)options
+{
+    DEBUG_CURRENT_METHOD();
+
+    NSMutableString *urlAsString = [NSMutableString string];
+    [urlAsString appendFormat:@"%@", kFACEBOOK_USER_FEED_URL];
+    [urlAsString appendFormat:@"?access_token=%@", _accessToken];
+
+    [options enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
+    {
+        [urlAsString appendFormat:@"&%@=%@", key, [obj encodeURL]];
+    }];
+
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"POST"];
+
+    _successBlock([self sendRequest:request]);
+}
+
 
 - (void)obtainFriends
 {
@@ -199,7 +236,7 @@
     [urlAsString appendFormat:@"%@", dialogId];
     [urlAsString appendFormat:@"/comments"];
     [urlAsString appendFormat:@"?access_token=%@", _accessToken];
-    [urlAsString appendFormat:@"&limit=&u", count];
+    [urlAsString appendFormat:@"&limit=%u", count];
 
     NSURL *url = [NSURL URLWithString:urlAsString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -252,7 +289,7 @@
     NSMutableString *urlAsString = [NSMutableString string];
     [urlAsString appendFormat:@"%@", kFACEBOOK_USER_INBOX_URL];
     [urlAsString appendFormat:@"?access_token=%@", _accessToken];
-    [urlAsString appendFormat:@"&limit=&u", count];
+    [urlAsString appendFormat:@"&limit=%u", count];
 
     NSURL *url = [NSURL URLWithString:urlAsString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -284,7 +321,7 @@
     NSMutableString *urlAsString = [NSMutableString string];
     [urlAsString appendFormat:@"%@", kFACEBOOK_USER_OUTBOX_URL];
     [urlAsString appendFormat:@"?access_token=%@", _accessToken];
-    [urlAsString appendFormat:@"&limit=&u", count];
+    [urlAsString appendFormat:@"&limit=%u", count];
 
     NSURL *url = [NSURL URLWithString:urlAsString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -298,7 +335,7 @@
 {
     DEBUG_CURRENT_METHOD();
 
-    return [NSString stringWithFormat:@"Access token: %@, expires in: &u",
+    return [NSString stringWithFormat:@"Access token: %@, expires in: %u",
                                       _accessToken,
                                       _expirationTime];
 }
@@ -315,8 +352,8 @@
                                                  returningResponse:&response
                                                              error:&error];
 
-    NSLog(@"response: %@", [NSString stringWithCString:[responseData bytes]
-                                              encoding:NSUTF8StringEncoding]);
+    NSLog(@"===>%@", [NSString stringWithCString:[responseData bytes]
+                                        encoding:NSUTF8StringEncoding]);
 
     if(error != nil) {
         _errorBlock(error);

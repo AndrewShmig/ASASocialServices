@@ -35,10 +35,8 @@
             NSLog(@"response from server: %@", dictionary);
         }];
 
-//        [account obtainDialogCommentsWithId:@"162838120547921"];
-        [account obtainDialogCommentsWithId:@"316482585058025"
-                                      count:3
-                                     offset:1];
+        [account publishToFeedCustomOptions:@{@"message"  : @"Hello from iOS app, second time!",
+                                              @"picture" : @"http://laurencecooper.files.wordpress.com/2011/03/52750.jpg"}];
     }];
 }
 
