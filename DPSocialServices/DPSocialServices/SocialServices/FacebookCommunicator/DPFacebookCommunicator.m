@@ -47,7 +47,7 @@
         _app_secret = kFACEBOOK_APP_SECRET;
 
         // в качестве возвратного адреса можно взять любую строку
-        _redirect_url = [@"http://digipeople.ru/" encodeURL];
+        _redirect_url = [@"http://m.digipeople.ru/" encodeURL];
         _state = [self generateState];
         _code = @"";
         _access_token = @"";
@@ -128,6 +128,9 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
         return NO;
     }
 
+    if([[url encodeURL] hasPrefix:_redirect_url])
+        return NO;
+
     return YES;
 }
 
@@ -187,6 +190,8 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
     NSString *responseBody = [NSString stringWithCString:[responseData bytes]
                                                 encoding:NSUTF8StringEncoding];
+
+    NSLog(@"Response body: %@", responseBody);
 
     NSArray *parts = [responseBody componentsSeparatedByString:@"&"];
     _access_token = [parts[0] componentsSeparatedByString:@"="][1];

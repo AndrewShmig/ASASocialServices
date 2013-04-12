@@ -12,9 +12,36 @@
 
 #import <Foundation/Foundation.h>
 
+
+static NSString *const kFACEBOOK_USER_URL = @"https://graph.facebook.com/me";
+static NSString *const kFACEBOOK_USER_FRIENDS_URL = @"https://graph.facebook.com/me/friends";
+static NSString *const kFACEBOOK_USER_INBOX_URL = @"https://graph.facebook.com/me/inbox";
+static NSString *const kFACEBOOK_USER_OUTBOX_URL = @"https://graph.facebook.com/me/outbox";
+static NSString *const kFACEBOOK_USER_PHOTO_URL = @"https://graph.facebook.com/me/picture";
+
+
 @interface DPFacebookUserAccount : NSObject
+
+@property (nonatomic, readonly) NSString *accessToken;
+@property (nonatomic, readonly) NSUInteger expirationTime;
+
+@property (nonatomic, copy) void (^errorBlock)(NSError *);
+@property (nonatomic, copy) void (^successBlock)(NSDictionary *);
 
 - (id)initWithAccessToken:(NSString *)accessToken
            expirationTime:(NSUInteger)expirationTime;
+- (id)initWithAccessToken:(NSString *)accessToken;
+
+- (void)obtainInfo;
+- (void)obtainInfoCustomFields:(NSArray *)fields;
+
+- (void)obtainPhoto;
+
+- (void)obtainFriends;
+- (void)obtainFriendsCustomFields:(NSArray *)fields;
+
+- (void)obtainInboxMessages;
+
+- (void)obtainOutboxMessages;
 
 @end

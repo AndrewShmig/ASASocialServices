@@ -29,6 +29,13 @@
         NSLog(@"Error: %@", error);
     } onSuccessBlock:^(DPFacebookUserAccount *account) {
         NSLog(@"account:%@", account);
+
+        [account setSuccessBlock:^(NSDictionary *dictionary)
+        {
+            NSLog(@"response from server: %@", dictionary);
+        }];
+
+        [account obtainPhoto];
     }];
 }
 
