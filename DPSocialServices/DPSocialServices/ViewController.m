@@ -35,6 +35,8 @@
             NSLog(@"%@", dictionary);
         }];
 
+        [account usersGetSubscriptionsWithCustomOptions:@{}];
+
 //        [account usersGetFollowersWithCustomOptions:[NSDictionary dictionary]];
     }];
 }

@@ -6,6 +6,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
+
+
 @interface DPVkontakteUserAccount : NSObject
 
 @property (nonatomic, readonly) NSString *accessToken;
