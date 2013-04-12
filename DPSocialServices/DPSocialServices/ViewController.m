@@ -11,7 +11,7 @@
 @implementation ViewController
 
 @synthesize webView = _webView;
-@synthesize fb = _fb;
+@synthesize vk = _vk;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,13 +21,13 @@
     [_webView setHidden:NO];
     [self.view addSubview:_webView];
 
-    _fb = [[DPFacebookCommunicator alloc] initWithWebView:_webView];
+    _fb = [[DPVkontakteCommunicator alloc] initWithWebView:_webView];
 
     [_fb startOnCancelBlock:^{
         NSLog(@"Cancel");
     } onErrorBlock:^(NSError *error) {
         NSLog(@"Error: %@", error);
-    } onSuccessBlock:^(DPFacebookUserAccount *account) {
+    } onSuccessBlock:^(DPVkontakteUserAccount *account) {
         NSLog(@"account:%@", account);
 
         [account setSuccessBlock:^(NSDictionary *dictionary)
@@ -35,12 +35,7 @@
             NSLog(@"%@", dictionary);
         }];
 
-        [account obtainFriendsCustomFields:@[@"name",
-                                             @"gender",
-                                             @"location",
-                                             @"cover",
-                                             @"about",
-                                             @"bio"]];
+
     }];
 }
 

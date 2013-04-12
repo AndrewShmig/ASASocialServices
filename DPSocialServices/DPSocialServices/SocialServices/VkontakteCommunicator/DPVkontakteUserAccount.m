@@ -10,7 +10,6 @@
 
 #if LOG_ON == 1
 # define DEBUG_CURRENT_METHOD() NSLog(@"%s", __FUNCTION__)
-# define DEBUG_INFO(x) NSLog(@"%@", x)
 #endif
 
 @implementation DPVkontakteUserAccount

@@ -8,17 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DPTwitterCommunicator.h"
 #import "DPVkontakteCommunicator.h"
-#import "DPFacebookCommunicator.h"
-
-#import "DPTwitterUserAccount.h"
 #import "DPVkontakteUserAccount.h"
-#import "DPFacebookUserAccount.h"
 
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) UIWebView *webView;
-@property (nonatomic, strong) DPFacebookCommunicator *fb;
+@property (nonatomic, strong) DPVkontakteCommunicator *vk;
 
 @end
