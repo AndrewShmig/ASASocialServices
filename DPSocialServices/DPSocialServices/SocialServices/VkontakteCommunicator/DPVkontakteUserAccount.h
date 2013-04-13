@@ -5,7 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "DDLog.h"
 
 static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 

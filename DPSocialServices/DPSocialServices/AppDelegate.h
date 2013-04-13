@@ -2,11 +2,14 @@
 //  AppDelegate.h
 //  DPSocialServices
 //
-//  Created by digipeople on 04/09/13.
+//  Created by Andrew Shmig on 04/09/13.
 //  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+
+#import "DDLog.h"
+#import "DDTTYLogger.h"
 
 @class ViewController;
 

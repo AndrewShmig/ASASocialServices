@@ -7,6 +7,8 @@
 #import <Foundation/Foundation.h>
 #import "DPVkontakteUserAccount.h"
 
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
 @implementation DPVkontakteUserAccount
 
 @synthesize accessToken = _accessToken;
@@ -19,11 +21,16 @@
                       expirationTime:(NSInteger)expirationTime
                               userId:(NSInteger)userId
 {
+    DDLogInfo(@"%s", __FUNCTION__);
+    DDLogVerbose(@"Access token: %@", accessToken);
+    DDLogVerbose(@"Expiration time: %i", expirationTime);
+    DDLogVerbose(@"User id: %i", userId);
+
     self = [super init];
 
     if (self) {
         // init
-        _accessToken = accessToken;
+        _accessToken = [accessToken copy];
         _userId = userId;
         _expirationTime = expirationTime;
 
@@ -43,6 +50,8 @@
 - (id)initUserAccountWithAccessToken:(NSString *)accessToken
                               userId:(NSUInteger)userId
 {
+    DDLogInfo(@"%s", __FUNCTION__);
+
     return [self initUserAccountWithAccessToken:accessToken
                                  expirationTime:0
                                          userId:userId];
@@ -50,6 +59,8 @@
 
 - (id)init
 {
+    DDLogInfo(@"%s", __FUNCTION__);
+
     @throw [NSException exceptionWithName:@"Invalid init method used."
                                    reason:@"Invalid init method used."
                                  userInfo:nil];
