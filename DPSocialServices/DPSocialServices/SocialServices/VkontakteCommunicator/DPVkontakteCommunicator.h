@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DDLog.h"
 
 @class DPVkontakteUserAccount;
 

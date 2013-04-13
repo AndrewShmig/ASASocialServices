@@ -7,6 +7,7 @@
 
 #import "DPVkontakteCommunicator.h"
 #import "DPVkontakteUserAccount.h"
+#import "DDLog.h"
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 

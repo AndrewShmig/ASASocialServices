@@ -44,7 +44,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/DPSocialServices/Default@2x.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" afterPath="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" afterPath="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
@@ -57,12 +56,12 @@
     <ignored path="DPSocialServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ViewController.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365782489829" ignored="false" />
-    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365837976261" ignored="false" />
-    <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365839606647" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365839744651" ignored="false" />
+    <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365839805883" ignored="false" />
     <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365800444776" ignored="false" />
     <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365838260836" ignored="false" />
     <file path="/DPVkontakteCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365838605741" ignored="false" />
-    <file path="/DPVkontakteCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365839468590" ignored="false" />
+    <file path="/DPVkontakteCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365839816883" ignored="false" />
     <file path="/a.dummy" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365702891571" ignored="false" />
     <file path="/DPTwitterCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365623866713" ignored="false" />
     <file path="/DPTwitterCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365623768713" ignored="false" />
@@ -98,7 +97,36 @@
     <favorites_list name="DPSocialServices" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="DPVkontakteCommunicator.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.19485791">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#141#176#0" expanded="true" />
+                <element signature="n#initWithWebView:#0;n#DPVkontakteCommunicator#0" expanded="true" />
+                <element signature="n#startOnCancelBlock:onErrorBlock:onSuccessBlock:#0;n#DPVkontakteCommunicator#0" expanded="true" />
+                <element signature="n#webView:shouldStartLoadWithRequest:navigationType:#0;n#DPVkontakteCommunicator#0" expanded="true" />
+                <element signature="n#webViewDidFinishLoad:#0;n#DPVkontakteCommunicator#0" expanded="true" />
+                <element signature="n#webViewDidStartLoad:#0;n#DPVkontakteCommunicator#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DPVkontakteCommunicator.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="33" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -129,9 +157,9 @@
         <option value="$PROJECT_DIR$/DPSocialServices/ViewController.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" />
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
       </list>
     </option>
   </component>
@@ -166,7 +194,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,16 +254,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="DirectoryView.Xcode" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/CocoaLumberjack-master/Lumberjack" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="DPSocialServices" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.DPSocialServices">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="DPSocialServices" TARGET_NAME="DPSocialServices" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="DPSocialServices" RUN_TARGET_NAME="DPSocialServices" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -438,13 +466,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.3794872" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.3794872" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
@@ -640,32 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="224" selection-end="224" vertical-scroll-proportion="0.21276596">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#141#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="48" selection-start="198" selection-end="198" vertical-scroll-proportion="0.19148937">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#80#113#0" expanded="true" />
-            <element signature="e#240#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1430" selection-end="1430" vertical-scroll-proportion="0.29787233">
+        <state line="6" column="33" selection-start="113" selection-end="113" vertical-scroll-proportion="0.042440318">
           <folding>
-            <element signature="e#80#113#0" expanded="true" />
             <element signature="n#DPVkontakteUserAccount#0" expanded="false" />
             <element signature="n#DPVkontakteUserAccount#1" expanded="false" />
             <element signature="n#DPVkontakteUserAccount#2" expanded="false" />
@@ -695,9 +701,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="166" selection-end="166" vertical-scroll-proportion="0.16976127">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#80#113#0" expanded="true" />
+            <element signature="e#258#297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="333" selection-end="333" vertical-scroll-proportion="0.30311233">
+        <state line="9" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.19485791">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#141#176#0" expanded="true" />
