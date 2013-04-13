@@ -445,10 +445,3 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 - (void)appsGetCatalogWithCustomOptions:(NSDictionary *)options;
 
 @end
-
-// -----------------------------------------------------------------------------
-// Request methods, parsing methods etc
-// -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Additions)
-
-@end
