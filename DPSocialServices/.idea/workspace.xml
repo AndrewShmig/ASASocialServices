@@ -44,6 +44,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/DPSocialServices/Default@2x.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" afterPath="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" afterPath="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
@@ -57,12 +58,12 @@
     <ignored path="DPSocialServices.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ViewController.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365782489829" ignored="false" />
-    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366128403015" ignored="false" />
-    <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366129633301" ignored="false" />
-    <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366130086951" ignored="false" />
-    <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365838260836" ignored="false" />
-    <file path="/DPVkontakteCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365838605741" ignored="false" />
-    <file path="/DPVkontakteCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365841902156" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366137248238" ignored="false" />
+    <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366136688663" ignored="false" />
+    <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366137739776" ignored="false" />
+    <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366131495144" ignored="false" />
+    <file path="/DPVkontakteCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366131645553" ignored="false" />
+    <file path="/DPVkontakteCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366132826479" ignored="false" />
     <file path="/a.dummy" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365702891571" ignored="false" />
     <file path="/DPTwitterCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365623866713" ignored="false" />
     <file path="/DPTwitterCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365623768713" ignored="false" />
@@ -73,9 +74,9 @@
     <file path="/DPFacebookCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365755828780" ignored="false" />
     <file path="/README.md" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365628834474" ignored="false" />
     <file path="/DPFacebookUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365774028947" ignored="false" />
-    <file path="/main.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365797187752" ignored="false" />
+    <file path="/main.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366134068661" ignored="false" />
     <file path="/AppDelegate.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365839134452" ignored="false" />
-    <file path="/AppDelegate.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365838221857" ignored="false" />
+    <file path="/AppDelegate.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366134472858" ignored="false" />
     <file path="/a.mm" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365923689593" ignored="false" />
     <file path="/a.html" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365923697493" ignored="false" />
     <file path="/a.xml" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365923698703" ignored="false" />
@@ -102,11 +103,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ViewController.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DPVkontakteUserAccount.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="111" column="1" selection-start="3959" selection-end="3959" vertical-scroll-proportion="0.5611702">
+              <folding>
+                <element signature="e#80#114#0" expanded="true" />
+                <element signature="e#212#251#0" expanded="true" />
+                <element signature="n#initUserAccountWithAccessToken:expirationTime:userId:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+                <element signature="n#initUserAccountWithAccessToken:userId:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+                <element signature="n#init#0;n#DPVkontakteUserAccount#0" expanded="true" />
+                <element signature="n#description#0;n#DPVkontakteUserAccount#0" expanded="true" />
+                <element signature="n#forwardInvocation:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+                <element signature="n#methodSignatureForSelector:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+                <element signature="n#parseMethodName:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="37" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.5212766">
-              <folding />
+            <state line="27" column="22" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#215#246#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,12 +159,12 @@
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/ViewController.h" />
-        <option value="$PROJECT_DIR$/DPSocialServices/main.m" />
-        <option value="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" />
-        <option value="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h" />
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" />
+        <option value="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" />
+        <option value="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" />
+        <option value="$PROJECT_DIR$/DPSocialServices/main.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/ViewController.m" />
       </list>
@@ -195,7 +217,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,8 +275,27 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPSocialServices" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DPSocialServices" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Supporting Files" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="DirectoryView.Xcode" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,7 +315,9 @@
     <configuration default="false" name="DPSocialServices" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="DPSocialServices" PROJECT_NAME="DPSocialServices" TARGET_NAME="DPSocialServices" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="DPSocialServices" RUN_TARGET_NAME="DPSocialServices" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
+      <RunnerSettings RunnerId="InstrumentsRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="InstrumentsRunner" />
       <method />
     </configuration>
     <list size="1">
@@ -466,11 +508,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="1" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.4705128" order="0" side_tool="false" content_ui="combo" />
@@ -564,15 +606,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="15" selection-start="5766" selection-end="5766" vertical-scroll-proportion="0.48803192" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="169" selection-end="169" vertical-scroll-proportion="0.06495264" />
@@ -609,11 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/main.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="65" selection-end="65" vertical-scroll-proportion="0.084880635" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/DPSocialServices-Prefix.pch">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.19098143">
@@ -628,40 +663,25 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="296" selection-end="296" vertical-scroll-proportion="0.14854111">
-          <folding>
-            <element signature="e#155#178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="33" selection-start="174" selection-end="174" vertical-scroll-proportion="0.042440318">
+        <state line="13" column="103" selection-start="439" selection-end="439" vertical-scroll-proportion="0.15957446">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="274" selection-end="274" vertical-scroll-proportion="0.23815967" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="41" selection-end="41" vertical-scroll-proportion="0.04255319" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/AppDelegate.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="72" selection-end="72" vertical-scroll-proportion="0.08510638" />
+        <state line="8" column="23" selection-start="176" selection-end="176" vertical-scroll-proportion="0.15957446">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="384" column="66" selection-start="19789" selection-end="19789" vertical-scroll-proportion="1.875">
+        <state line="387" column="39" selection-start="19965" selection-end="19965" vertical-scroll-proportion="0.38164893">
           <folding>
             <element signature="n#DPVkontakteUserAccount#0" expanded="false" />
             <element signature="n#DPVkontakteUserAccount#1" expanded="false" />
@@ -691,20 +711,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="363" selection-end="363" vertical-scroll-proportion="0.2393617">
+        <state line="9" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.1826793">
           <folding>
-            <element signature="e#80#113#0" expanded="true" />
-            <element signature="n#forwardInvocation:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#141#176#0" expanded="true" />
+            <element signature="n#initWithWebView:#0;n#DPVkontakteCommunicator#0" expanded="true" />
+            <element signature="n#startOnCancelBlock:onErrorBlock:onSuccessBlock:#0;n#DPVkontakteCommunicator#0" expanded="true" />
+            <element signature="n#webView:shouldStartLoadWithRequest:navigationType:#0;n#DPVkontakteCommunicator#0" expanded="true" />
+            <element signature="n#webViewDidFinishLoad:#0;n#DPVkontakteCommunicator#0" expanded="true" />
+            <element signature="n#webViewDidStartLoad:#0;n#DPVkontakteCommunicator#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFURLConnectionOperation.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="0" selection-start="7593" selection-end="7593" vertical-scroll-proportion="0.3325527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="0.19215156">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#153#176#0" expanded="true" />
+            <element signature="n#applicationWillResignActive:#0;n#AppDelegate#0" expanded="true" />
+            <element signature="n#applicationDidEnterBackground:#0;n#AppDelegate#0" expanded="true" />
+            <element signature="n#applicationWillEnterForeground:#0;n#AppDelegate#0" expanded="true" />
+            <element signature="n#applicationDidBecomeActive:#0;n#AppDelegate#0" expanded="true" />
+            <element signature="n#applicationWillTerminate:#0;n#AppDelegate#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="44" selection-start="296" selection-end="296" vertical-scroll-proportion="0.13962767">
+          <folding>
+            <element signature="e#155#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.2393617">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="37" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.5212766">
-          <folding />
+        <state line="27" column="22" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#215#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="1" selection-start="3959" selection-end="3959" vertical-scroll-proportion="0.5611702">
+          <folding>
+            <element signature="e#80#114#0" expanded="true" />
+            <element signature="e#212#251#0" expanded="true" />
+            <element signature="n#initUserAccountWithAccessToken:expirationTime:userId:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+            <element signature="n#initUserAccountWithAccessToken:userId:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+            <element signature="n#init#0;n#DPVkontakteUserAccount#0" expanded="true" />
+            <element signature="n#description#0;n#DPVkontakteUserAccount#0" expanded="true" />
+            <element signature="n#forwardInvocation:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+            <element signature="n#methodSignatureForSelector:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+            <element signature="n#parseMethodName:#0;n#DPVkontakteUserAccount#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

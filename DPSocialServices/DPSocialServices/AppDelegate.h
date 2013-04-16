@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DDLog.h"
-#import "DDTTYLogger.h"
-
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

@@ -7,9 +7,6 @@
 
 #import "DPVkontakteCommunicator.h"
 #import "DPVkontakteUserAccount.h"
-#import "DDLog.h"
-
-static const int ddLogLevel = LOG_LEVEL_OFF;
 
 @implementation DPVkontakteCommunicator
 {
@@ -30,8 +27,6 @@ static const int ddLogLevel = LOG_LEVEL_OFF;
 
 - (id)initWithWebView:(UIWebView *)webView
 {
-    DDLogInfo(@"%s", __FUNCTION__);
-
     self = [super init];
 
     if (self) {
@@ -65,8 +60,6 @@ static const int ddLogLevel = LOG_LEVEL_OFF;
               onErrorBlock:(void (^)(NSError *))errorBlock
             onSuccessBlock:(void (^)(DPVkontakteUserAccount *))acceptedBlock
 {
-    DDLogInfo(@"%s", __FUNCTION__);
-
     _cancel_block = [cancelBlock copy];
     _error_block = [errorBlock copy];
     _accepted_block = [acceptedBlock copy];
@@ -79,8 +72,6 @@ static const int ddLogLevel = LOG_LEVEL_OFF;
                                                                  _display]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
-    DDLogVerbose(@"url: %@", url);
-
     [_inner_web_view loadRequest:request];
 }
 
@@ -90,20 +81,14 @@ static const int ddLogLevel = LOG_LEVEL_OFF;
 shouldStartLoadWithRequest:(NSURLRequest *)request
             navigationType:(UIWebViewNavigationType)navigationType
 {
-    DDLogInfo(@"%s", __FUNCTION__);
-
     NSString *url = [NSString stringWithFormat:@"%@", [request URL]];
 
     // проверяем какой УРЛ мы сейчас обрабатываем
     if ([url hasPrefix:_redirect_url]) {
-        DDLogVerbose(@"url: %@", url);
-
         NSString *query_string = [url substringFromIndex:[_redirect_url length] + 1];
 
         // проверим, какой запрос был возвращен - согласен ли пользователь дать доступ к своему профилю или нет
         if ([query_string hasPrefix:@"access_token"]) {
-            DDLogVerbose(@"access token received");
-
             NSArray *parts = [query_string componentsSeparatedByString:@"&"];
 
             // согласен, обрабатываем
@@ -116,15 +101,10 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
                                                                                             expirationTime:expiration_time
                                                                                                     userId:user_id];
 
-            DDLogVerbose(@"User authorized our application");
-
             // ура! мы получили доступ к пользовательскому аккаунту
             _accepted_block(user_account);
 
         } else {
-
-            DDLogVerbose(@"User denied to authorize our application");
-
             // пользователь отказал в доступе нашего приложения к своему профилю
             _cancel_block();
 
@@ -136,16 +116,12 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    DDLogInfo(@"%s", __FUNCTION__);
-
     // отображаем индикатор загрузки
     [_activity_indicator setHidden:YES];
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    DDLogInfo(@"%s", __FUNCTION__);
-
     // прячем индикатор загрузки
     [_activity_indicator setHidden:NO];
 }

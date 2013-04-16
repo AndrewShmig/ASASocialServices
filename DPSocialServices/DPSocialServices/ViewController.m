@@ -13,7 +13,8 @@
 @synthesize webView = _webView;
 @synthesize vk = _vk;
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 
     CGRect frame = [[UIScreen mainScreen] bounds];
@@ -21,21 +22,29 @@
     [_webView setHidden:NO];
     [self.view addSubview:_webView];
 
+    _vk = [[DPVkontakteCommunicator alloc] initWithWebView:_webView];
+
     DPVkontakteUserAccount *user;
     NSString *accessToken = [[NSUserDefaults standardUserDefaults]
-                    objectForKey:@"accessToken"];
+                                             objectForKey:@"accessToken"];
+    NSInteger userId = [[[NSUserDefaults standardUserDefaults]
+                                         objectForKey:@"userId"] integerValue];
     user = [[DPVkontakteUserAccount alloc]
-            initUserAccountWithAccessToken:accessToken
-                                    userId:@"58487857"];
+                                    initUserAccountWithAccessToken:accessToken
+                                                            userId:userId];
+
+    NSLog(@"%@", user);
 
     [user setSuccessBlock:^(NSDictionary *dictionary)
     {
-        NSLog(@"====>%@<====", dictionary);
+        NSLog(@"%@", dictionary);
     }];
 
-    [user friendsGetOnlineWithCustomOptions:@{@"uid" : @"58487857"}];
+    NSDictionary *options = @{@"uid":@"1"};
+//    [user usersGetWithCustomOptions:@{@"uid":@"1"}]; // Zombie
+    [user usersGetWithCustomOptions:options]; // Not zombie
 
-//    _vk = [[DPVkontakteCommunicator alloc] initWithWebView:_webView];
+//    __block NSDictionary *options = @{};
 //
 //    [_vk startOnCancelBlock:^{
 //        NSLog(@"Cancel");
@@ -44,16 +53,12 @@
 //    } onSuccessBlock:^(DPVkontakteUserAccount *account) {
 //        NSLog(@"account:%@", account);
 //
-//        [[NSUserDefaults standardUserDefaults]
-//                setObject:[account accessToken] forKey:@"accessToken"];
-//        [[NSUserDefaults standardUserDefaults] synchronize];
-//
 //        [account setSuccessBlock:^(NSDictionary *dictionary)
 //        {
-//            NSLog(@"====> %@ <=====", dictionary);
+//            NSLog(@"%@", dictionary);
 //        }];
 //
-//        [account friendsGetWithCustomOptions:@{@"uid" : @"1"}];
+//        [account docsGetUploadServerWithCustomOptions:options];
 //    }];
 }
 

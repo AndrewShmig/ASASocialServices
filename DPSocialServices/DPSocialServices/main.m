@@ -5,8 +5,6 @@
 //  Created by Andrew Shmig on 04/09/13.
 //
 
-#import <UIKit/UIKit.h>
-
 #import "AppDelegate.h"
 
 int main(int argc, char *argv[])

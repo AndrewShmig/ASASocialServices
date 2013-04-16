@@ -23,7 +23,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
                               userId:(NSInteger)userId;
 
 - (id)initUserAccountWithAccessToken:(NSString *)accessToken
-                              userId:(NSUInteger)userId;
+                              userId:(NSInteger)userId;
 @end
 
 // -----------------------------------------------------------------------------
