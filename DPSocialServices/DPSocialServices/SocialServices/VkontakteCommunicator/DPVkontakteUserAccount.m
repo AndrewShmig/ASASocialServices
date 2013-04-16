@@ -140,3 +140,35 @@
 }
 
 @end
+
+@implementation DPVkontakteUserAccount(Upload)
+
+- (void)uploadDocument:(NSString *)documentPath
+                 toURL:(NSURL *)url
+           withOptions:(NSDictionary *)options
+{
+    NSAssert(NO, @"Implement uploadDocument:toURL:withOptions: method.");
+}
+
+- (void)uploadPhoto:(NSString *)photoPath
+              toURL:(NSURL *)url
+        withOptions:(NSDictionary *)options
+{
+    NSAssert(NO, @"Implement uploadPhoto:toURL:withOptions: method.");
+}
+
+- (void)uploadAudio:(NSString *)audioPath
+              toURL:(NSURL *)url
+        withOptions:(NSDictionary *)options
+{
+    NSAssert(NO, @"Implement uploadAudio:toURL:withOptions: method.");
+}
+
+- (void)uploadVideo:(NSString *)videoPath
+              toURL:(NSURL *)url
+        withOptions:(NSDictionary *)options
+{
+    NSAssert(NO, @"Implement uploadVideo:toURL:withOptions: method.");
+}
+
+@end

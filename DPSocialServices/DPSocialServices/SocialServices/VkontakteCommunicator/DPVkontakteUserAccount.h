@@ -445,3 +445,26 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 - (void)appsGetCatalogWithCustomOptions:(NSDictionary *)options;
 
 @end
+
+// -----------------------------------------------------------------------------
+// Uploding files to VK servers
+// -----------------------------------------------------------------------------
+@interface DPVkontakteUserAccount(Upload)
+
+- (void)uploadDocument:(NSString *)documentPath
+                 toURL:(NSURL *)url
+           withOptions:(NSDictionary *)options;
+
+- (void)uploadPhoto:(NSString *)photoPath
+              toURL:(NSURL *)url
+        withOptions:(NSDictionary *)options;
+
+- (void)uploadAudio:(NSString *)audioPath
+              toURL:(NSURL *)url
+        withOptions:(NSDictionary *)options;
+
+- (void)uploadVideo:(NSString *)videoPath
+              toURL:(NSURL *)url
+        withOptions:(NSDictionary *)options;
+
+@end
