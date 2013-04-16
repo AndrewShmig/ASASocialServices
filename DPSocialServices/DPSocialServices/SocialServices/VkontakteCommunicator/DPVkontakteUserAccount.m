@@ -7,6 +7,8 @@
 #import <Foundation/Foundation.h>
 #import "DPVkontakteUserAccount.h"
 #import "DDLog.h"
+#import "AFJSONREquestOperation.h"
+#import "NSString+encodeURL.h"
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
@@ -91,7 +93,48 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                                                                 parts[1]];
     DDLogVerbose(@"vkURLMethodSignature: %@", vkURLMethodSignature);
 
-    // TODO: perform HTTP request here to vkURLMethodSignature URL passing options as URL params
+    // appending params to URL
+    NSMutableString *fullRequestURL = [vkURLMethodSignature mutableCopy];
+
+    if([options count] != 0)
+        [fullRequestURL appendString:@"?"];
+
+    [options enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
+    {
+        [fullRequestURL appendFormat:@"%@=%@&", key, [obj encodeURL]];
+    }];
+    
+    if([options count] != 0)
+        [fullRequestURL appendFormat:@"access_token=%@", _accessToken];
+
+    DDLogVerbose(@"fullRequestURL: %@", fullRequestURL);
+
+    // performing HTTP GET request to vkURLMethodSignature URL
+    NSURL *url = [NSURL URLWithString:fullRequestURL];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    AFJSONRequestOperation *operation;
+    operation = [AFJSONRequestOperation
+            JSONRequestOperationWithRequest:urlRequest
+                                    success:^(NSURLRequest *request,
+                                              NSHTTPURLResponse *response,
+                                              id JSON)
+                                    {
+                                        DDLogVerbose(@"Status code: %d", [response statusCode]);
+
+                                        _successBlock(JSON);
+                                    }
+                                    failure:^(NSURLRequest *request,
+                                              NSHTTPURLResponse *response,
+                                              NSError *error,
+                                              id JSON)
+                                    {
+                                        DDLogError(@"Status code: %d", [response statusCode]);
+                                        DDLogError(@"Response body: %@", JSON);
+
+                                        _errorBlock(error);
+                                    }];
+
+    [operation start];
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
