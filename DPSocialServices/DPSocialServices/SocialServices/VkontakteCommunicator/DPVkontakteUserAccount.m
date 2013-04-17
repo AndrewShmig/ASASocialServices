@@ -143,33 +143,30 @@
 @end
 
 @implementation DPVkontakteUserAccount(Upload)
-
 - (void)uploadDocument:(NSString *)documentPath
+                 toURL:(NSURL *)url
+           withOptions:(NSDictionary *)options
 {
 
 }
 
-- (void)uploadAlbumPhoto:(NSString *)photoPath
-{
-
-}
-
-- (void)uploadWallPhoto:(NSString *)photoPath
-{
-
-}
-
-- (void)uploadMessagePhoto:(NSString *)photoPath
+- (void)uploadPhoto:(NSString *)photoPath
+              toURL:(NSURL *)url
+        withOptions:(NSDictionary *)options
 {
 
 }
 
 - (void)uploadAudio:(NSString *)audioPath
+              toURL:(NSURL *)url
+        withOptions:(NSDictionary *)options
 {
 
 }
 
 - (void)uploadVideo:(NSString *)videoPath
+              toURL:(NSURL *)url
+        withOptions:(NSDictionary *)options
 {
 
 }
