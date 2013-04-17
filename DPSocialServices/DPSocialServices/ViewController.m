@@ -40,9 +40,7 @@
         NSLog(@"%@", dictionary);
     }];
 
-    NSDictionary *options = @{@"uid":@"1"};
-//    [user usersGetWithCustomOptions:@{@"uid":@"1"}]; // Zombie
-    [user usersGetWithCustomOptions:options]; // Not zombie
+    [user usersGetWithCustomOptions:@{@"uid":@"1"}];
 
 //    __block NSDictionary *options = @{};
 //

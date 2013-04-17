@@ -66,11 +66,12 @@
 - (void)forwardInvocation:(NSInvocation *)anInvocation
 {
     NSString *methodName = NSStringFromSelector([anInvocation selector]);
-    NSDictionary *options;
+    void *buffer;
 
-    [anInvocation getArgument:&options
+    [anInvocation getArgument:&buffer
                       atIndex:2];
 
+    NSDictionary *options = (__bridge NSDictionary *)buffer;
     NSArray *parts = [self parseMethodName:methodName];
     NSString *vkURLMethodSignature = [NSString stringWithFormat:@"%@%@.%@",
                                                                 kVKONTAKTE_API_URL,
