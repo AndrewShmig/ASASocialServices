@@ -459,6 +459,10 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
               toURL:(NSURL *)url
         withOptions:(NSDictionary *)options;
 
+- (void)uploadAlbumPhoto:(NSString *)photoPath
+                   toURL:(NSURL *)url
+             withOptions:(NSDictionary *)options;
+
 - (void)uploadAudio:(NSString *)audioPath
               toURL:(NSURL *)url
         withOptions:(NSDictionary *)options;

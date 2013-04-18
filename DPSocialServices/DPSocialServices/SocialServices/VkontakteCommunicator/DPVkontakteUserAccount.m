@@ -169,6 +169,18 @@
          withOptions:options];
 }
 
+- (void)uploadAlbumPhoto:(NSString *)photoPath
+                   toURL:(NSURL *)url
+             withOptions:(NSDictionary *)options
+{
+    [self uploadFile:photoPath
+        fileMIMEType:@"image/jpeg"
+   fileFormFieldName:@"file1"
+               toURL:url
+         withOptions:options];
+}
+
+
 - (void)uploadAudio:(NSString *)audioPath
               toURL:(NSURL *)url
         withOptions:(NSDictionary *)options

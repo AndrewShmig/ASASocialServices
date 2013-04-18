@@ -59,9 +59,9 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/ViewController.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365782489829" ignored="false" />
     <file path="/Dummy.txt" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366307272804" ignored="false" />
-    <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366310619390" ignored="false" />
+    <file path="/DPVkontakteUserAccount.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366311820182" ignored="false" />
     <file path="/ViewController.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366310944045" ignored="false" />
-    <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366171089795" ignored="false" />
+    <file path="/DPVkontakteUserAccount.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366311781890" ignored="false" />
     <file path="/DPVkontakteCommunicator.h" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366131645553" ignored="false" />
     <file path="/DPVkontakteCommunicator.m" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1366132826479" ignored="false" />
     <file path="/a.dummy" changelist="9d13f835-584d-421d-9669-f1b164cca2ac" time="1365702891571" ignored="false" />
@@ -103,19 +103,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
+      <file leaf-file-name="DPVkontakteUserAccount.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="184" column="32" selection-start="6456" selection-end="6456" vertical-scroll-proportion="0.5412234">
+              <folding>
+                <element signature="n#uploadPhoto:toURL:withOptions:#0;n#DPVkontakteUserAccount#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DPVkontakteUserAccount.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
+      <file leaf-file-name="ViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="43" selection-start="5932" selection-end="5932" vertical-scroll-proportion="0.46143618">
+            <state line="39" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,9 +154,9 @@
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/main.m" />
+        <option value="$PROJECT_DIR$/DPSocialServices/ViewController.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
-        <option value="$PROJECT_DIR$/DPSocialServices/ViewController.m" />
       </list>
     </option>
   </component>
@@ -693,13 +695,6 @@
         <state line="12" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.2393617" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="450" column="80" selection-start="22484" selection-end="22484" vertical-scroll-proportion="0.5026525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="44" selection-start="296" selection-end="296" vertical-scroll-proportion="0.1392573">
@@ -725,6 +720,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="463" column="19" selection-start="22886" selection-end="22886" vertical-scroll-proportion="0.68085104">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
@@ -734,8 +736,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="43" selection-start="5932" selection-end="5932" vertical-scroll-proportion="0.46143618">
-          <folding />
+        <state line="184" column="32" selection-start="6456" selection-end="6456" vertical-scroll-proportion="0.5412234">
+          <folding>
+            <element signature="n#uploadPhoto:toURL:withOptions:#0;n#DPVkontakteUserAccount#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
