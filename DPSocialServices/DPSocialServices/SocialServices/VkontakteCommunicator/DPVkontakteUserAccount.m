@@ -142,33 +142,115 @@
 
 @end
 
+// -----------------------------------------------------------------------------
+// Uploding files to VK servers
+// -----------------------------------------------------------------------------
 @implementation DPVkontakteUserAccount(Upload)
+
 - (void)uploadDocument:(NSString *)documentPath
                  toURL:(NSURL *)url
            withOptions:(NSDictionary *)options
 {
-
+    [self uploadFile:documentPath
+        fileMIMEType:@"multipart/form-data"
+   fileFormFieldName:@"file"
+               toURL:url
+         withOptions:options];
 }
 
 - (void)uploadPhoto:(NSString *)photoPath
               toURL:(NSURL *)url
         withOptions:(NSDictionary *)options
 {
-
+    [self uploadFile:photoPath
+        fileMIMEType:@"image/jpeg"
+   fileFormFieldName:@"photo"
+               toURL:url
+         withOptions:options];
 }
 
 - (void)uploadAudio:(NSString *)audioPath
               toURL:(NSURL *)url
         withOptions:(NSDictionary *)options
 {
-
+    [self uploadFile:audioPath
+        fileMIMEType:@"multipart/form-data"
+   fileFormFieldName:@"file"
+               toURL:url
+         withOptions:options];
 }
 
 - (void)uploadVideo:(NSString *)videoPath
               toURL:(NSURL *)url
         withOptions:(NSDictionary *)options
 {
+    [self uploadFile:videoPath
+        fileMIMEType:@"multipart/form-data"
+   fileFormFieldName:@"video_file"
+               toURL:url
+         withOptions:options];
+}
 
+- (void)uploadFile:(NSString *)filePath
+      fileMIMEType:(NSString *)mimeType
+ fileFormFieldName:(NSString *)fieldName
+             toURL:(NSURL *)url
+       withOptions:(NSDictionary *)options
+{
+    NSData *documentData = [NSData dataWithContentsOfFile:filePath];
+
+    // getting filename
+    NSString *fileName = [[filePath componentsSeparatedByString:@"/"]
+                                    lastObject];
+
+    // we have key-value pairs to append to URL
+    if([options count] != 0) {
+        NSMutableString *newURL = [[url description] mutableCopy];
+
+        [options enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
+        {
+            [newURL appendFormat:@"&%@=%@", key, [obj encodeURL]];
+        }];
+
+        url = [NSURL URLWithString:newURL];
+    }
+
+    AFHTTPClient *httpClient = [[AFHTTPClient alloc]
+                                              initWithBaseURL:url];
+
+    NSMutableURLRequest *uploadRequest = [httpClient
+            multipartFormRequestWithMethod:@"POST"
+                                      path:@""
+                                parameters:nil
+                 constructingBodyWithBlock:^(
+                         id <AFMultipartFormData> formData)
+                 {
+                     [formData appendPartWithFileData:documentData
+                                                 name:fieldName
+                                             fileName:fileName
+                                             mimeType:mimeType];
+                 }];
+
+    AFHTTPRequestOperation *operation = [httpClient
+            HTTPRequestOperationWithRequest:uploadRequest
+                                    success:^(
+                                            AFHTTPRequestOperation *operation,
+                                            id responseObject)
+                                    {
+                                        NSDictionary *response = [NSJSONSerialization
+                                                JSONObjectWithData:responseObject
+                                                           options:NSJSONReadingMutableContainers
+                                                             error:nil];
+
+                                        _successBlock(response);
+                                    }
+                                    failure:^(
+                                            AFHTTPRequestOperation *operation,
+                                            NSError *error)
+                                    {
+                                        _errorBlock(error);
+                                    }];
+    [operation start];
 }
 
 

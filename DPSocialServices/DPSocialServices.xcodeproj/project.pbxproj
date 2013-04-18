@@ -14,10 +14,11 @@
 		1A9A07915F6733665C7F84B7 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0FDA270A12BF4AA151DF /* AFHTTPRequestOperation.m */; };
 		1A9A080A6F3F7F697D1A17F7 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A05C58E55046ACF2DFC9B /* AFXMLRequestOperation.m */; };
 		1A9A091A5A27E59272FDBE6A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A013FED54331FA9E35B71 /* AFURLConnectionOperation.m */; };
-		1A9A0A23CEE05E84D14E48E5 /* 1 (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A056387A96A0B59D38E07 /* 1 (1).jpg */; };
+		1A9A096059550E946D9FA2DD /* document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0D656E24B0F59716CB4D /* document.pdf */; };
 		1A9A0AA07C9C443C112B6E4E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0972E3AF4F3C29EF12B0 /* README.txt */; };
 		1A9A0BE08737CB8491CF033C /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0F82EF6C79D42DA50525 /* AFJSONRequestOperation.m */; };
 		1A9A0C41C7F1B27D67E14727 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A01E12B26A5E53AF2ECE7 /* AFNetworkActivityIndicatorManager.m */; };
+		1A9A0C9220CD11FB5E779A07 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0B7E9D75DA615DC19944 /* image.jpg */; };
 		1A9A0D329302AE3A7D97F683 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0A68EAA4A8221AD6A471 /* AFImageRequestOperation.m */; };
 		1A9A0D70A5C351548EF0FFD7 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A09552BD59DDF41E651DF /* UIImageView+AFNetworking.m */; };
 		1A9A0D77764AA6E84D34A1DF /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0495D523B1C24551DC48 /* DDLog.m */; };
@@ -57,7 +58,6 @@
 		1A9A043BF854CE1CE8C8C795 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
 		1A9A0495D523B1C24551DC48 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
 		1A9A054DE854D3388D58E8D6 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		1A9A056387A96A0B59D38E07 /* 1 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1 (1).jpg"; sourceTree = "<group>"; };
 		1A9A0575C6D071048234C3D2 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		1A9A0597BCE9752C5CB085E7 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
 		1A9A05C58E55046ACF2DFC9B /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
@@ -72,10 +72,12 @@
 		1A9A0A076F360D7A6C96AF0D /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
 		1A9A0A584889E4137C359ECF /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		1A9A0A68EAA4A8221AD6A471 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		1A9A0B7E9D75DA615DC19944 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		1A9A0C83AC318A44A2AAA5E0 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
 		1A9A0D209A31A09C2903B325 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
 		1A9A0D2C7B81A7E7C0C3C3B6 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		1A9A0D44ABCEB407F77731C6 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		1A9A0D656E24B0F59716CB4D /* document.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = document.pdf; sourceTree = "<group>"; };
 		1A9A0DC5D1B439262F7A92E9 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		1A9A0DF531E09CB3A388A228 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
 		1A9A0F0B95EF55DAB93C04A3 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
@@ -155,14 +157,6 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
-		1A9A07012250A7353B23754F /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				1A9A056387A96A0B59D38E07 /* 1 (1).jpg */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
 		1A9A0727CC4BC0DAFE9632B1 /* Lumberjack */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +173,15 @@
 				1A9A011904E33F1404164889 /* DDAbstractDatabaseLogger.m */,
 			);
 			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		1A9A0DA56236BD9ED9B1B29A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0B7E9D75DA615DC19944 /* image.jpg */,
+				1A9A0D656E24B0F59716CB4D /* document.pdf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		1A9A0E7A584CD5E8CAA78E73 /* Extensions */ = {
@@ -303,7 +306,7 @@
 				7FAB46468FE6A87866415187 /* Frameworks */,
 				7FAB48E9E837CCA773278AF9 /* DPSocialServices */,
 				7FAB472B8FB36D21EA73861F /* SocialServices */,
-				1A9A07012250A7353B23754F /* Images */,
+				1A9A0DA56236BD9ED9B1B29A /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -355,8 +358,9 @@
 			files = (
 				7FAB494ED08308850B203AE3 /* InfoPlist.strings in Resources */,
 				7FAB4E23AE9493D0F01E8E15 /* ViewController.xib in Resources */,
-				1A9A0A23CEE05E84D14E48E5 /* 1 (1).jpg in Resources */,
 				1A9A0AA07C9C443C112B6E4E /* README.txt in Resources */,
+				1A9A0C9220CD11FB5E779A07 /* image.jpg in Resources */,
+				1A9A096059550E946D9FA2DD /* document.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
