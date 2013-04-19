@@ -33,11 +33,12 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         DDLogVerbose(@"%@", account);
 
         [account performVKMethod:kVKAudioGet
-                         options:@{@"uid":@"1"}
+                         options:@{@"uid" : @"1"}
                          success:^(NSDictionary *dictionary)
                          {
                              DDLogVerbose(@"audio: %@", dictionary);
-                         } failure:nil];
+                         }
+                         failure:nil];
     }];
 }
 

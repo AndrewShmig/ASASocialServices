@@ -14,7 +14,6 @@
 		1A9A07915F6733665C7F84B7 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0FDA270A12BF4AA151DF /* AFHTTPRequestOperation.m */; };
 		1A9A080A6F3F7F697D1A17F7 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A05C58E55046ACF2DFC9B /* AFXMLRequestOperation.m */; };
 		1A9A091A5A27E59272FDBE6A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A013FED54331FA9E35B71 /* AFURLConnectionOperation.m */; };
-		1A9A096059550E946D9FA2DD /* document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0D656E24B0F59716CB4D /* document.pdf */; };
 		1A9A0AA07C9C443C112B6E4E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0972E3AF4F3C29EF12B0 /* README.txt */; };
 		1A9A0BE08737CB8491CF033C /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0F82EF6C79D42DA50525 /* AFJSONRequestOperation.m */; };
 		1A9A0C41C7F1B27D67E14727 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A01E12B26A5E53AF2ECE7 /* AFNetworkActivityIndicatorManager.m */; };
@@ -78,7 +77,6 @@
 		1A9A0D209A31A09C2903B325 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
 		1A9A0D2C7B81A7E7C0C3C3B6 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		1A9A0D44ABCEB407F77731C6 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
-		1A9A0D656E24B0F59716CB4D /* document.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = document.pdf; sourceTree = "<group>"; };
 		1A9A0DC5D1B439262F7A92E9 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		1A9A0DF531E09CB3A388A228 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
 		1A9A0F0B95EF55DAB93C04A3 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				1A9A0B7E9D75DA615DC19944 /* image.jpg */,
-				1A9A0D656E24B0F59716CB4D /* document.pdf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -362,7 +359,6 @@
 				7FAB4E23AE9493D0F01E8E15 /* ViewController.xib in Resources */,
 				1A9A0AA07C9C443C112B6E4E /* README.txt in Resources */,
 				1A9A0C9220CD11FB5E779A07 /* image.jpg in Resources */,
-				1A9A096059550E946D9FA2DD /* document.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
