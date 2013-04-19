@@ -8,6 +8,13 @@
 #import "DPVkontakteCommunicator.h"
 #import "DPVkontakteUserAccount.h"
 
+#define LOG_ON 1
+
+#if LOG_ON == 1
+# define DEBUG_CURRENT_METHOD() NSLog(@"%s", __FUNCTION__)
+# define DEBUG_INFO(x) NSLog(@"%@", x)
+#endif
+
 @implementation DPVkontakteCommunicator
 {
     const NSString *_app_id;
@@ -27,6 +34,9 @@
 
 - (id)initWithWebView:(UIWebView *)webView
 {
+
+    DEBUG_CURRENT_METHOD();
+
     self = [super init];
 
     if (self) {
@@ -60,6 +70,9 @@
               onErrorBlock:(void (^)(NSError *))errorBlock
             onSuccessBlock:(void (^)(DPVkontakteUserAccount *))acceptedBlock
 {
+
+    DEBUG_CURRENT_METHOD();
+
     _cancel_block = [cancelBlock copy];
     _error_block = [errorBlock copy];
     _accepted_block = [acceptedBlock copy];
@@ -81,9 +94,12 @@
 shouldStartLoadWithRequest:(NSURLRequest *)request
             navigationType:(UIWebViewNavigationType)navigationType
 {
+
+    DEBUG_CURRENT_METHOD();
+
     NSString *url = [NSString stringWithFormat:@"%@", [request URL]];
 
-    // проверяем какой УРЛ мы сейчас обрабатываем
+    // проверяем какое УРЛ мы сейчас обрабатываем
     if ([url hasPrefix:_redirect_url]) {
         NSString *query_string = [url substringFromIndex:[_redirect_url length] + 1];
 
@@ -105,6 +121,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
             _accepted_block(user_account);
 
         } else {
+
             // пользователь отказал в доступе нашего приложения к своему профилю
             _cancel_block();
 

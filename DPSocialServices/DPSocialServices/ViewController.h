@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DPVkontakteCommunicator.h"
-#import "DPVkontakteUserAccount.h"
+#import "ASAVkontakteCommunicator.h"
+#import "ASAVkontakteUserAccount.h"
 
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) UIWebView *webView;
-@property (nonatomic, strong) DPVkontakteCommunicator *vk;
+@property (nonatomic, strong) ASAVkontakteCommunicator *vk;
 
 @end

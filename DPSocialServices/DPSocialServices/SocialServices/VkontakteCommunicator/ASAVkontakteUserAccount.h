@@ -1,5 +1,5 @@
 //
-//  DPVkontakteUserAccount.h
+//  ASAVkontakteUserAccount.h
 //
 //  Created by Andrew Shmig on 18.12.12.
 //
@@ -9,7 +9,11 @@
 static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 
 
-@interface DPVkontakteUserAccount : NSObject
+typedef void (^ASAVkontakteSuccessBlock)(NSDictionary *);
+typedef void (^ASAVkontakteFailureBlock)(NSError *);
+
+
+@interface ASAVkontakteUserAccount : NSObject
 
 @property (nonatomic, readonly) NSString *accessToken;
 @property (nonatomic, readonly) NSInteger expirationTime;
@@ -29,7 +33,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/users
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Users)
+@interface ASAVkontakteUserAccount (Users)
 
 - (void)usersGetWithCustomOptions:(NSDictionary *)options;
 - (void)usersSearchWithCustomOptions:(NSDictionary *)options;
@@ -42,7 +46,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/groups
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Groups)
+@interface ASAVkontakteUserAccount (Groups)
 
 - (void)groupsIsMemberWithCustomOptions:(NSDictionary *)options;
 - (void)groupsGetByIdWithCustomOptions:(NSDictionary *)options;
@@ -61,7 +65,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/friends
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Friends)
+@interface ASAVkontakteUserAccount (Friends)
 
 - (void)friendsGetWithCustomOptions:(NSDictionary *)options;
 - (void)friendsGetOnlineWithCustomOptions:(NSDictionary *)options;
@@ -86,7 +90,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/wall
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Wall)
+@interface ASAVkontakteUserAccount (Wall)
 
 - (void)wallGetWithCustomOptions:(NSDictionary *)options;
 - (void)wallGetByIdWithCustomOptions:(NSDictionary *)options;
@@ -110,7 +114,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/photos
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Photos)
+@interface ASAVkontakteUserAccount (Photos)
 
 - (void)photosCreateAlbumWithCustomOptions:(NSDictionary *)options;
 - (void)photosEditAlbumWithCustomOptions:(NSDictionary *)options;
@@ -154,7 +158,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/video
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Video)
+@interface ASAVkontakteUserAccount (Video)
 
 - (void)videoGetWithCustomOptions:(NSDictionary *)options;
 - (void)videoEditWithCustomOptions:(NSDictionary *)options;
@@ -183,7 +187,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/audio
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Audio)
+@interface ASAVkontakteUserAccount (Audio)
 
 - (void)audioGetWithCustomOptions:(NSDictionary *)options;
 - (void)audioGetByIdWithCustomOptions:(NSDictionary *)options;
@@ -211,7 +215,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/messages
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Messages)
+@interface ASAVkontakteUserAccount (Messages)
 
 - (void)messagesGetWithCustomOptions:(NSDictionary *)options;
 - (void)messagesGetDialogsWithCustomOptions:(NSDictionary *)options;
@@ -241,7 +245,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/newsfeed
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Newsfeed)
+@interface ASAVkontakteUserAccount (Newsfeed)
 
 - (void)newsfeedGetWithCustomOptions:(NSDictionary *)options;
 - (void)newsfeedGetRecommendedWithCustomOptions:(NSDictionary *)options;
@@ -258,7 +262,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/likes
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Likes)
+@interface ASAVkontakteUserAccount (Likes)
 
 - (void)likesGetListWithCustomOptions:(NSDictionary *)options;
 - (void)likesAddWithCustomOptions:(NSDictionary *)options;
@@ -270,7 +274,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/account
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Account)
+@interface ASAVkontakteUserAccount (Account)
 
 - (void)accountGetCountersWithCustomOptions:(NSDictionary *)options;
 - (void)accountSetNameInMenuWithCustomOptions:(NSDictionary *)options;
@@ -288,7 +292,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/status
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Status)
+@interface ASAVkontakteUserAccount (Status)
 
 - (void)statusGetWithCustomOptions:(NSDictionary *)options;
 - (void)statusSetWithCustomOptions:(NSDictionary *)options;
@@ -298,7 +302,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/pages
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Pages)
+@interface ASAVkontakteUserAccount (Pages)
 
 - (void)pagesGetWithCustomOptions:(NSDictionary *)options;
 - (void)pagesSaveWithCustomOptions:(NSDictionary *)options;
@@ -313,7 +317,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/board
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Board)
+@interface ASAVkontakteUserAccount (Board)
 
 - (void)boardGetTopicsWithCustomOptions:(NSDictionary *)options;
 - (void)boardGetCommentsWithCustomOptions:(NSDictionary *)options;
@@ -334,7 +338,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/notes
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Notes)
+@interface ASAVkontakteUserAccount (Notes)
 
 - (void)notesGetWithCustomOptions:(NSDictionary *)options;
 - (void)notesGetByIdWithCustomOptions:(NSDictionary *)options;
@@ -353,7 +357,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/places
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Places)
+@interface ASAVkontakteUserAccount (Places)
 
 - (void)placesAddWithCustomOptions:(NSDictionary *)options;
 - (void)placesGetByIdWithCustomOptions:(NSDictionary *)options;
@@ -373,7 +377,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/polls
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Polls)
+@interface ASAVkontakteUserAccount (Polls)
 
 - (void)pollsGetByIdWithCustomOptions:(NSDictionary *)options;
 - (void)pollsAddVoteWithCustomOptions:(NSDictionary *)options;
@@ -385,7 +389,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/docs
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Docs)
+@interface ASAVkontakteUserAccount (Docs)
 
 - (void)docsGetWithCustomOptions:(NSDictionary *)options;
 - (void)docsGetByIdWithCustomOptions:(NSDictionary *)options;
@@ -399,7 +403,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/fave
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Fave)
+@interface ASAVkontakteUserAccount (Fave)
 
 - (void)faveGetUsersWithCustomOptions:(NSDictionary *)options;
 - (void)faveGetPhotosWithCustomOptions:(NSDictionary *)options;
@@ -412,7 +416,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/notifications
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Notifications)
+@interface ASAVkontakteUserAccount (Notifications)
 
 - (void)notificationsGetWithCustomOptions:(NSDictionary *)options;
 - (void)notificationsMarkAsViewedWithCustomOptions:(NSDictionary *)options;
@@ -422,7 +426,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/stats
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Stats)
+@interface ASAVkontakteUserAccount (Stats)
 
 - (void)statsGetWithCustomOptions:(NSDictionary *)options;
 
@@ -431,7 +435,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/search
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Search)
+@interface ASAVkontakteUserAccount (Search)
 
 - (void)searchGetHintsWithCustomOptions:(NSDictionary *)options;
 
@@ -440,7 +444,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/apps
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Apps)
+@interface ASAVkontakteUserAccount (Apps)
 
 - (void)appsGetCatalogWithCustomOptions:(NSDictionary *)options;
 
@@ -449,7 +453,7 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 // -----------------------------------------------------------------------------
 // Uploding files to VK servers
 // -----------------------------------------------------------------------------
-@interface DPVkontakteUserAccount(Upload)
+@interface ASAVkontakteUserAccount (Upload)
 
 - (void)uploadDocument:(NSString *)documentPath
                  toURL:(NSURL *)url

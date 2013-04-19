@@ -27,20 +27,20 @@
 		1A9A0FC8CC5BB46C6B369914 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0D209A31A09C2903B325 /* DDFileLogger.m */; };
 		1A9A0FF042CC9AAFBEAA2013 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A004742FA19F965109385 /* DDASLLogger.m */; };
 		7FAB41737304A0FD736C7867 /* NSData+toBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB458FD6F90D12533525D3 /* NSData+toBase64.m */; };
-		7FAB4178DFDC6B9F1FE8CE5D /* DPFacebookCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4D12ED9067C926D7A27E /* DPFacebookCommunicator.m */; };
+		7FAB4178DFDC6B9F1FE8CE5D /* ASAFacebookCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4D12ED9067C926D7A27E /* ASAFacebookCommunicator.m */; };
 		7FAB44CBBC6DEB303FF83FFE /* NSString+toBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB45784FB4105969A63360 /* NSString+toBase64.m */; };
-		7FAB44D37BA1E6E775A6CFF5 /* DPVkontakteCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB472F9FFF8E4F8A6BD6BC /* DPVkontakteCommunicator.m */; };
-		7FAB490FD21A6B087E459957 /* DPFacebookUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4241B7DC0A93DA5DB554 /* DPFacebookUserAccount.m */; };
+		7FAB44D37BA1E6E775A6CFF5 /* ASAVkontakteCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB472F9FFF8E4F8A6BD6BC /* ASAVkontakteCommunicator.m */; };
+		7FAB490FD21A6B087E459957 /* ASAFacebookUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4241B7DC0A93DA5DB554 /* ASAFacebookUserAccount.m */; };
 		7FAB4933ECB4CADEC112984D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB435EC4769EBECB2F7201 /* main.m */; };
 		7FAB494ED08308850B203AE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FAB453155D211AC59874263 /* InfoPlist.strings */; };
 		7FAB4A173C1A9551BC4B5B59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB47FA5039CDFB8D80337A /* UIKit.framework */; };
 		7FAB4AFEAF085BA7A8751CC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB4F3F5F5AF5FAB52DF21D /* Foundation.framework */; };
 		7FAB4BDF9A87468187AF48A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4A5D2F2D1DEBB92D69FC /* ViewController.m */; };
-		7FAB4C319A54B6249A9FB6B6 /* DPVkontakteUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4798BFBE63D27E8B1F78 /* DPVkontakteUserAccount.m */; };
-		7FAB4CA091474BB7E75F9CD2 /* DPTwitterUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB40D693597F4527667AB9 /* DPTwitterUserAccount.m */; };
+		7FAB4C319A54B6249A9FB6B6 /* ASAVkontakteUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4798BFBE63D27E8B1F78 /* ASAVkontakteUserAccount.m */; };
+		7FAB4CA091474BB7E75F9CD2 /* ASATwitterUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB40D693597F4527667AB9 /* ASATwitterUserAccount.m */; };
 		7FAB4DF5B3D4EAE48DF8544B /* NSString+encodeURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB47451BD10270413C5338 /* NSString+encodeURL.m */; };
 		7FAB4E23AE9493D0F01E8E15 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FAB4A59496F21116E272145 /* ViewController.xib */; };
-		7FAB4EEDFD40A681CF4850CE /* DPTwitterCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4F9A9E6ED74640F7B28F /* DPTwitterCommunicator.m */; };
+		7FAB4EEDFD40A681CF4850CE /* ASATwitterCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4F9A9E6ED74640F7B28F /* ASATwitterCommunicator.m */; };
 		7FAB4EFFB2219B4EB3A54125 /* NSString+HMACSHA1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4C04895DD5D14A79DD3A /* NSString+HMACSHA1.m */; };
 		7FAB4F4CFB1D3DC5AA6B678C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB4645C193C4AFA02D41E7 /* CoreGraphics.framework */; };
 		7FAB4FC1167546E6B9044EC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB4BBF0B7613AB2956691B /* AppDelegate.m */; };
@@ -83,22 +83,22 @@
 		1A9A0F0B95EF55DAB93C04A3 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		1A9A0F82EF6C79D42DA50525 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
 		1A9A0FDA270A12BF4AA151DF /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		7FAB4011DD80CFD31A9E6FFA /* DPVkontakteCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPVkontakteCommunicator.h; sourceTree = "<group>"; };
-		7FAB40D693597F4527667AB9 /* DPTwitterUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTwitterUserAccount.m; sourceTree = "<group>"; };
+		7FAB4011DD80CFD31A9E6FFA /* ASAVkontakteCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAVkontakteCommunicator.h; sourceTree = "<group>"; };
+		7FAB40D693597F4527667AB9 /* ASATwitterUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASATwitterUserAccount.m; sourceTree = "<group>"; };
 		7FAB4222B015885464BA9C91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7FAB4241B7DC0A93DA5DB554 /* DPFacebookUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFacebookUserAccount.m; sourceTree = "<group>"; };
+		7FAB4241B7DC0A93DA5DB554 /* ASAFacebookUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAFacebookUserAccount.m; sourceTree = "<group>"; };
 		7FAB42716523485AEB8F00C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7FAB432447975630246B3D74 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		7FAB435EC4769EBECB2F7201 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7FAB43AA4CD50AB9881DB70D /* DPTwitterUserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTwitterUserAccount.h; sourceTree = "<group>"; };
-		7FAB43D8AA8C0D9E1307B23D /* DPFacebookUserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFacebookUserAccount.h; sourceTree = "<group>"; };
-		7FAB4441FC1590651C4BE4D0 /* DPTwitterCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTwitterCommunicator.h; sourceTree = "<group>"; };
+		7FAB43AA4CD50AB9881DB70D /* ASATwitterUserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASATwitterUserAccount.h; sourceTree = "<group>"; };
+		7FAB43D8AA8C0D9E1307B23D /* ASAFacebookUserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAFacebookUserAccount.h; sourceTree = "<group>"; };
+		7FAB4441FC1590651C4BE4D0 /* ASATwitterCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASATwitterCommunicator.h; sourceTree = "<group>"; };
 		7FAB45784FB4105969A63360 /* NSString+toBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+toBase64.m"; sourceTree = "<group>"; };
 		7FAB458FD6F90D12533525D3 /* NSData+toBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+toBase64.m"; sourceTree = "<group>"; };
 		7FAB4645C193C4AFA02D41E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7FAB472F9FFF8E4F8A6BD6BC /* DPVkontakteCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPVkontakteCommunicator.m; sourceTree = "<group>"; };
+		7FAB472F9FFF8E4F8A6BD6BC /* ASAVkontakteCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAVkontakteCommunicator.m; sourceTree = "<group>"; };
 		7FAB47451BD10270413C5338 /* NSString+encodeURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+encodeURL.m"; sourceTree = "<group>"; };
-		7FAB4798BFBE63D27E8B1F78 /* DPVkontakteUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPVkontakteUserAccount.m; sourceTree = "<group>"; };
+		7FAB4798BFBE63D27E8B1F78 /* ASAVkontakteUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAVkontakteUserAccount.m; sourceTree = "<group>"; };
 		7FAB47FA5039CDFB8D80337A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7FAB4811C7AFDF749E2D7FD0 /* DPSocialServices-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "DPSocialServices-Info.plist"; sourceTree = "<group>"; };
 		7FAB482276458EF81B6BC98C /* NSData+toBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+toBase64.h"; sourceTree = "<group>"; };
@@ -107,14 +107,14 @@
 		7FAB4BBF0B7613AB2956691B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7FAB4C04895DD5D14A79DD3A /* NSString+HMACSHA1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HMACSHA1.m"; sourceTree = "<group>"; };
 		7FAB4CFC25D3C50D3BF1649D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7FAB4D12ED9067C926D7A27E /* DPFacebookCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFacebookCommunicator.m; sourceTree = "<group>"; };
-		7FAB4E7D9F1511D1B24A87AA /* DPFacebookCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFacebookCommunicator.h; sourceTree = "<group>"; };
+		7FAB4D12ED9067C926D7A27E /* ASAFacebookCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAFacebookCommunicator.m; sourceTree = "<group>"; };
+		7FAB4E7D9F1511D1B24A87AA /* ASAFacebookCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAFacebookCommunicator.h; sourceTree = "<group>"; };
 		7FAB4ED25A9F1A98F2534BAE /* NSString+toBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+toBase64.h"; sourceTree = "<group>"; };
 		7FAB4F068FA646E51730EE6C /* NSString+encodeURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+encodeURL.h"; sourceTree = "<group>"; };
 		7FAB4F3F5F5AF5FAB52DF21D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7FAB4F493F3B520B304207A7 /* DPVkontakteUserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPVkontakteUserAccount.h; sourceTree = "<group>"; };
+		7FAB4F493F3B520B304207A7 /* ASAVkontakteUserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAVkontakteUserAccount.h; sourceTree = "<group>"; };
 		7FAB4F8188B42A7224BFAA9F /* DPSocialServices-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DPSocialServices-Prefix.pch"; sourceTree = "<group>"; };
-		7FAB4F9A9E6ED74640F7B28F /* DPTwitterCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTwitterCommunicator.m; sourceTree = "<group>"; };
+		7FAB4F9A9E6ED74640F7B28F /* ASATwitterCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASATwitterCommunicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,10 +199,10 @@
 		7FAB42B22F25FDDDD847E0A5 /* FacebookCommunicator */ = {
 			isa = PBXGroup;
 			children = (
-				7FAB43D8AA8C0D9E1307B23D /* DPFacebookUserAccount.h */,
-				7FAB4241B7DC0A93DA5DB554 /* DPFacebookUserAccount.m */,
-				7FAB4E7D9F1511D1B24A87AA /* DPFacebookCommunicator.h */,
-				7FAB4D12ED9067C926D7A27E /* DPFacebookCommunicator.m */,
+				7FAB43D8AA8C0D9E1307B23D /* ASAFacebookUserAccount.h */,
+				7FAB4241B7DC0A93DA5DB554 /* ASAFacebookUserAccount.m */,
+				7FAB4E7D9F1511D1B24A87AA /* ASAFacebookCommunicator.h */,
+				7FAB4D12ED9067C926D7A27E /* ASAFacebookCommunicator.m */,
 			);
 			path = FacebookCommunicator;
 			sourceTree = "<group>";
@@ -280,10 +280,10 @@
 		7FAB49E58A29B941BEAA4CE7 /* TwitterCommunicator */ = {
 			isa = PBXGroup;
 			children = (
-				7FAB43AA4CD50AB9881DB70D /* DPTwitterUserAccount.h */,
-				7FAB40D693597F4527667AB9 /* DPTwitterUserAccount.m */,
-				7FAB4441FC1590651C4BE4D0 /* DPTwitterCommunicator.h */,
-				7FAB4F9A9E6ED74640F7B28F /* DPTwitterCommunicator.m */,
+				7FAB43AA4CD50AB9881DB70D /* ASATwitterUserAccount.h */,
+				7FAB40D693597F4527667AB9 /* ASATwitterUserAccount.m */,
+				7FAB4441FC1590651C4BE4D0 /* ASATwitterCommunicator.h */,
+				7FAB4F9A9E6ED74640F7B28F /* ASATwitterCommunicator.m */,
 			);
 			path = TwitterCommunicator;
 			sourceTree = "<group>";
@@ -291,10 +291,10 @@
 		7FAB4AE7381E0537060B925A /* VkontakteCommunicator */ = {
 			isa = PBXGroup;
 			children = (
-				7FAB4F493F3B520B304207A7 /* DPVkontakteUserAccount.h */,
-				7FAB4798BFBE63D27E8B1F78 /* DPVkontakteUserAccount.m */,
-				7FAB4011DD80CFD31A9E6FFA /* DPVkontakteCommunicator.h */,
-				7FAB472F9FFF8E4F8A6BD6BC /* DPVkontakteCommunicator.m */,
+				7FAB4F493F3B520B304207A7 /* ASAVkontakteUserAccount.h */,
+				7FAB4798BFBE63D27E8B1F78 /* ASAVkontakteUserAccount.m */,
+				7FAB4011DD80CFD31A9E6FFA /* ASAVkontakteCommunicator.h */,
+				7FAB472F9FFF8E4F8A6BD6BC /* ASAVkontakteCommunicator.m */,
 			);
 			path = VkontakteCommunicator;
 			sourceTree = "<group>";
@@ -378,12 +378,12 @@
 				7FAB4EFFB2219B4EB3A54125 /* NSString+HMACSHA1.m in Sources */,
 				7FAB44CBBC6DEB303FF83FFE /* NSString+toBase64.m in Sources */,
 				7FAB4DF5B3D4EAE48DF8544B /* NSString+encodeURL.m in Sources */,
-				7FAB4CA091474BB7E75F9CD2 /* DPTwitterUserAccount.m in Sources */,
-				7FAB4EEDFD40A681CF4850CE /* DPTwitterCommunicator.m in Sources */,
-				7FAB490FD21A6B087E459957 /* DPFacebookUserAccount.m in Sources */,
-				7FAB4178DFDC6B9F1FE8CE5D /* DPFacebookCommunicator.m in Sources */,
-				7FAB4C319A54B6249A9FB6B6 /* DPVkontakteUserAccount.m in Sources */,
-				7FAB44D37BA1E6E775A6CFF5 /* DPVkontakteCommunicator.m in Sources */,
+				7FAB4CA091474BB7E75F9CD2 /* ASATwitterUserAccount.m in Sources */,
+				7FAB4EEDFD40A681CF4850CE /* ASATwitterCommunicator.m in Sources */,
+				7FAB490FD21A6B087E459957 /* ASAFacebookUserAccount.m in Sources */,
+				7FAB4178DFDC6B9F1FE8CE5D /* ASAFacebookCommunicator.m in Sources */,
+				7FAB4C319A54B6249A9FB6B6 /* ASAVkontakteUserAccount.m in Sources */,
+				7FAB44D37BA1E6E775A6CFF5 /* ASAVkontakteCommunicator.m in Sources */,
 				1A9A0F4CAE18C2749E244B51 /* AFHTTPClient.m in Sources */,
 				1A9A080A6F3F7F697D1A17F7 /* AFXMLRequestOperation.m in Sources */,
 				1A9A07915F6733665C7F84B7 /* AFHTTPRequestOperation.m in Sources */,

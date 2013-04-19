@@ -11,7 +11,7 @@
 
 static const NSString *kVKONTAKTE_APP_ID = @"3541027";
 static const NSString *kVKONTAKTE_PRIVATE_KEY = @"EImkkJQ8jF7obXFVSHIZ";
-static const NSString *kVKONTAKTE_PERMISSIONS_LIST = @"friends,status,wall,messages,offline,photos,docs";
+static const NSString *kVKONTAKTE_PERMISSIONS_LIST = @"friends,status,wall,messages,offline,photos";
 
 @interface DPVkontakteCommunicator : NSObject <UIWebViewDelegate>
 

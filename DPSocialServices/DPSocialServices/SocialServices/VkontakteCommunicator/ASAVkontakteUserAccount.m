@@ -1,14 +1,14 @@
 //
-//  DPVkontakteUserAccount.m
+//  ASAVkontakteUserAccount.m
 //
 //  Created by Andrew Shmig on 18.12.12.
 //
 
-#import "DPVkontakteUserAccount.h"
+#import "ASAVkontakteUserAccount.h"
 #import "AFNetworking.h"
 #import "NSString+encodeURL.h"
 
-@implementation DPVkontakteUserAccount
+@implementation ASAVkontakteUserAccount
 
 @synthesize accessToken = _accessToken;
 @synthesize userId = _userId;
@@ -145,7 +145,7 @@
 // -----------------------------------------------------------------------------
 // Uploding files to VK servers
 // -----------------------------------------------------------------------------
-@implementation DPVkontakteUserAccount(Upload)
+@implementation ASAVkontakteUserAccount (Upload)
 
 - (void)uploadDocument:(NSString *)documentPath
                  toURL:(NSURL *)url
