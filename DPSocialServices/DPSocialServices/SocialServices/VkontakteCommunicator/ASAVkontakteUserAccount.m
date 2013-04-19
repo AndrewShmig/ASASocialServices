@@ -68,38 +68,19 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 }
 
 // -----------------------------------------------------------------------------
-// Message forwarding
+// Performs request to VK method with custom options
 // -----------------------------------------------------------------------------
-- (void)forwardInvocation:(NSInvocation *)anInvocation
+- (void)performVKMethod:(NSString *)methodName
+                options:(NSDictionary *)options
+                success:(ASAVkontakteSuccessBlock)success
+                failure:(ASAVkontakteFailureBlock)failure
 {
     DDLogVerbose(@"%s", __FUNCTION__);
 
-    NSString *methodName = NSStringFromSelector([anInvocation selector]);
-    void *buffer;
-    void *bufferSuccess;
-    void *bufferFailure;
-
-    [anInvocation getArgument:&buffer
-                      atIndex:2];
-    [anInvocation getArgument:&bufferSuccess
-                      atIndex:3];
-    [anInvocation getArgument:&bufferFailure
-                      atIndex:4];
-
-    NSDictionary *options = (__bridge NSDictionary *)buffer;
-    ASAVkontakteSuccessBlock success = (__bridge ASAVkontakteSuccessBlock)bufferSuccess;
-    ASAVkontakteFailureBlock failure = (__bridge ASAVkontakteFailureBlock)bufferFailure;
-
-    NSArray *parts = [self parseMethodName:methodName];
-    NSString *vkURLMethodSignature = [NSString stringWithFormat:@"%@%@.%@",
-                                                                kVKONTAKTE_API_URL,
-                                                                parts[0],
-                                                                parts[1]];
-    DDLogVerbose(@"options: %@", options);
-    DDLogVerbose(@"vkURLMethodSignature: %@", vkURLMethodSignature);
-
     // appending params to URL
-    NSMutableString *fullRequestURL = [vkURLMethodSignature mutableCopy];
+    NSMutableString *fullRequestURL = [NSMutableString stringWithFormat:@"%@%@",
+                                                                        kVKONTAKTE_API_URL,
+                                                                        [methodName mutableCopy]];
 
     [fullRequestURL appendString:@"?"];
 
@@ -137,42 +118,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                                     }];
 
     [operation start];
-}
-
-- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
-{
-    DDLogVerbose(@"%s", __FUNCTION__);
-    DDLogVerbose(@"aSelector: %@", NSStringFromSelector(aSelector));
-
-    return [NSMethodSignature signatureWithObjCTypes:[@"v@:@@@" UTF8String]];
-}
-
-// -----------------------------------------------------------------------------
-// Parsing method signatures
-// -----------------------------------------------------------------------------
-- (NSArray *)parseMethodName:(NSString *)methodName
-{
-    DDLogVerbose(@"%s", __FUNCTION__);
-
-    NSRange range;
-    NSString *suffix = @"WithCustomOptions:";
-
-    range = [methodName rangeOfString:suffix];
-    methodName = [methodName substringToIndex:range.location];
-
-    NSCharacterSet *characterSet = [NSCharacterSet uppercaseLetterCharacterSet];
-    range = [methodName rangeOfCharacterFromSet:characterSet];
-
-    NSString *mainVKObject = [methodName substringToIndex:range.location];
-    NSString *methodOfMainVKObject = [NSString stringWithFormat:@"%@%@",
-                                                                [[methodName substringWithRange:NSMakeRange(range.location, 1)]
-                                                                             lowercaseString],
-                                                                [methodName substringFromIndex:range.location + 1]];
-
-    DDLogVerbose(@"mainVKObject: %@", mainVKObject);
-    DDLogVerbose(@"methodOfMainVKObject: %@", methodOfMainVKObject);
-
-    return @[mainVKObject, methodOfMainVKObject];
 }
 
 @end

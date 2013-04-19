@@ -55,6 +55,7 @@
 		1A9A028699684CE33480910A /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
 		1A9A02B85D33B9E60F7CB51E /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
 		1A9A02CE0088372C20A43F8F /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		1A9A039E933EBF18FE9CBBD7 /* ASAVkontakteMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAVkontakteMethods.h; sourceTree = "<group>"; };
 		1A9A043BF854CE1CE8C8C795 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
 		1A9A0495D523B1C24551DC48 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
 		1A9A054DE854D3388D58E8D6 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -295,6 +296,7 @@
 				7FAB4798BFBE63D27E8B1F78 /* ASAVkontakteUserAccount.m */,
 				7FAB4011DD80CFD31A9E6FFA /* ASAVkontakteCommunicator.h */,
 				7FAB472F9FFF8E4F8A6BD6BC /* ASAVkontakteCommunicator.m */,
+				1A9A039E933EBF18FE9CBBD7 /* ASAVkontakteMethods.h */,
 			);
 			path = VkontakteCommunicator;
 			sourceTree = "<group>";

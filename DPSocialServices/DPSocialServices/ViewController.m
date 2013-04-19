@@ -33,33 +33,12 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     } onSuccessBlock:^(ASAVkontakteUserAccount *account) {
         DDLogVerbose(@"%@", account);
 
-        [account docsGetUploadServerWithCustomOptions:@{}
-                                              success:^(NSDictionary *dictionary)
-                                              {
-                                                  NSString *uploadURL = dictionary[@"response"][@"upload_url"];
-                                                  NSString *documentPath = [[NSBundle mainBundle]
-                                                          pathForResource:@"document"
-                                                                   ofType:@"pdf"];
-
-                                                  [account uploadDocument:documentPath
-                                                                    toURL:[NSURL URLWithString:uploadURL]
-                                                              withOptions:@{}
-                                                                  success:^(
-                                                                          NSDictionary *dictionary)
-                                                                  {
-                                                                      DDLogVerbose(@"dictionary: %@", dictionary);
-
-                                                                      [account docsSaveWithCustomOptions:@{@"file":dictionary[@"file"]}
-                                                                                                 success:^(
-                                                                                                         NSDictionary *dictionary)
-                                                                                                 {
-                                                                                                     DDLogVerbose(@"dictionary: %@", dictionary);
-                                                                                                 }
-                                                                                                 failure:nil];
-                                                                  }
-                                                                  failure:nil];
-                                              }
-                                              failure:nil];
+        [account performVKMethod:kVKUsersGet
+                         options:@{@"uid":@"1"}
+                         success:^(NSDictionary *dictionary)
+                         {
+                             DDLogVerbose(@"dictionary: %@", dictionary);
+                         } failure:nil];
     }];
 }
 
