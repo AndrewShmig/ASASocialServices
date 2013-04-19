@@ -8,9 +8,8 @@
 
 static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 
-
-typedef void (^ASAVkontakteSuccessBlock)(NSDictionary *);
-typedef void (^ASAVkontakteFailureBlock)(NSError *);
+typedef void (^ASAVkontakteSuccessBlock) (NSDictionary *);
+typedef void (^ASAVkontakteFailureBlock) (NSError *);
 
 
 @interface ASAVkontakteUserAccount : NSObject
@@ -18,9 +17,6 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 @property (nonatomic, readonly) NSString *accessToken;
 @property (nonatomic, readonly) NSInteger expirationTime;
 @property (nonatomic, readonly) NSInteger userId;
-
-@property (nonatomic, copy) void (^errorBlock)(NSError *);
-@property (nonatomic, copy) void (^successBlock)(NSDictionary *);
 
 - (id)initUserAccountWithAccessToken:(NSString *)accessToken
                       expirationTime:(NSInteger)expirationTime
@@ -35,14 +31,25 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Users)
 
-- (void)usersGetWithCustomOptions:(NSDictionary *)options;
-- (void)usersGetWithCustomOptions:(NSDictionary *)options success:(ASAVkontakteSuccessBlock)success;
-- (void)usersGetWithCustomOptions:(NSDictionary *)options success:(ASAVkontakteSuccessBlock)success failure:(ASAVkontakteFailureBlock)failure;
+- (void)usersGetWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
 
-- (void)usersSearchWithCustomOptions:(NSDictionary *)options;
-- (void)usersIsAppUserWithCustomOptions:(NSDictionary *)options;
-- (void)usersGetSubscriptionsWithCustomOptions:(NSDictionary *)options;
-- (void)usersGetFollowersWithCustomOptions:(NSDictionary *)options;
+- (void)usersSearchWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)usersIsAppUserWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)usersGetSubscriptionsWithCustomOptions:(NSDictionary *)options
+                                       success:(ASAVkontakteSuccessBlock)success
+                                       failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)usersGetFollowersWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -51,17 +58,49 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Groups)
 
-- (void)groupsIsMemberWithCustomOptions:(NSDictionary *)options;
-- (void)groupsGetByIdWithCustomOptions:(NSDictionary *)options;
-- (void)groupsGetWithCustomOptions:(NSDictionary *)options;
-- (void)groupsGetMembersWithCustomOptions:(NSDictionary *)options;
-- (void)groupsJoinWithCustomOptions:(NSDictionary *)options;
-- (void)groupsLeaveWithCustomOptions:(NSDictionary *)options;
-- (void)groupsSearchWithCustomOptions:(NSDictionary *)options;
-- (void)groupsGetInvitesWithCustomOptions:(NSDictionary *)options;
-- (void)groupsBanUserWithCustomOptions:(NSDictionary *)options;
-- (void)groupsUnbanUserWithCustomOptions:(NSDictionary *)options;
-- (void)groupsGetBannedWithCustomOptions:(NSDictionary *)options;
+- (void)groupsIsMemberWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)groupsGetByIdWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)groupsGetWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)groupsGetMembersWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)groupsJoinWithCustomOptions:(NSDictionary *)options
+                            success:(ASAVkontakteSuccessBlock)success
+                            failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)groupsLeaveWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)groupsSearchWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)groupsGetInvitesWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)groupsBanUserWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)groupsUnbanUserWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)groupsGetBannedWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -70,23 +109,73 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Friends)
 
-- (void)friendsGetWithCustomOptions:(NSDictionary *)options;
-- (void)friendsGetOnlineWithCustomOptions:(NSDictionary *)options;
-- (void)friendsGetMutualWithCustomOptions:(NSDictionary *)options;
-- (void)friendsGetRecentWithCustomOptions:(NSDictionary *)options;
-- (void)friendsGetRequestsWithCustomOptions:(NSDictionary *)options;
-- (void)friendsAddWithCustomOptions:(NSDictionary *)options;
-- (void)friendsEditWithCustomOptions:(NSDictionary *)options;
-- (void)friendsDeleteWithCustomOptions:(NSDictionary *)options;
-- (void)friendsGetListsWithCustomOptions:(NSDictionary *)options;
-- (void)friendsAddListWithCustomOptions:(NSDictionary *)options;
-- (void)friendsEditListWithCustomOptions:(NSDictionary *)options;
-- (void)friendsDeleteListWithCustomOptions:(NSDictionary *)options;
-- (void)friendsGetAppUsersWithCustomOptions:(NSDictionary *)options;
-- (void)friendsGetByPhonesWithCustomOptions:(NSDictionary *)options;
-- (void)friendsDeleteAllRequestsWithCustomOptions:(NSDictionary *)options;
-- (void)friendsGetSuggestionsWithCustomOptions:(NSDictionary *)options;
-- (void)friendsAreFriendsWithCustomOptions:(NSDictionary *)options;
+- (void)friendsGetWithCustomOptions:(NSDictionary *)options
+                            success:(ASAVkontakteSuccessBlock)success
+                            failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsGetOnlineWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsGetMutualWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsGetRecentWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsGetRequestsWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsAddWithCustomOptions:(NSDictionary *)options
+                            success:(ASAVkontakteSuccessBlock)success
+                            failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsEditWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsDeleteWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsGetListsWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsAddListWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsEditListWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsDeleteListWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsGetAppUsersWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsGetByPhonesWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsDeleteAllRequestsWithCustomOptions:(NSDictionary *)options
+                                          success:(ASAVkontakteSuccessBlock)success
+                                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsGetSuggestionsWithCustomOptions:(NSDictionary *)options
+                                       success:(ASAVkontakteSuccessBlock)success
+                                       failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)friendsAreFriendsWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -95,22 +184,69 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Wall)
 
-- (void)wallGetWithCustomOptions:(NSDictionary *)options;
-- (void)wallGetByIdWithCustomOptions:(NSDictionary *)options;
-- (void)wallSavePostWithCustomOptions:(NSDictionary *)options;
-- (void)wallPostWithCustomOptions:(NSDictionary *)options;
-- (void)wallRepostWithCustomOptions:(NSDictionary *)options;
-- (void)wallGetRepostsWithCustomOptions:(NSDictionary *)options;
-- (void)wallEditWithCustomOptions:(NSDictionary *)options;
-- (void)wallDeleteWithCustomOptions:(NSDictionary *)options;
-- (void)wallRestoreWithCustomOptions:(NSDictionary *)options;
-- (void)wallGetCommentsWithCustomOptions:(NSDictionary *)options;
-- (void)wallAddCommentWithCustomOptions:(NSDictionary *)options;
-- (void)wallDeleteCommentWithCustomOptions:(NSDictionary *)options;
-- (void)wallRestoreCommentWithCustomOptions:(NSDictionary *)options;
-- (void)wallGetLikesWithCustomOptions:(NSDictionary *)options;
-- (void)wallAddLikeWithCustomOptions:(NSDictionary *)options;
-- (void)wallDeleteLikeWithCustomOptions:(NSDictionary *)options;
+- (void)wallGetWithCustomOptions:(NSDictionary *)options
+                         success:(ASAVkontakteSuccessBlock)success
+                         failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallGetByIdWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallSavePostWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallPostWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallRepostWithCustomOptions:(NSDictionary *)options
+                            success:(ASAVkontakteSuccessBlock)success
+                            failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallGetRepostsWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallEditWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallDeleteWithCustomOptions:(NSDictionary *)options
+                            success:(ASAVkontakteSuccessBlock)success
+                            failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallRestoreWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallGetCommentsWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallAddCommentWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallDeleteCommentWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallRestoreCommentWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallGetLikesWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallAddLikeWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)wallDeleteLikeWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -119,42 +255,149 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Photos)
 
-- (void)photosCreateAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)photosEditAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetAlbumsWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetAlbumCountWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetProfileWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetByIdWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetUploadServerWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetProfileUploadServerWithCustomOptions:(NSDictionary *)options;
-- (void)photosSaveProfilePhotoWithCustomOptions:(NSDictionary *)options;
-- (void)photosSaveWallPhotoWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetWallUploadServerWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetMessagesUploadServerWithCustomOptions:(NSDictionary *)options;
-- (void)photosSaveMessagesPhotoWithCustomOptions:(NSDictionary *)options;
-- (void)photosSearchWithCustomOptions:(NSDictionary *)options;
-- (void)photosSaveWithCustomOptions:(NSDictionary *)options;
-- (void)photosEditWithCustomOptions:(NSDictionary *)options;
-- (void)photosMoveWithCustomOptions:(NSDictionary *)options;
-- (void)photosMakeCoverWithCustomOptions:(NSDictionary *)options;
-- (void)photosReorderAlbumsWithCustomOptions:(NSDictionary *)options;
-- (void)photosReorderPhotosWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetAllWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetUserPhotosWithCustomOptions:(NSDictionary *)options;
-- (void)photosDeleteAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)photosDeleteWithCustomOptions:(NSDictionary *)options;
-- (void)photosConfirmTagWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetCommentsWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetAllCommentsWithCustomOptions:(NSDictionary *)options;
-- (void)photosCreateCommentWithCustomOptions:(NSDictionary *)options;
-- (void)photosDeleteCommentWithCustomOptions:(NSDictionary *)options;
-- (void)photosRestoreCommentWithCustomOptions:(NSDictionary *)options;
-- (void)photosEditCommentWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetTagsWithCustomOptions:(NSDictionary *)options;
-- (void)photosPutTagWithCustomOptions:(NSDictionary *)options;
-- (void)photosRemoveTagWithCustomOptions:(NSDictionary *)options;
-- (void)photosGetNewTagsWithCustomOptions:(NSDictionary *)options;
+- (void)photosCreateAlbumWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosEditAlbumWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetAlbumsWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetAlbumCountWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetProfileWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetByIdWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetUploadServerWithCustomOptions:(NSDictionary *)options
+                                       success:(ASAVkontakteSuccessBlock)success
+                                       failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetProfileUploadServerWithCustomOptions:(NSDictionary *)options
+                                              success:(ASAVkontakteSuccessBlock)success
+                                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosSaveProfilePhotoWithCustomOptions:(NSDictionary *)options
+                                        success:(ASAVkontakteSuccessBlock)success
+                                        failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosSaveWallPhotoWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetWallUploadServerWithCustomOptions:(NSDictionary *)options
+                                           success:(ASAVkontakteSuccessBlock)success
+                                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetMessagesUploadServerWithCustomOptions:(NSDictionary *)options
+                                               success:(ASAVkontakteSuccessBlock)success
+                                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosSaveMessagesPhotoWithCustomOptions:(NSDictionary *)options
+                                         success:(ASAVkontakteSuccessBlock)success
+                                         failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosSearchWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosSaveWithCustomOptions:(NSDictionary *)options
+                            success:(ASAVkontakteSuccessBlock)success
+                            failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosEditWithCustomOptions:(NSDictionary *)options
+                            success:(ASAVkontakteSuccessBlock)success
+                            failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosMoveWithCustomOptions:(NSDictionary *)options
+                            success:(ASAVkontakteSuccessBlock)success
+                            failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosMakeCoverWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosReorderAlbumsWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosReorderPhotosWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetAllWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetUserPhotosWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosDeleteAlbumWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosDeleteWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosConfirmTagWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetCommentsWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetAllCommentsWithCustomOptions:(NSDictionary *)options
+                                      success:(ASAVkontakteSuccessBlock)success
+                                      failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosCreateCommentWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosDeleteCommentWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosRestoreCommentWithCustomOptions:(NSDictionary *)options
+                                      success:(ASAVkontakteSuccessBlock)success
+                                      failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosEditCommentWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetTagsWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosPutTagWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosRemoveTagWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)photosGetNewTagsWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -163,27 +406,89 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Video)
 
-- (void)videoGetWithCustomOptions:(NSDictionary *)options;
-- (void)videoEditWithCustomOptions:(NSDictionary *)options;
-- (void)videoAddWithCustomOptions:(NSDictionary *)options;
-- (void)videoSaveWithCustomOptions:(NSDictionary *)options;
-- (void)videoDeleteWithCustomOptions:(NSDictionary *)options;
-- (void)videoRestoreWithCustomOptions:(NSDictionary *)options;
-- (void)videoSearchWithCustomOptions:(NSDictionary *)options;
-- (void)videoGetUserVideosWithCustomOptions:(NSDictionary *)options;
-- (void)videoGetAlbumsWithCustomOptions:(NSDictionary *)options;
-- (void)videoAddAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)videoEditAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)videoDeleteAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)videoMoveToAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)videoGetCommentsWithCustomOptions:(NSDictionary *)options;
-- (void)videoCreateCommentWithCustomOptions:(NSDictionary *)options;
-- (void)videoDeleteCommentWithCustomOptions:(NSDictionary *)options;
-- (void)videoEditCommentWithCustomOptions:(NSDictionary *)options;
-- (void)videoGetTagsWithCustomOptions:(NSDictionary *)options;
-- (void)videoPutTagWithCustomOptions:(NSDictionary *)options;
-- (void)videoRemoveTagWithCustomOptions:(NSDictionary *)options;
-- (void)videoGetNewTagsWithCustomOptions:(NSDictionary *)options;
+- (void)videoGetWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoEditWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoAddWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoSaveWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoDeleteWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoRestoreWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoSearchWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoGetUserVideosWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoGetAlbumsWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoAddAlbumWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoEditAlbumWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoDeleteAlbumWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoMoveToAlbumWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoGetCommentsWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoCreateCommentWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoDeleteCommentWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoEditCommentWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoGetTagsWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoPutTagWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoRemoveTagWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)videoGetNewTagsWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -192,26 +497,85 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Audio)
 
-- (void)audioGetWithCustomOptions:(NSDictionary *)options;
-- (void)audioGetByIdWithCustomOptions:(NSDictionary *)options;
-- (void)audioGetLyricsWithCustomOptions:(NSDictionary *)options;
-- (void)audioSearchWithCustomOptions:(NSDictionary *)options;
-- (void)audioGetUploadServerWithCustomOptions:(NSDictionary *)options;
-- (void)audioSaveWithCustomOptions:(NSDictionary *)options;
-- (void)audioAddWithCustomOptions:(NSDictionary *)options;
-- (void)audioDeleteWithCustomOptions:(NSDictionary *)options;
-- (void)audioEditWithCustomOptions:(NSDictionary *)options;
-- (void)audioReorderWithCustomOptions:(NSDictionary *)options;
-- (void)audioRestoreWithCustomOptions:(NSDictionary *)options;
-- (void)audioGetAlbumsWithCustomOptions:(NSDictionary *)options;
-- (void)audioAddAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)audioEditAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)audioDeleteAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)audioMoveToAlbumWithCustomOptions:(NSDictionary *)options;
-- (void)audioGetBroadcastWithCustomOptions:(NSDictionary *)options;
-- (void)audioSetBroadcastWithCustomOptions:(NSDictionary *)options;
-- (void)audioGetRecommendationsWithCustomOptions:(NSDictionary *)options;
-- (void)audioGetCountWithCustomOptions:(NSDictionary *)options;
+- (void)audioGetWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioGetByIdWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioGetLyricsWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioSearchWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioGetUploadServerWithCustomOptions:(NSDictionary *)options
+                                      success:(ASAVkontakteSuccessBlock)success
+                                      failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioSaveWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioAddWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioDeleteWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioEditWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioReorderWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioRestoreWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioGetAlbumsWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioAddAlbumWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioEditAlbumWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioDeleteAlbumWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioMoveToAlbumWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioGetBroadcastWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioSetBroadcastWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioGetRecommendationsWithCustomOptions:(NSDictionary *)options
+                                         success:(ASAVkontakteSuccessBlock)success
+                                         failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)audioGetCountWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -220,28 +584,93 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Messages)
 
-- (void)messagesGetWithCustomOptions:(NSDictionary *)options;
-- (void)messagesGetDialogsWithCustomOptions:(NSDictionary *)options;
-- (void)messagesGetByIdWithCustomOptions:(NSDictionary *)options;
-- (void)messagesSearchWithCustomOptions:(NSDictionary *)options;
-- (void)messagesGetHistoryWithCustomOptions:(NSDictionary *)options;
-- (void)messagesSendWithCustomOptions:(NSDictionary *)options;
-- (void)messagesDeleteWithCustomOptions:(NSDictionary *)options;
-- (void)messagesDeleteDialogWithCustomOptions:(NSDictionary *)options;
-- (void)messagesRestoreWithCustomOptions:(NSDictionary *)options;
-- (void)messagesMarkAsNewWithCustomOptions:(NSDictionary *)options;
-- (void)messagesMarkAsReadWithCustomOptions:(NSDictionary *)options;
-- (void)messagesGetLongPollServerWithCustomOptions:(NSDictionary *)options;
-- (void)messagesGetLongPollHistoryWithCustomOptions:(NSDictionary *)options;
-- (void)messagesCreateChatWithCustomOptions:(NSDictionary *)options;
-- (void)messagesEditChatWithCustomOptions:(NSDictionary *)options;
-- (void)messagesGetChatUsersWithCustomOptions:(NSDictionary *)options;
-- (void)messagesSetActivityWithCustomOptions:(NSDictionary *)options;
-- (void)messagesSearchDialogsWithCustomOptions:(NSDictionary *)options;
-- (void)messagesAddChatUserWithCustomOptions:(NSDictionary *)options;
-- (void)messagesRemoveChatUserWithCustomOptions:(NSDictionary *)options;
-- (void)messagesGetLastActivityWithCustomOptions:(NSDictionary *)options;
-- (void)messagesGetChatWithCustomOptions:(NSDictionary *)options;
+- (void)messagesGetWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesGetDialogsWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesGetByIdWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesSearchWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesGetHistoryWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesSendWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesDeleteWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesDeleteDialogWithCustomOptions:(NSDictionary *)options
+                                      success:(ASAVkontakteSuccessBlock)success
+                                      failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesRestoreWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesMarkAsNewWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesMarkAsReadWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesGetLongPollServerWithCustomOptions:(NSDictionary *)options
+                                           success:(ASAVkontakteSuccessBlock)success
+                                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesGetLongPollHistoryWithCustomOptions:(NSDictionary *)options
+                                            success:(ASAVkontakteSuccessBlock)success
+                                            failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesCreateChatWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesEditChatWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesGetChatUsersWithCustomOptions:(NSDictionary *)options
+                                      success:(ASAVkontakteSuccessBlock)success
+                                      failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesSetActivityWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesSearchDialogsWithCustomOptions:(NSDictionary *)options
+                                       success:(ASAVkontakteSuccessBlock)success
+                                       failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesAddChatUserWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesRemoveChatUserWithCustomOptions:(NSDictionary *)options
+                                        success:(ASAVkontakteSuccessBlock)success
+                                        failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesGetLastActivityWithCustomOptions:(NSDictionary *)options
+                                         success:(ASAVkontakteSuccessBlock)success
+                                         failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)messagesGetChatWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -250,15 +679,41 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Newsfeed)
 
-- (void)newsfeedGetWithCustomOptions:(NSDictionary *)options;
-- (void)newsfeedGetRecommendedWithCustomOptions:(NSDictionary *)options;
-- (void)newsfeedGetCommentsWithCustomOptions:(NSDictionary *)options;
-- (void)newsfeedGetMentionsWithCustomOptions:(NSDictionary *)options;
-- (void)newsfeedGetBannedWithCustomOptions:(NSDictionary *)options;
-- (void)newsfeedAddBanWithCustomOptions:(NSDictionary *)options;
-- (void)newsfeedDeleteBanWithCustomOptions:(NSDictionary *)options;
-- (void)newsfeedSearchWithCustomOptions:(NSDictionary *)options;
-- (void)newsfeedGetListsWithCustomOptions:(NSDictionary *)options;
+- (void)newsfeedGetWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)newsfeedGetRecommendedWithCustomOptions:(NSDictionary *)options
+                                        success:(ASAVkontakteSuccessBlock)success
+                                        failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)newsfeedGetCommentsWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)newsfeedGetMentionsWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)newsfeedGetBannedWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)newsfeedAddBanWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)newsfeedDeleteBanWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)newsfeedSearchWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)newsfeedGetListsWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -267,10 +722,21 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Likes)
 
-- (void)likesGetListWithCustomOptions:(NSDictionary *)options;
-- (void)likesAddWithCustomOptions:(NSDictionary *)options;
-- (void)likesDeleteWithCustomOptions:(NSDictionary *)options;
-- (void)likesIsLikedWithCustomOptions:(NSDictionary *)options;
+- (void)likesGetListWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)likesAddWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)likesDeleteWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)likesIsLikedWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -279,16 +745,45 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Account)
 
-- (void)accountGetCountersWithCustomOptions:(NSDictionary *)options;
-- (void)accountSetNameInMenuWithCustomOptions:(NSDictionary *)options;
-- (void)accountSetOnlineWithCustomOptions:(NSDictionary *)options;
-- (void)accountImportContactsWithCustomOptions:(NSDictionary *)options;
-- (void)accountRegisterDeviceWithCustomOptions:(NSDictionary *)options;
-- (void)accountUnregisterDeviceWithCustomOptions:(NSDictionary *)options;
-- (void)accountSetSilenceModeWithCustomOptions:(NSDictionary *)options;
-- (void)accountGetPushSettingsWithCustomOptions:(NSDictionary *)options;
-- (void)accountGetAppPermissionsWithCustomOptions:(NSDictionary *)options;
-- (void)accountGetActiveOffersWithCustomOptions:(NSDictionary *)options;
+- (void)accountGetCountersWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)accountSetNameInMenuWithCustomOptions:(NSDictionary *)options
+                                      success:(ASAVkontakteSuccessBlock)success
+                                      failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)accountSetOnlineWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)accountImportContactsWithCustomOptions:(NSDictionary *)options
+                                       success:(ASAVkontakteSuccessBlock)success
+                                       failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)accountRegisterDeviceWithCustomOptions:(NSDictionary *)options
+                                       success:(ASAVkontakteSuccessBlock)success
+                                       failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)accountUnregisterDeviceWithCustomOptions:(NSDictionary *)options
+                                         success:(ASAVkontakteSuccessBlock)success
+                                         failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)accountSetSilenceModeWithCustomOptions:(NSDictionary *)options
+                                       success:(ASAVkontakteSuccessBlock)success
+                                       failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)accountGetPushSettingsWithCustomOptions:(NSDictionary *)options
+                                        success:(ASAVkontakteSuccessBlock)success
+                                        failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)accountGetAppPermissionsWithCustomOptions:(NSDictionary *)options
+                                          success:(ASAVkontakteSuccessBlock)success
+                                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)accountGetActiveOffersWithCustomOptions:(NSDictionary *)options
+                                        success:(ASAVkontakteSuccessBlock)success
+                                        failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -297,8 +792,13 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Status)
 
-- (void)statusGetWithCustomOptions:(NSDictionary *)options;
-- (void)statusSetWithCustomOptions:(NSDictionary *)options;
+- (void)statusGetWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)statusSetWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -307,13 +807,33 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Pages)
 
-- (void)pagesGetWithCustomOptions:(NSDictionary *)options;
-- (void)pagesSaveWithCustomOptions:(NSDictionary *)options;
-- (void)pagesSaveAccessWithCustomOptions:(NSDictionary *)options;
-- (void)pagesGetHistoryWithCustomOptions:(NSDictionary *)options;
-- (void)pagesGetTitlesWithCustomOptions:(NSDictionary *)options;
-- (void)pagesGetVersionWithCustomOptions:(NSDictionary *)options;
-- (void)pagesParseWikiWithCustomOptions:(NSDictionary *)options;
+- (void)pagesGetWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)pagesSaveWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)pagesSaveAccessWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)pagesGetHistoryWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)pagesGetTitlesWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)pagesGetVersionWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)pagesParseWikiWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -322,19 +842,57 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Board)
 
-- (void)boardGetTopicsWithCustomOptions:(NSDictionary *)options;
-- (void)boardGetCommentsWithCustomOptions:(NSDictionary *)options;
-- (void)boardAddTopicWithCustomOptions:(NSDictionary *)options;
-- (void)boardAddCommentWithCustomOptions:(NSDictionary *)options;
-- (void)boardDeleteTopicWithCustomOptions:(NSDictionary *)options;
-- (void)boardEditTopicWithCustomOptions:(NSDictionary *)options;
-- (void)boardEditCommentWithCustomOptions:(NSDictionary *)options;
-- (void)boardRestoreCommentWithCustomOptions:(NSDictionary *)options;
-- (void)boardDeleteCommentWithCustomOptions:(NSDictionary *)options;
-- (void)boardOpenTopicWithCustomOptions:(NSDictionary *)options;
-- (void)boardCloseTopicWithCustomOptions:(NSDictionary *)options;
-- (void)boardFixTopicWithCustomOptions:(NSDictionary *)options;
-- (void)boardUnfixTopicWithCustomOptions:(NSDictionary *)options;
+- (void)boardGetTopicsWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardGetCommentsWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardAddTopicWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardAddCommentWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardDeleteTopicWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardEditTopicWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardEditCommentWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardRestoreCommentWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardDeleteCommentWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardOpenTopicWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardCloseTopicWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardFixTopicWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)boardUnfixTopicWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -343,17 +901,49 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Notes)
 
-- (void)notesGetWithCustomOptions:(NSDictionary *)options;
-- (void)notesGetByIdWithCustomOptions:(NSDictionary *)options;
-- (void)notesGetFriendsNotesWithCustomOptions:(NSDictionary *)options;
-- (void)notesAddWithCustomOptions:(NSDictionary *)options;
-- (void)notesEditWithCustomOptions:(NSDictionary *)options;
-- (void)notesDeleteWithCustomOptions:(NSDictionary *)options;
-- (void)notesGetCommentsWithCustomOptions:(NSDictionary *)options;
-- (void)notesCreateCommentWithCustomOptions:(NSDictionary *)options;
-- (void)notesEditCommentWithCustomOptions:(NSDictionary *)options;
-- (void)notesDeleteCommentWithCustomOptions:(NSDictionary *)options;
-- (void)notesRestoreCommentWithCustomOptions:(NSDictionary *)options;
+- (void)notesGetWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notesGetByIdWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notesGetFriendsNotesWithCustomOptions:(NSDictionary *)options
+                                      success:(ASAVkontakteSuccessBlock)success
+                                      failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notesAddWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notesEditWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notesDeleteWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notesGetCommentsWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notesCreateCommentWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notesEditCommentWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notesDeleteCommentWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notesRestoreCommentWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -362,18 +952,53 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Places)
 
-- (void)placesAddWithCustomOptions:(NSDictionary *)options;
-- (void)placesGetByIdWithCustomOptions:(NSDictionary *)options;
-- (void)placesSearchWithCustomOptions:(NSDictionary *)options;
-- (void)placesCheckinWithCustomOptions:(NSDictionary *)options;
-- (void)placesGetCheckinsWithCustomOptions:(NSDictionary *)options;
-- (void)placesGetTypesWithCustomOptions:(NSDictionary *)options;
-- (void)placesGetCountriesWithCustomOptions:(NSDictionary *)options;
-- (void)placesGetRegionsWithCustomOptions:(NSDictionary *)options;
-- (void)placesGetStreeByIdWithCustomOptions:(NSDictionary *)options;
-- (void)placesGetCountryByIdWithCustomOptions:(NSDictionary *)options;
-- (void)placesGetCitiesWithCustomOptions:(NSDictionary *)options;
-- (void)placesGetCityByIdWithCustomOptions:(NSDictionary *)options;
+- (void)placesAddWithCustomOptions:(NSDictionary *)options
+                           success:(ASAVkontakteSuccessBlock)success
+                           failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesGetByIdWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesSearchWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesCheckinWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesGetCheckinsWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesGetTypesWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesGetCountriesWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesGetRegionsWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesGetStreeByIdWithCustomOptions:(NSDictionary *)options
+                                    success:(ASAVkontakteSuccessBlock)success
+                                    failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesGetCountryByIdWithCustomOptions:(NSDictionary *)options
+                                      success:(ASAVkontakteSuccessBlock)success
+                                      failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesGetCitiesWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)placesGetCityByIdWithCustomOptions:(NSDictionary *)options
+                                   success:(ASAVkontakteSuccessBlock)success
+                                   failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -382,10 +1007,21 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Polls)
 
-- (void)pollsGetByIdWithCustomOptions:(NSDictionary *)options;
-- (void)pollsAddVoteWithCustomOptions:(NSDictionary *)options;
-- (void)pollsDeleteVoteWithCustomOptions:(NSDictionary *)options;
-- (void)pollsGetVotersWithCustomOptions:(NSDictionary *)options;
+- (void)pollsGetByIdWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)pollsAddVoteWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)pollsDeleteVoteWithCustomOptions:(NSDictionary *)options
+                                 success:(ASAVkontakteSuccessBlock)success
+                                 failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)pollsGetVotersWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -394,12 +1030,29 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Docs)
 
-- (void)docsGetWithCustomOptions:(NSDictionary *)options;
-- (void)docsGetByIdWithCustomOptions:(NSDictionary *)options;
-- (void)docsGetUploadServerWithCustomOptions:(NSDictionary *)options;
-- (void)docsGetWallUploadServerWithCustomOptions:(NSDictionary *)options;
-- (void)docsSaveWithCustomOptions:(NSDictionary *)options;
-- (void)docsDeleteWithCustomOptions:(NSDictionary *)options;
+- (void)docsGetWithCustomOptions:(NSDictionary *)options
+                         success:(ASAVkontakteSuccessBlock)success
+                         failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)docsGetByIdWithCustomOptions:(NSDictionary *)options
+                             success:(ASAVkontakteSuccessBlock)success
+                             failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)docsGetUploadServerWithCustomOptions:(NSDictionary *)options
+                                     success:(ASAVkontakteSuccessBlock)success
+                                     failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)docsGetWallUploadServerWithCustomOptions:(NSDictionary *)options
+                                         success:(ASAVkontakteSuccessBlock)success
+                                         failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)docsSaveWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)docsDeleteWithCustomOptions:(NSDictionary *)options
+                            success:(ASAVkontakteSuccessBlock)success
+                            failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -408,11 +1061,25 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Fave)
 
-- (void)faveGetUsersWithCustomOptions:(NSDictionary *)options;
-- (void)faveGetPhotosWithCustomOptions:(NSDictionary *)options;
-- (void)faveGetPostsWithCustomOptions:(NSDictionary *)options;
-- (void)faveGetVideosWithCustomOptions:(NSDictionary *)options;
-- (void)faveGetLinksWithCustomOptions:(NSDictionary *)options;
+- (void)faveGetUsersWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)faveGetPhotosWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)faveGetPostsWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)faveGetVideosWithCustomOptions:(NSDictionary *)options
+                               success:(ASAVkontakteSuccessBlock)success
+                               failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)faveGetLinksWithCustomOptions:(NSDictionary *)options
+                              success:(ASAVkontakteSuccessBlock)success
+                              failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -421,8 +1088,13 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Notifications)
 
-- (void)notificationsGetWithCustomOptions:(NSDictionary *)options;
-- (void)notificationsMarkAsViewedWithCustomOptions:(NSDictionary *)options;
+- (void)notificationsGetWithCustomOptions:(NSDictionary *)options
+                                  success:(ASAVkontakteSuccessBlock)success
+                                  failure:(ASAVkontakteFailureBlock)failure;
+
+- (void)notificationsMarkAsViewedWithCustomOptions:(NSDictionary *)options
+                                           success:(ASAVkontakteSuccessBlock)success
+                                           failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -431,7 +1103,9 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Stats)
 
-- (void)statsGetWithCustomOptions:(NSDictionary *)options;
+- (void)statsGetWithCustomOptions:(NSDictionary *)options
+                          success:(ASAVkontakteSuccessBlock)success
+                          failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -440,7 +1114,9 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Search)
 
-- (void)searchGetHintsWithCustomOptions:(NSDictionary *)options;
+- (void)searchGetHintsWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -449,7 +1125,9 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 // -----------------------------------------------------------------------------
 @interface ASAVkontakteUserAccount (Apps)
 
-- (void)appsGetCatalogWithCustomOptions:(NSDictionary *)options;
+- (void)appsGetCatalogWithCustomOptions:(NSDictionary *)options
+                                success:(ASAVkontakteSuccessBlock)success
+                                failure:(ASAVkontakteFailureBlock)failure;
 
 @end
 
@@ -460,22 +1138,32 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 
 - (void)uploadDocument:(NSString *)documentPath
                  toURL:(NSURL *)url
-           withOptions:(NSDictionary *)options;
+           withOptions:(NSDictionary *)options
+               success:(ASAVkontakteSuccessBlock)success
+               failure:(ASAVkontakteFailureBlock)failure;
 
 - (void)uploadPhoto:(NSString *)photoPath
               toURL:(NSURL *)url
-        withOptions:(NSDictionary *)options;
+        withOptions:(NSDictionary *)options
+            success:(ASAVkontakteSuccessBlock)success
+            failure:(ASAVkontakteFailureBlock)failure;
 
 - (void)uploadAlbumPhoto:(NSString *)photoPath
                    toURL:(NSURL *)url
-             withOptions:(NSDictionary *)options;
+             withOptions:(NSDictionary *)options
+                 success:(ASAVkontakteSuccessBlock)success
+                 failure:(ASAVkontakteFailureBlock)failure;
 
 - (void)uploadAudio:(NSString *)audioPath
               toURL:(NSURL *)url
-        withOptions:(NSDictionary *)options;
+        withOptions:(NSDictionary *)options
+            success:(ASAVkontakteSuccessBlock)success
+            failure:(ASAVkontakteFailureBlock)failure;
 
 - (void)uploadVideo:(NSString *)videoPath
               toURL:(NSURL *)url
-        withOptions:(NSDictionary *)options;
+        withOptions:(NSDictionary *)options
+            success:(ASAVkontakteSuccessBlock)success
+            failure:(ASAVkontakteFailureBlock)failure;
 
 @end

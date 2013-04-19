@@ -7,6 +7,10 @@
 #import "ASAVkontakteCommunicator.h"
 #import "ASAVkontakteUserAccount.h"
 
+#import "DDLog.h"
+
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
 @implementation ASAVkontakteCommunicator
 {
     const NSString *_app_id;
@@ -80,6 +84,8 @@
 shouldStartLoadWithRequest:(NSURLRequest *)request
             navigationType:(UIWebViewNavigationType)navigationType
 {
+    DDLogVerbose(@"%s", __FUNCTION__);
+
     NSString *url = [NSString stringWithFormat:@"%@", [request URL]];
 
     // проверяем какой УРЛ мы сейчас обрабатываем
@@ -95,11 +101,14 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
             NSInteger expiration_time = [[parts[1] componentsSeparatedByString:@"="][1] integerValue];
             NSInteger user_id = [[parts[2] componentsSeparatedByString:@"="][1] integerValue];
 
+            DDLogVerbose(@"accessToken: %@", access_token);
+            DDLogVerbose(@"expirationTime: %i", expiration_time);
+            DDLogVerbose(@"userId: %i", user_id);
+
             ASAVkontakteUserAccount *user_account = [[ASAVkontakteUserAccount alloc]
                                                                             initUserAccountWithAccessToken:access_token
                                                                                             expirationTime:expiration_time
                                                                                                     userId:user_id];
-
             // ура! мы получили доступ к пользовательскому аккаунту
             _accepted_block(user_account);
 

@@ -6,6 +6,10 @@
 
 #import "ViewController.h"
 
+#import "DDLog.h"
+
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
 @implementation ViewController
 
 @synthesize webView = _webView;
@@ -23,16 +27,39 @@
     _vk = [[ASAVkontakteCommunicator alloc] initWithWebView:_webView];
 
     [_vk startOnCancelBlock:^{
-        NSLog(@"Cancel");
+        DDLogVerbose(@"[Cancel]");
     } onErrorBlock:^(NSError *error) {
-        NSLog(@"Error: %@", error);
+        DDLogVerbose(@"[Error]: %@", error);
     } onSuccessBlock:^(ASAVkontakteUserAccount *account) {
-        NSLog(@"account:%@", account);
+        DDLogVerbose(@"%@", account);
 
-        [account setSuccessBlock:^(NSDictionary *dictionary)
-        {
-            NSLog(@"===>%@", dictionary);
-        }];
+        [account docsGetUploadServerWithCustomOptions:@{}
+                                              success:^(NSDictionary *dictionary)
+                                              {
+                                                  NSString *uploadURL = dictionary[@"response"][@"upload_url"];
+                                                  NSString *documentPath = [[NSBundle mainBundle]
+                                                          pathForResource:@"document"
+                                                                   ofType:@"pdf"];
+
+                                                  [account uploadDocument:documentPath
+                                                                    toURL:[NSURL URLWithString:uploadURL]
+                                                              withOptions:@{}
+                                                                  success:^(
+                                                                          NSDictionary *dictionary)
+                                                                  {
+                                                                      DDLogVerbose(@"dictionary: %@", dictionary);
+
+                                                                      [account docsSaveWithCustomOptions:@{@"file":dictionary[@"file"]}
+                                                                                                 success:^(
+                                                                                                         NSDictionary *dictionary)
+                                                                                                 {
+                                                                                                     DDLogVerbose(@"dictionary: %@", dictionary);
+                                                                                                 }
+                                                                                                 failure:nil];
+                                                                  }
+                                                                  failure:nil];
+                                              }
+                                              failure:nil];
     }];
 }
 
