@@ -103,21 +103,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DPVkontakteUserAccount.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="32" selection-start="6456" selection-end="6456" vertical-scroll-proportion="0.5412234">
-              <folding>
-                <element signature="n#uploadPhoto:toURL:withOptions:#0;n#DPVkontakteUserAccount#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewController.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ViewController.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
+            <state line="29" column="35" selection-start="694" selection-end="694" vertical-scroll-proportion="0.4316644">
               <folding />
             </state>
           </provider>
@@ -727,19 +716,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="32" selection-start="6456" selection-end="6456" vertical-scroll-proportion="0.5412234">
+        <state line="170" column="0" selection-start="6089" selection-end="6089" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#uploadPhoto:toURL:withOptions:#0;n#DPVkontakteUserAccount#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="35" selection-start="694" selection-end="694" vertical-scroll-proportion="0.4316644">
+          <folding />
         </state>
       </provider>
     </entry>
