@@ -1,2 +1,5 @@
-./.idea/*
-./.svn/*
+DPSocialServices/.idea/
+DPSocialServices/.svn/
+DPSocialServices/.DB_Store
+DPSocialServices/DPSocialServices/.idea/
+DPSocialServices/DPSocialServices/.svn/
