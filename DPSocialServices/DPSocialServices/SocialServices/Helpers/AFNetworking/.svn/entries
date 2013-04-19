@@ -1,161 +1,0 @@
-10
-
-dir
-0
-http://svn.kc/subversion/social-services/DPSocialServices/DPSocialServices/SocialServices/Helpers/AFNetworking
-http://svn.kc/subversion/social-services
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-6e68bf22-c93d-413b-9e6e-5de89b28a9f7
-
-AFHTTPClient.h
-file
-
-
-
-add
-
-AFHTTPClient.m
-file
-
-
-
-add
-
-AFHTTPRequestOperation.h
-file
-
-
-
-add
-
-AFHTTPRequestOperation.m
-file
-
-
-
-add
-
-AFImageRequestOperation.h
-file
-
-
-
-add
-
-AFImageRequestOperation.m
-file
-
-
-
-add
-
-AFJSONRequestOperation.h
-file
-
-
-
-add
-
-AFJSONRequestOperation.m
-file
-
-
-
-add
-
-AFNetworkActivityIndicatorManager.h
-file
-
-
-
-add
-
-AFNetworkActivityIndicatorManager.m
-file
-
-
-
-add
-
-AFNetworking.h
-file
-
-
-
-add
-
-AFPropertyListRequestOperation.h
-file
-
-
-
-add
-
-AFPropertyListRequestOperation.m
-file
-
-
-
-add
-
-AFURLConnectionOperation.h
-file
-
-
-
-add
-
-AFURLConnectionOperation.m
-file
-
-
-
-add
-
-AFXMLRequestOperation.h
-file
-
-
-
-add
-
-AFXMLRequestOperation.m
-file
-
-
-
-add
-
-UIImageView+AFNetworking.h
-file
-
-
-
-add
-
-UIImageView+AFNetworking.m
-file
-
-
-
-add
-
