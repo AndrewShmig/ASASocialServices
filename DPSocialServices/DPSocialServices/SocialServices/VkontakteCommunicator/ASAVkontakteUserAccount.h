@@ -11,6 +11,12 @@ static NSString *const kVKONTAKTE_API_URL = @"https://api.vk.com/method/";
 typedef void (^ASAVkontakteSuccessBlock) (NSDictionary *);
 typedef void (^ASAVkontakteFailureBlock) (NSError *);
 
+static NSString *const kUsersGet = @"users.get";
+static NSString *const kUsersSearch = @"users.search";
+static NSString *const kUsersIsAppUser = @"users.isAppUser";
+static NSString *const kUsersGetSubscriptions = @"users.getSubscriptions";
+static NSString *const kUsersGetFollowers = @"users.getFollowers";
+
 
 @interface ASAVkontakteUserAccount : NSObject
 
@@ -24,12 +30,17 @@ typedef void (^ASAVkontakteFailureBlock) (NSError *);
 
 - (id)initUserAccountWithAccessToken:(NSString *)accessToken
                               userId:(NSInteger)userId;
+
+- (void)performVKMethod:(NSString *)methodName
+                options:(NSDictionary *)options
+                success:(ASAVkontakteSuccessBlock)success
+                failure:(ASAVkontakteFailureBlock)failure;
 @end
 
 // -----------------------------------------------------------------------------
 // Documentation: https://vk.com/dev/users
 // -----------------------------------------------------------------------------
-@interface ASAVkontakteUserAccount (Users)
+/*@interface ASAVkontakteUserAccount (Users)
 
 - (void)usersGetWithCustomOptions:(NSDictionary *)options
                           success:(ASAVkontakteSuccessBlock)success
@@ -50,6 +61,7 @@ typedef void (^ASAVkontakteFailureBlock) (NSError *);
 - (void)usersGetFollowersWithCustomOptions:(NSDictionary *)options
                                    success:(ASAVkontakteSuccessBlock)success
                                    failure:(ASAVkontakteFailureBlock)failure;
+
 
 @end
 
@@ -1129,7 +1141,7 @@ typedef void (^ASAVkontakteFailureBlock) (NSError *);
                                 success:(ASAVkontakteSuccessBlock)success
                                 failure:(ASAVkontakteFailureBlock)failure;
 
-@end
+@end */
 
 // -----------------------------------------------------------------------------
 // Uploding files to VK servers
