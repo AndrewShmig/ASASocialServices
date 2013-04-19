@@ -26,13 +26,105 @@ svn:special svn:externals svn:needs-lock
 
 6e68bf22-c93d-413b-9e6e-5de89b28a9f7
 
+ASAVkontakteCommunicator.h
+file
+
+
+
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://svn.kc/subversion/social-services/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h
+10
+
+ASAVkontakteCommunicator.m
+file
+
+
+
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://svn.kc/subversion/social-services/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m
+27
+
+ASAVkontakteUserAccount.h
+file
+
+
+
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://svn.kc/subversion/social-services/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h
+23
+
+ASAVkontakteUserAccount.m
+file
+
+
+
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://svn.kc/subversion/social-services/DPSocialServices/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m
+24
+
 DPVkontakteCommunicator.h
 file
 10
 
 
-
-2013-04-10T19:17:20.000000Z
+delete
+2013-04-13T07:56:50.000000Z
 d984ce37ebdae1bf04a5f80220dce02f
 2013-04-10T19:33:28.928327Z
 10
@@ -65,7 +157,7 @@ file
 27
 
 
-
+delete
 2013-04-11T17:59:40.000000Z
 99285387a7e296f53323165c2a029c36
 2013-04-11T18:04:33.719428Z
@@ -99,7 +191,7 @@ file
 23
 
 
-
+delete
 2013-04-11T05:28:50.000000Z
 91e27a4c6e5be5eb5710012207b1cf51
 2013-04-11T05:29:23.193378Z
@@ -133,7 +225,7 @@ file
 24
 
 
-
+delete
 2013-04-11T05:30:41.000000Z
 8a1df8b4096e056c00021f26f268f6cd
 2013-04-11T05:31:01.887373Z

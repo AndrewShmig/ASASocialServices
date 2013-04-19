@@ -26,12 +26,104 @@ svn:special svn:externals svn:needs-lock
 
 6e68bf22-c93d-413b-9e6e-5de89b28a9f7
 
+ASAFacebookCommunicator.h
+file
+
+
+
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://svn.kc/subversion/social-services/DPSocialServices/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h
+32
+
+ASAFacebookCommunicator.m
+file
+
+
+
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://svn.kc/subversion/social-services/DPSocialServices/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.m
+33
+
+ASAFacebookUserAccount.h
+file
+
+
+
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://svn.kc/subversion/social-services/DPSocialServices/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.h
+35
+
+ASAFacebookUserAccount.m
+file
+
+
+
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://svn.kc/subversion/social-services/DPSocialServices/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookUserAccount.m
+35
+
 DPFacebookCommunicator.h
 file
 32
 
 
-
+delete
 2013-04-12T08:37:08.000000Z
 531bfe4df9ee9ff7ee7aef7262a35989
 2013-04-12T08:40:16.776053Z
@@ -65,7 +157,7 @@ file
 33
 
 
-
+delete
 2013-04-12T11:37:07.000000Z
 bef728c919bd2e56d73e227fa6d3ca4a
 2013-04-12T12:25:05.436307Z
@@ -99,7 +191,7 @@ file
 35
 
 
-
+delete
 2013-04-12T13:41:35.000000Z
 7c9ef9a803b4da8ce6694d3477391ea4
 2013-04-12T13:45:07.578592Z
@@ -133,7 +225,7 @@ file
 35
 
 
-
+delete
 2013-04-12T13:41:35.000000Z
 6403bd14e24b060a5ffe69b81b647a67
 2013-04-12T13:45:07.578592Z

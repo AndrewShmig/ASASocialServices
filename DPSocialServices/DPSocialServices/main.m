@@ -2,11 +2,8 @@
 //  main.m
 //  DPSocialServices
 //
-//  Created by digipeople on 04/09/13.
-//  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
+//  Created by Andrew Shmig on 04/09/13.
 //
-
-#import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
 
