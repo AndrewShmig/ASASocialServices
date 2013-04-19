@@ -56,18 +56,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 }
 
 // -----------------------------------------------------------------------------
-// Description
-// -----------------------------------------------------------------------------
-- (NSString *)description
-{
-    DDLogVerbose(@"%s", __FUNCTION__);
-
-    return [NSString stringWithFormat:@"\nAccess token: %@\nUser id:%d\n",
-                                      _accessToken,
-                                      _userId];
-}
-
-// -----------------------------------------------------------------------------
 // Performs request to VK method with custom options
 // -----------------------------------------------------------------------------
 - (void)performVKMethod:(NSString *)methodName
@@ -118,6 +106,18 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                                     }];
 
     [operation start];
+}
+
+// -----------------------------------------------------------------------------
+// Description
+// -----------------------------------------------------------------------------
+- (NSString *)description
+{
+    DDLogVerbose(@"%s", __FUNCTION__);
+
+    return [NSString stringWithFormat:@"\nAccess token: %@\nUser id:%d\n",
+                                      _accessToken,
+                                      _userId];
 }
 
 @end
