@@ -1,6 +1,5 @@
 //
 //  ViewController.h
-//  DPSocialServices
 //
 //  Created by AndrewShmig on 04/09/13.
 //
