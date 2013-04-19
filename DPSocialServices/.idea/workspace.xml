@@ -54,7 +54,6 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteCommunicator.m" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteUserAccount.h" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteUserAccount.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" afterPath="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" afterPath="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/ViewController.h" afterPath="$PROJECT_DIR$/DPSocialServices/ViewController.h" />
@@ -129,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/ViewController.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteUserAccount.h" />
@@ -145,6 +143,7 @@
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookCommunicator.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookUserAccount.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookUserAccount.m" />
+        <option value="$PROJECT_DIR$/DPSocialServices/ViewController.h" />
       </list>
     </option>
   </component>
@@ -603,15 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="297" selection-end="297" vertical-scroll-proportion="0.1392573">
-          <folding>
-            <element signature="e#155#178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteCommunicator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="40" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0596817">
@@ -711,6 +701,15 @@
         <state line="4" column="2" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0795756">
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="39" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0795756">
+          <folding>
+            <element signature="e#92#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
