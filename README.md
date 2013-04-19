@@ -1,12 +1,28 @@
 # ASASocialServices
 
-В поисках примеров? Тогда вам сразу [сюда](https://github.com/AndrewShmig/ASASocialServices/wiki/_pages).
+Набор классов ASASocialServices предназначен для взаимодействия с социальными сетями:
+* Twitter
+  * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPTwitterCommunicator)
+  * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPTwitterUserAccount)
+* Vkontakte
+  * Как работать с библиотекой?
+  * Как настроить?
+  * Как осуществлять запросы?
+  * Примеры запросов.
+    * Получение списка друзей
+    * Отправка личного сообщения определенному пользователю
+    * Постинг на стену
+    * тд
+  * Как загрузить документ?
+  * Как загрузить аудио?
+  * Как загрузить видео?
+* Facebook
+  * [Как настроить](https://github.com/AndrewShmig/ASASocialServices/wiki/DPFacebookCommunicator)
+  * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPFacebookUserAccount)
+  * [Пример постинга в ленту пользователя](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BUserGuide%5D-Как-осуществить-постинг-в-ленту-пользователя-Facebook)
+  * [Пример получения списка друзей](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BUserGuide%5D-Как-получить-список-друзей-пользователя-Facebook)
+  * [Пример получения списка друзей пользователя с определенными данными](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BUserGuide%5D-Как-получить-список-друзей-пользователя-Facebook-с-определенной-иформацией)
 
-[Основная директория](https://github.com/AndrewShmig/ASASocialServices/tree/master/DPSocialServices/DPSocialServices/SocialServices) модуля.
+Детальная информация находится на [страницах](https://github.com/AndrewShmig/ASASocialServices/wiki/_pages).
 
-[Проект](https://github.com/AndrewShmig/ASASocialServices/tree/master/DPSocialServices), который позволяет запустить и проверить [DPSocialServices](https://github.com/AndrewShmig/ASASocialServices/tree/master/DPSocialServices/DPSocialServices/SocialServices) на работоспособность.
-Наибольший интерес представляет собой класс [ViewController](https://github.com/AndrewShmig/ASASocialServices/blob/master/DPSocialServices/DPSocialServices/ViewController.h) в файле [ViewController.m](https://github.com/AndrewShmig/ASASocialServices/blob/master/DPSocialServices/DPSocialServices/ViewController.m), там происходит основная работа.
-
-* [Как использовать DPSocialServices с Twitter.com](https://github.com/AndrewShmig/ASASocialServices/wiki/DPTwitterCommunicator).
-* [Как использовать DPSocialServices c VK.com](https://github.com/AndrewShmig/ASASocialServices/wiki/DPVkontakteCommunicator).
-* [Как использовать DPSocialServices с Facebook.com](https://github.com/AndrewShmig/ASASocialServices/wiki/DPFacebookCommunicator).
+Класс ASA*Communicator позволяет получить все необходимые токены для осуществления дальнейших запросов от лица пользователя, которые производятся через класс ASA*UserAccount.
