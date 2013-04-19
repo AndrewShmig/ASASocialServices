@@ -54,6 +54,7 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteCommunicator.m" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteUserAccount.h" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" afterPath="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteUserAccount.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" afterPath="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" afterPath="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DPSocialServices/ViewController.h" afterPath="$PROJECT_DIR$/DPSocialServices/ViewController.h" />
@@ -128,22 +129,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/DPSocialServices/AppDelegate.h" />
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.m" />
-        <option value="$PROJECT_DIR$/DPSocialServices/AppDelegate.m" />
-        <option value="$PROJECT_DIR$/DPSocialServices/main.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/ViewController.m" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteUserAccount.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteUserAccount.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/DPVkontakteCommunicator.h" />
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteCommunicator.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterCommunicator.h" />
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/ASATwitterCommunicator.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/DPTwitterUserAccount.h" />
-        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/ASATwitterUserAccount.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/DPFacebookCommunicator.h" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteCommunicator.h" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteCommunicator.m" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/ASATwitterCommunicator.h" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/ASATwitterUserAccount.h" />
         <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookCommunicator.h" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookCommunicator.m" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookUserAccount.h" />
+        <option value="$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookUserAccount.m" />
       </list>
     </option>
   </component>
@@ -197,24 +198,6 @@
       <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPSocialServices" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SocialServices" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VkontakteCommunicator" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" />
@@ -598,62 +581,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/DPSocialServices-Prefix.pch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.19098143">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/DPSocialServices-Info.plist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/AppDelegate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="176" selection-end="176" vertical-scroll-proportion="0.15957446" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteCommunicator.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.1826793">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#142#178#0" expanded="true" />
-            <element signature="n#initWithWebView:#0;n#ASAVkontakteCommunicator#0" expanded="true" />
-            <element signature="n#startOnCancelBlock:onErrorBlock:onSuccessBlock:#0;n#ASAVkontakteCommunicator#0" expanded="true" />
-            <element signature="n#webView:shouldStartLoadWithRequest:navigationType:#0;n#ASAVkontakteCommunicator#0" expanded="true" />
-            <element signature="n#webViewDidFinishLoad:#0;n#ASAVkontakteCommunicator#0" expanded="true" />
-            <element signature="n#webViewDidStartLoad:#0;n#ASAVkontakteCommunicator#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/Helpers/AFNetworking/AFURLConnectionOperation.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="0" selection-start="7593" selection-end="7593" vertical-scroll-proportion="0.3325527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="0.19215156">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#153#176#0" expanded="true" />
-            <element signature="n#applicationWillResignActive:#0;n#AppDelegate#0" expanded="true" />
-            <element signature="n#applicationDidEnterBackground:#0;n#AppDelegate#0" expanded="true" />
-            <element signature="n#applicationWillEnterForeground:#0;n#AppDelegate#0" expanded="true" />
-            <element signature="n#applicationDidBecomeActive:#0;n#AppDelegate#0" expanded="true" />
-            <element signature="n#applicationWillTerminate:#0;n#AppDelegate#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/main.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.2393617" />
@@ -663,15 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="278" column="14" selection-start="12570" selection-end="12570" vertical-scroll-proportion="0.29228687">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteUserAccount.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="0" selection-start="6089" selection-end="6089" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#uploadPhoto:toURL:withOptions:#0;n#ASAVkontakteUserAccount#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -685,13 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteUserAccount.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="45" selection-start="351" selection-end="351" vertical-scroll-proportion="0.2188329">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/ViewController.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="44" selection-start="297" selection-end="297" vertical-scroll-proportion="0.1392573">
@@ -701,35 +612,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/ASATwitterUserAccount.h">
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteCommunicator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="34" selection-start="524" selection-end="524" vertical-scroll-proportion="0.33819628">
+        <state line="3" column="40" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0596817">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteCommunicator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="40" selection-start="77" selection-end="77" vertical-scroll-proportion="0.060728744">
+          <folding>
+            <element signature="e#82#118#0" expanded="true" />
+            <element signature="n#initWithWebView:#0;n#ASAVkontakteCommunicator#0" expanded="true" />
+            <element signature="n#startOnCancelBlock:onErrorBlock:onSuccessBlock:#0;n#ASAVkontakteCommunicator#0" expanded="true" />
+            <element signature="n#webView:shouldStartLoadWithRequest:navigationType:#0;n#ASAVkontakteCommunicator#0" expanded="true" />
+            <element signature="n#webViewDidFinishLoad:#0;n#ASAVkontakteCommunicator#0" expanded="true" />
+            <element signature="n#webViewDidStartLoad:#0;n#ASAVkontakteCommunicator#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteUserAccount.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="40" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0596817">
+          <folding>
+            <element signature="n#uploadPhoto:toURL:withOptions:#0;n#ASAVkontakteUserAccount#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteUserAccount.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="45" selection-start="351" selection-end="351" vertical-scroll-proportion="0.29840848">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#337#370#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/ASATwitterCommunicator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="14" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.4774536">
+        <state line="5" column="2" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0994695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/ASATwitterCommunicator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="204" selection-end="204" vertical-scroll-proportion="0.1392573">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/VkontakteCommunicator/ASAVkontakteCommunicator.h">
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/ASATwitterUserAccount.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="556" selection-end="556" vertical-scroll-proportion="0.2387268">
-          <folding />
+        <state line="5" column="2" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0994695">
+          <folding>
+            <element signature="e#138#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/TwitterCommunicator/ASATwitterUserAccount.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="2" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0994695">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookCommunicator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="493" selection-end="493" vertical-scroll-proportion="0.2834008">
+        <state line="3" column="39" selection-start="75" selection-end="75" vertical-scroll-proportion="0.060728744">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookCommunicator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="39" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0596817">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookUserAccount.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="40" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0596817">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPSocialServices/SocialServices/FacebookCommunicator/ASAFacebookUserAccount.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="2" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0795756">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

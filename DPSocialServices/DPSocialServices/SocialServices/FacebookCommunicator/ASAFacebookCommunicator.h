@@ -2,7 +2,6 @@
 //  ASAFacebookCommunicator.h
 //
 //  Created by AndrewShmig on 14.12.12.
-//  Copyright (c) 2012 digipeople. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

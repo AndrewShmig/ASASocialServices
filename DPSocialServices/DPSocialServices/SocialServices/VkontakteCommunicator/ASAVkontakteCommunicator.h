@@ -2,7 +2,6 @@
 //  ASAVkontakteCommunicator.h
 //
 //  Created by Andrew Shmig on 18.12.12.
-//  Copyright (c) 2012 DigiPeople Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

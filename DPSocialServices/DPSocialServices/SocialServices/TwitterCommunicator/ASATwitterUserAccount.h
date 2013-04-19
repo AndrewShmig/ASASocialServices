@@ -5,10 +5,6 @@
 //  Copyright (c) 2012 AndrewShmig. All rights reserved.
 //
 //
-//  Twitter User Account Class
-//  Its only possible to use this class with working oauth_token and oauth_token_secret keys
-//  If tokens become invalid use TwitterCommunicator to obtain new ones
-//
 
 #import <Foundation/Foundation.h>
 #import "NSData+toBase64.h"

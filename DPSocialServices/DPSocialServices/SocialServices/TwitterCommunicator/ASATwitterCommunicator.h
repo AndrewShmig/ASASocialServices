@@ -5,9 +5,6 @@
 //  Copyright (c) 2012 AndrewShmig. All rights reserved.
 //
 //
-//  Класс используется для прохождения OAuth авторизации пользователя Твиттера
-//  Используется в связке с встроенным элементом UIWebView
-//
 
 #import <Foundation/Foundation.h>
 #import "NSData+toBase64.h"
