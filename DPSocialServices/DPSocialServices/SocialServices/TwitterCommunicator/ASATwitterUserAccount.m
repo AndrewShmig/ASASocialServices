@@ -1,11 +1,11 @@
 //
-//  DPTwitterUserAccount.m
+//  ASATwitterUserAccount.m
 //
 //  Created by AndrewShmig on 11.12.12.
 //  Copyright (c) 2012 AndrewShmig. All rights reserved.
 //
 
-#import "DPTwitterUserAccount.h"
+#import "ASATwitterUserAccount.h"
 
 #define LOG_ON 1
 
@@ -21,7 +21,7 @@ enum {
   TwitterUserAccountNilTwitterUserId
 };
 
-@implementation DPTwitterUserAccount
+@implementation ASATwitterUserAccount
 
 @synthesize oauthToken = _oauthToken,
             oauthTokenSecret = _oauthTokenSecret,
@@ -525,7 +525,7 @@ enum {
     forHTTPHeaderField:@"Content-Type"];
 
   // generating request body
-  NSString *oauth_nonce = [DPTwitterCommunicator generateNonceToken:32];
+  NSString *oauth_nonce = [ASATwitterCommunicator generateNonceToken:32];
   NSString *oauth_timestamp = [NSString stringWithFormat:@"%@",
                               [NSNumber numberWithUnsignedInt:[[NSDate date] timeIntervalSince1970]]];
   NSString *oauth_consumer_key = kTWITTER_CONSUMER_KEY;
@@ -543,7 +543,7 @@ enum {
   [dic setObject:oauth_token forKey:@"oauth_token"];
   [dic addEntriesFromDictionary:params];
 
-  NSString *signature_base_string = [DPTwitterCommunicator
+  NSString *signature_base_string = [ASATwitterCommunicator
           generateSignatureBaseString:dic
                 withHTTPRequestMethod:httpMethod
                         andRequestURL:urlRequestString];

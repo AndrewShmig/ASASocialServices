@@ -1,12 +1,11 @@
 //
-//  DPFacebookCommunicator.m
+//  ASAFacebookCommunicator.m
 //
 //  Created by AndrewShmig on 14.12.12.
-//  Copyright (c) 2012 digipeople. All rights reserved.
 //
 
-#import "DPFacebookCommunicator.h"
-#import "DPFacebookUserAccount.h"
+#import "ASAFacebookCommunicator.h"
+#import "ASAFacebookUserAccount.h"
 #import "NSString+encodeURL.h"
 
 #define LOG_ON 1
@@ -15,7 +14,7 @@
 # define DEBUG_CURRENT_METHOD() NSLog(@"%s", __FUNCTION__)
 #endif
 
-@implementation DPFacebookCommunicator
+@implementation ASAFacebookCommunicator
 {
     const NSString *_app_id;
     const NSString *_app_secret;
@@ -31,7 +30,7 @@
 
     void (^_cancel_block) (void);
     void (^_error_block) (NSError *);
-    void (^_accepted_block) (DPFacebookUserAccount *);
+    void (^_accepted_block) (ASAFacebookUserAccount *);
 }
 
 #pragma mark - Init methods
@@ -73,7 +72,7 @@
 
 - (void)startOnCancelBlock:(void (^)())cancelBlock
               onErrorBlock:(void (^)(NSError *))errorBlock
-            onSuccessBlock:(void (^)(DPFacebookUserAccount *))acceptedBlock
+            onSuccessBlock:(void (^)(ASAFacebookUserAccount *))acceptedBlock
 {
     DEBUG_CURRENT_METHOD();
 
@@ -197,8 +196,8 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     _access_token = [parts[0] componentsSeparatedByString:@"="][1];
     _expires_in = (NSUInteger)[[parts[1] componentsSeparatedByString:@"="][1] integerValue];
 
-    DPFacebookUserAccount *facebookUserAccount;
-    facebookUserAccount = [[DPFacebookUserAccount alloc]
+    ASAFacebookUserAccount *facebookUserAccount;
+    facebookUserAccount = [[ASAFacebookUserAccount alloc]
             initWithAccessToken:_access_token
                  expirationTime:_expires_in];
 

@@ -1,12 +1,7 @@
 //
-//  DPFacebookUserAccount.h
+//  ASAFacebookUserAccount.h
 //
 //  Created by Andrew Shmig on 14.12.12.
-//  Copyright (c) 2012 digipeople. All rights reserved.
-//
-//  Класс пользователя Facebook
-//
-//  Содержит в себе действующий access token и время, когда истечет срок его действия
 //
 //
 
@@ -22,7 +17,7 @@ static NSString *const kFACEBOOK_USER_PHOTO_URL = @"https://graph.facebook.com/m
 static NSString *const kFACEBOOK_USER_FEED_URL = @"https://graph.facebook.com/me/feed";
 
 
-@interface DPFacebookUserAccount : NSObject
+@interface ASAFacebookUserAccount : NSObject
 
 @property (nonatomic, readonly) NSString *accessToken;
 @property (nonatomic, readonly) NSUInteger expirationTime;

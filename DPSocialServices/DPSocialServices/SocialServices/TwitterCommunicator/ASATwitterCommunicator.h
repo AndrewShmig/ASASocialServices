@@ -1,12 +1,9 @@
 //
-//  DPTwitterCommunicator.h
+//  ASATwitterCommunicator.h
 //
 //  Created by AndrewShmig on 06.12.12.
 //  Copyright (c) 2012 AndrewShmig. All rights reserved.
 //
-//
-//  Класс используется для прохождения OAuth авторизации пользователя Твиттера
-//  Используется в связке с встроенным элементом UIWebView
 //
 
 #import <Foundation/Foundation.h>
@@ -24,15 +21,15 @@ static const NSString *kTWITTER_AUTHORIZE_URL = @"https://api.twitter.com/oauth/
 static const NSString *kTWITTER_ACCESS_TOKEN_URL = @"https://api.twitter.com/oauth/access_token";
 static const NSString *kTWITTER_LOGOUT_URL = @"https://api.twitter.com/intent/session";
 
-@class DPTwitterUserAccount;
+@class ASATwitterUserAccount;
 
-@interface DPTwitterCommunicator : NSObject <UIWebViewDelegate>
+@interface ASATwitterCommunicator : NSObject <UIWebViewDelegate>
 
 - (id)initWithWebView:(UIWebView *)webView;
 
 - (void)startOnCancelBlock:(void (^)(void))cancelBlock
               onErrorBlock:(void (^)(NSError *))errorBlock
-            onSuccessBlock:(void (^)(DPTwitterUserAccount *))acceptedBlock;
+            onSuccessBlock:(void (^)(ASATwitterUserAccount *))acceptedBlock;
 
 + (NSString *)generateNonceToken:(NSInteger)length;
 

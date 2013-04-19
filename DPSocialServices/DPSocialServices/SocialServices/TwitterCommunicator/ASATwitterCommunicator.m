@@ -1,12 +1,12 @@
 //
-//  DPTwitterCommunicator.m
+//  ASATwitterCommunicator.m
 //
 //  Created by AndrewShmig on 06.12.12.
 //  Copyright (c) 2012 AndrewShmig. All rights reserved.
 //
 
-#import "DPTwitterCommunicator.h"
-#import "DPTwitterUserAccount.h"
+#import "ASATwitterCommunicator.h"
+#import "ASATwitterUserAccount.h"
 
 static const NSString *kTwitterCommunicatorErrorDomain = @"kTwitterCommunicatorErrorDomain";
 
@@ -15,9 +15,9 @@ enum
     TwitterCommunicatorRequestError = -1
 };
 
-@implementation DPTwitterCommunicator
+@implementation ASATwitterCommunicator
 {
-    DPTwitterUserAccount *_twitterUserAccount;
+    ASATwitterUserAccount *_twitterUserAccount;
 
     // --------- API links
     NSString *_request_token_URL;
@@ -52,7 +52,7 @@ enum
 
     void (^_error_block) (NSError *);
 
-    void (^_accepted_block) (DPTwitterUserAccount *);
+    void (^_accepted_block) (ASATwitterUserAccount *);
 }
 
 #pragma mark - Initialization
@@ -97,7 +97,7 @@ enum
 
 - (void)startOnCancelBlock:(void (^)(void))cancelBlock
               onErrorBlock:(void (^)(NSError *))errorBlock
-            onSuccessBlock:(void (^)(DPTwitterUserAccount *))acceptedBlock
+            onSuccessBlock:(void (^)(ASATwitterUserAccount *))acceptedBlock
 {
     NSLog(@"%s", __FUNCTION__);
 
@@ -116,7 +116,7 @@ enum
     NSLog(@"%s", __FUNCTION__);
 
     // generating request body
-    NSString *oauth_nonce = [DPTwitterCommunicator generateNonceToken:32];
+    NSString *oauth_nonce = [ASATwitterCommunicator generateNonceToken:32];
     NSString *oauth_callback = _callback_URL;
 
     NSNumber *timestamp = [NSNumber numberWithInt:[[NSDate date]
@@ -137,7 +137,7 @@ enum
     [dic setObject:oauth_timestamp forKey:@"oauth_timestamp"];
     [dic setObject:oauth_version forKey:@"oauth_version"];
 
-    NSString *signature_base_string = [DPTwitterCommunicator
+    NSString *signature_base_string = [ASATwitterCommunicator
             generateSignatureBaseString:dic
                   withHTTPRequestMethod:@"POST"
                           andRequestURL:_request_token_URL];
@@ -205,7 +205,7 @@ enum
     NSLog(@"%s", __FUNCTION__);
 
     // generating request body
-    NSString *oauth_nonce = [DPTwitterCommunicator generateNonceToken:32];
+    NSString *oauth_nonce = [ASATwitterCommunicator generateNonceToken:32];
     NSString *oauth_callback = _callback_URL;
 
     NSNumber *timestamp = [NSNumber numberWithInt:[[NSDate date]
@@ -228,9 +228,9 @@ enum
     [dic setObject:oauth_version forKey:@"oauth_version"];
     [dic setObject:oauth_token forKey:@"oauth_token"];
 
-    NSString *signature_base_string = [DPTwitterCommunicator generateSignatureBaseString:dic
-                                                                   withHTTPRequestMethod:@"POST"
-                                                                           andRequestURL:_access_token_URL];
+    NSString *signature_base_string = [ASATwitterCommunicator generateSignatureBaseString:dic
+                                                                    withHTTPRequestMethod:@"POST"
+                                                                            andRequestURL:_access_token_URL];
 
     NSString *signing_key = [NSString stringWithFormat:@"%@&%@",
                                                        oauth_consumer_secret,
@@ -283,7 +283,7 @@ enum
     NSLog(@"_final_oauth_token_secret = %@", _final_oauth_token_secret);
 #endif
 
-    _twitterUserAccount = [[DPTwitterUserAccount alloc]
+    _twitterUserAccount = [[ASATwitterUserAccount alloc]
                                                  initWithToken:_final_oauth_token
                                                    tokenSecret:_final_oauth_token_secret
                                                  twitterUserID:_user_id

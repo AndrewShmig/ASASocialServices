@@ -1,11 +1,10 @@
 //
-//  DPFacebookUserAccount.m
+//  ASAFacebookUserAccount.m
 //
 //  Created by AndrewShmig on 14.12.12.
-//  Copyright (c) 2012 digipeople. All rights reserved.
 //
 
-#import "DPFacebookUserAccount.h"
+#import "ASAFacebookUserAccount.h"
 #import "NSString+encodeURL.h"
 
 #define LOG_ON 1
@@ -14,7 +13,7 @@
 # define DEBUG_CURRENT_METHOD() NSLog(@"%s", __FUNCTION__)
 #endif
 
-@implementation DPFacebookUserAccount
+@implementation ASAFacebookUserAccount
 {
     NSString *_accessToken;
     NSUInteger _expirationTime;

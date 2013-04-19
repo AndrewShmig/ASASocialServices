@@ -1,9 +1,7 @@
 //
 //  ViewController.m
-//  DPSocialServices
 //
 //  Created by AndrewShmig on 04/09/13.
-//  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -11,9 +9,10 @@
 @implementation ViewController
 
 @synthesize webView = _webView;
-@synthesize fb = _fb;
+@synthesize vk = _vk;
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 
     CGRect frame = [[UIScreen mainScreen] bounds];
@@ -21,26 +20,19 @@
     [_webView setHidden:NO];
     [self.view addSubview:_webView];
 
-    _fb = [[DPFacebookCommunicator alloc] initWithWebView:_webView];
+    _vk = [[ASAVkontakteCommunicator alloc] initWithWebView:_webView];
 
-    [_fb startOnCancelBlock:^{
+    [_vk startOnCancelBlock:^{
         NSLog(@"Cancel");
     } onErrorBlock:^(NSError *error) {
         NSLog(@"Error: %@", error);
-    } onSuccessBlock:^(DPFacebookUserAccount *account) {
+    } onSuccessBlock:^(ASAVkontakteUserAccount *account) {
         NSLog(@"account:%@", account);
 
         [account setSuccessBlock:^(NSDictionary *dictionary)
         {
-            NSLog(@"%@", dictionary);
+            NSLog(@"===>%@", dictionary);
         }];
-
-        [account obtainFriendsCustomFields:@[@"name",
-                                             @"gender",
-                                             @"location",
-                                             @"cover",
-                                             @"about",
-                                             @"bio"]];
     }];
 }
 

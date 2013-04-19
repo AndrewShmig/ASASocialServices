@@ -1,21 +1,13 @@
 //
-//  DPVkontakteCommunicator.m
+//  ASAVkontakteCommunicator.m
 //
 //  Created by Andrew Shmig on 18.12.12.
-//  Copyright (c) 2012 DigiPeople Inc. All rights reserved.
 //
 
-#import "DPVkontakteCommunicator.h"
-#import "DPVkontakteUserAccount.h"
+#import "ASAVkontakteCommunicator.h"
+#import "ASAVkontakteUserAccount.h"
 
-#define LOG_ON 1
-
-#if LOG_ON == 1
-# define DEBUG_CURRENT_METHOD() NSLog(@"%s", __FUNCTION__)
-# define DEBUG_INFO(x) NSLog(@"%@", x)
-#endif
-
-@implementation DPVkontakteCommunicator
+@implementation ASAVkontakteCommunicator
 {
     const NSString *_app_id;
     const NSString *_settings;
@@ -27,16 +19,13 @@
 
     void (^_cancel_block) (void);
     void (^_error_block) (NSError *);
-    void (^_accepted_block) (DPVkontakteUserAccount *);
+    void (^_accepted_block) (ASAVkontakteUserAccount *);
 }
 
 #pragma mark - Init methods
 
 - (id)initWithWebView:(UIWebView *)webView
 {
-
-    DEBUG_CURRENT_METHOD();
-
     self = [super init];
 
     if (self) {
@@ -64,15 +53,12 @@
     return self;
 }
 
-#pragma mark - Public DPVkontakteCommunicator Methods
+#pragma mark - Public ASAVkontakteCommunicator Methods
 
 - (void)startOnCancelBlock:(void (^)(void))cancelBlock
               onErrorBlock:(void (^)(NSError *))errorBlock
-            onSuccessBlock:(void (^)(DPVkontakteUserAccount *))acceptedBlock
+            onSuccessBlock:(void (^)(ASAVkontakteUserAccount *))acceptedBlock
 {
-
-    DEBUG_CURRENT_METHOD();
-
     _cancel_block = [cancelBlock copy];
     _error_block = [errorBlock copy];
     _accepted_block = [acceptedBlock copy];
@@ -94,12 +80,9 @@
 shouldStartLoadWithRequest:(NSURLRequest *)request
             navigationType:(UIWebViewNavigationType)navigationType
 {
-
-    DEBUG_CURRENT_METHOD();
-
     NSString *url = [NSString stringWithFormat:@"%@", [request URL]];
 
-    // проверяем какое УРЛ мы сейчас обрабатываем
+    // проверяем какой УРЛ мы сейчас обрабатываем
     if ([url hasPrefix:_redirect_url]) {
         NSString *query_string = [url substringFromIndex:[_redirect_url length] + 1];
 
@@ -112,7 +95,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
             NSInteger expiration_time = [[parts[1] componentsSeparatedByString:@"="][1] integerValue];
             NSInteger user_id = [[parts[2] componentsSeparatedByString:@"="][1] integerValue];
 
-            DPVkontakteUserAccount *user_account = [[DPVkontakteUserAccount alloc]
+            ASAVkontakteUserAccount *user_account = [[ASAVkontakteUserAccount alloc]
                                                                             initUserAccountWithAccessToken:access_token
                                                                                             expirationTime:expiration_time
                                                                                                     userId:user_id];
@@ -121,7 +104,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
             _accepted_block(user_account);
 
         } else {
-
             // пользователь отказал в доступе нашего приложения к своему профилю
             _cancel_block();
 
