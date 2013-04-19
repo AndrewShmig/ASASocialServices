@@ -36,6 +36,9 @@ typedef void (^ASAVkontakteFailureBlock)(NSError *);
 @interface ASAVkontakteUserAccount (Users)
 
 - (void)usersGetWithCustomOptions:(NSDictionary *)options;
+- (void)usersGetWithCustomOptions:(NSDictionary *)options success:(ASAVkontakteSuccessBlock)success;
+- (void)usersGetWithCustomOptions:(NSDictionary *)options success:(ASAVkontakteSuccessBlock)success failure:(ASAVkontakteFailureBlock)failure;
+
 - (void)usersSearchWithCustomOptions:(NSDictionary *)options;
 - (void)usersIsAppUserWithCustomOptions:(NSDictionary *)options;
 - (void)usersGetSubscriptionsWithCustomOptions:(NSDictionary *)options;
