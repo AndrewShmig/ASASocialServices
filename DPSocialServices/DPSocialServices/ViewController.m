@@ -2,7 +2,6 @@
 //  ViewController.m
 //
 //  Created by AndrewShmig on 04/09/13.
-//
 
 #import "ViewController.h"
 
