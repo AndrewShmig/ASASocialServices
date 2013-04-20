@@ -7,23 +7,36 @@
 //
 
 #import "ViewController.h"
+#import "DDLog.h"
+#import "ASAVkontakteMethods.h"
+#import "ASAVkontakteUserAccount.h"
 
-@interface ViewController ()
-
-@end
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @implementation ViewController
+
+@synthesize webView = _webView;
+@synthesize vk = _vk;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    CGRect frame = [[UIScreen mainScreen] bounds];
+    _webView = [[UIWebView alloc] initWithFrame:frame];
+    [self.view addSubview:_webView];
+
+    _vk = [[ASAVkontakteCommunicator alloc]
+            initWithWebView:_webView];
+
+    [_vk startOnCancelBlock:^{
+        DDLogVerbose(@"Cancel");
+    } onErrorBlock:^(NSError *error) {
+        DDLogVerbose(@"Error: %@", error);
+    } onSuccessBlock:^(ASAVkontakteUserAccount *account){
+        DDLogVerbose(@"%@", account);
+    }];
 }
 
 @end

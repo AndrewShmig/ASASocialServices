@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASAVkontakteCommunicator.h"
 
 @interface ViewController : UIViewController
+
+@property UIWebView *webView;
+@property ASAVkontakteCommunicator *vk;
 
 @end
