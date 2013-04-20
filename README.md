@@ -17,13 +17,7 @@
   * Как загрузить документ?
   * Как загрузить аудио?
   * Как загрузить видео?
-* Odnoklassniki [status: paused]
-  * Как настроить?
-  * Как использовать?
-* Mail.ru [status: paused]
-  * Как настроить?
-  * Как использовать?
-* Facebook [status: paused]
+* Facebook
   * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPFacebookCommunicator)
   * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPFacebookUserAccount)
   * [Пример постинга в ленту пользователя](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BUserGuide%5D-Как-осуществить-постинг-в-ленту-пользователя-Facebook)
