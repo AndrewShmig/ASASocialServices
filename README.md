@@ -1,10 +1,10 @@
 # ASASocialServices
 
 Набор классов ASASocialServices предназначен для взаимодействия с социальными сетями:
-* Twitter
+* Twitter [status: paused]
   * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPTwitterCommunicator)
   * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPTwitterUserAccount)
-* Vkontakte
+* Vkontakte [status: in progress]
   * Как работать с библиотекой?
   * Как настроить?
   * Как получить access_token пользователя ?
@@ -17,7 +17,13 @@
   * Как загрузить документ?
   * Как загрузить аудио?
   * Как загрузить видео?
-* Facebook
+* Odnoklassniki [status: paused]
+  * Как настроить?
+  * Как использовать?
+* Mail.ru [status: paused]
+  * Как настроить?
+  * Как использовать?
+* Facebook [status: paused]
   * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPFacebookCommunicator)
   * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPFacebookUserAccount)
   * [Пример постинга в ленту пользователя](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BUserGuide%5D-Как-осуществить-постинг-в-ленту-пользователя-Facebook)
