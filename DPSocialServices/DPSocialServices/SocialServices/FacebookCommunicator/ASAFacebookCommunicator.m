@@ -70,7 +70,7 @@
     return self;
 }
 
-- (void)startOnCancelBlock:(void (^)())cancelBlock
+- (void)startOnCancelBlock:(void (^)(void))cancelBlock
               onErrorBlock:(void (^)(NSError *))errorBlock
             onSuccessBlock:(void (^)(ASAFacebookUserAccount *))acceptedBlock
 {

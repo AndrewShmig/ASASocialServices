@@ -32,13 +32,15 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     } onSuccessBlock:^(ASAVkontakteUserAccount *account) {
         DDLogVerbose(@"%@", account);
 
-        [account performVKMethod:kVKAudioGet
-                         options:@{@"uid" : @"1"}
+        [account performVKMethod:kVKVideoGetAlbums
+                         options:@{@"uid" : @""}
                          success:^(NSDictionary *dictionary)
                          {
                              DDLogVerbose(@"audio: %@", dictionary);
                          }
-                         failure:nil];
+                         failure:^(NSError *error){
+                             DDLogVerbose(@"====>%@", error);
+                         }];
     }];
 }
 

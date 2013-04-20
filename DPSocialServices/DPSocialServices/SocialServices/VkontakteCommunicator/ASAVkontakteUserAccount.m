@@ -7,10 +7,14 @@
 #import "ASAVkontakteUserAccount.h"
 #import "AFNetworking.h"
 #import "NSString+encodeURL.h"
-
 #import "DDLog.h"
 
+#define return_from_block return
+
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
+NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
+
 
 @implementation ASAVkontakteUserAccount
 
@@ -91,6 +95,18 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                                               NSHTTPURLResponse *response,
                                               id JSON)
                                     {
+                                        if(JSON[@"error"] != nil) {
+                                            NSError *error = [NSError errorWithDomain:kVkontakteErrorDomain
+                                                                                 code:-1
+                                                                             userInfo:@{
+                                                                                     @"Status code"     : @([response statusCode]),
+                                                                                     @"Error code"      : JSON[@"error"][@"error_code"],
+                                                                                     @"Error message"   : JSON[@"error"][@"error_msg"]}];
+                                            failure(error);
+
+                                            return_from_block;
+                                        }
+
                                         success(JSON);
                                     }
                                     failure:^(NSURLRequest *request,
@@ -267,6 +283,17 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                                                 JSONObjectWithData:responseObject
                                                            options:NSJSONReadingMutableContainers
                                                              error:nil];
+
+                                        if(response[@"error"] != nil) {
+                                            NSError *error = [NSError errorWithDomain:kVkontakteErrorDomain
+                                                                                 code:-1
+                                                                             userInfo:@{
+                                                                                     @"Error code"    : response[@"error"][@"error_code"],
+                                                                                     @"Error message" : response[@"error"][@"error_msg"]}];
+                                            failure(error);
+
+                                            return_from_block;
+                                        }
 
                                         success(response);
                                     }
