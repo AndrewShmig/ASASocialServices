@@ -40,7 +40,8 @@ static NSString *const kVkontakteLoginPasswordOAuthURL = @"https://oauth.vk.com/
 // Obtain access_token using user login+password and init VKUserAccount.
 // This method performs request to VK server to obtain accessToken, if
 // request succeeds then success block is executed, else - failure block.
-// If request succeeds accessToken, expirationTime and userId properties are set.
+// If request succeeds accessToken, expirationTime and userId properties are set
+// before any block gets executed.
 // -----------------------------------------------------------------------------
 - (id)initUserAccountWithLogin:(NSString *)login
                       password:(NSString *)password
