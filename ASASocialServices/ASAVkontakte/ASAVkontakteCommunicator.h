@@ -8,9 +8,9 @@
 
 @class ASAVkontakteUserAccount;
 
-static const NSString *kVKONTAKTE_APP_ID = @"3541027";
-static const NSString *kVKONTAKTE_PRIVATE_KEY = @"EImkkJQ8jF7obXFVSHIZ";
-static const NSString *kVKONTAKTE_PERMISSIONS_LIST = @"friends,status,wall,messages,offline,photos,docs,audio";
+static const NSString *kVkontakteAppId = @"3541027";
+static const NSString *kVkontaktePrivateKey = @"EImkkJQ8jF7obXFVSHIZ";
+static const NSString *kVkontaktePermissionList = @"friends,status,wall,messages,offline,photos,docs,audio";
 
 @interface ASAVkontakteCommunicator : NSObject <UIWebViewDelegate>
 

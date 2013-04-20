@@ -33,8 +33,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
     if (self) {
         // init
-        _app_id = kVKONTAKTE_APP_ID;
-        _settings = kVKONTAKTE_PERMISSIONS_LIST;
+        _app_id = kVkontakteAppId;
+        _settings = kVkontaktePermissionList;
         _redirect_url = @"https://oauth.vk.com/blank.html";
         _display = @"touch";
 

@@ -88,13 +88,13 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
         // appending params
         [kVKOauthURL appendFormat:@"?grant_type=password"];
-        [kVKOauthURL appendFormat:@"&client_id=%@", kVKONTAKTE_APP_ID];
-        [kVKOauthURL appendFormat:@"&client_secret=%@", kVKONTAKTE_PRIVATE_KEY];
+        [kVKOauthURL appendFormat:@"&client_id=%@", kVkontakteAppId];
+        [kVKOauthURL appendFormat:@"&client_secret=%@", kVkontaktePrivateKey];
         [kVKOauthURL appendFormat:@"&username=%@", [login encodeURL]];
         [kVKOauthURL appendFormat:@"&password=%@", [password encodeURL]];
 
         if(permissions == nil)
-            [kVKOauthURL appendFormat:@"&scope=%@", kVKONTAKTE_PERMISSIONS_LIST];
+            [kVKOauthURL appendFormat:@"&scope=%@", kVkontaktePermissionList];
         else if([permissions count] != 0) {
             NSMutableString *permissionList = [NSMutableString string];
 
