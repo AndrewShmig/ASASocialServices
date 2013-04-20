@@ -22,7 +22,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     UIActivityIndicatorView *_activity_indicator;
 
     void (^_cancel_block) (void);
-    void (^_error_block) (NSError *);
     void (^_accepted_block) (ASAVkontakteUserAccount *);
 }
 
@@ -60,11 +59,11 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 #pragma mark - Public ASAVkontakteCommunicator Methods
 
 - (void)startOnCancelBlock:(void (^)(void))cancelBlock
-              onErrorBlock:(void (^)(NSError *))errorBlock
             onSuccessBlock:(void (^)(ASAVkontakteUserAccount *))acceptedBlock
 {
+    DDLogVerbose(@"%s", __FUNCTION__);
+
     _cancel_block = [cancelBlock copy];
-    _error_block = [errorBlock copy];
     _accepted_block = [acceptedBlock copy];
 
     // формируем УРЛ на который необходимо переадресовать пользователя для авторизации нашего приложения
@@ -87,6 +86,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     DDLogVerbose(@"%s", __FUNCTION__);
 
     NSString *url = [NSString stringWithFormat:@"%@", [request URL]];
+    DDLogVerbose(@"url: %@", url);
 
     // проверяем какой УРЛ мы сейчас обрабатываем
     if ([url hasPrefix:_redirect_url]) {
@@ -124,14 +124,18 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
+    DDLogVerbose(@"%s", __FUNCTION__);
+
     // отображаем индикатор загрузки
-    [_activity_indicator setHidden:YES];
+    [_activity_indicator stopAnimating];
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
+    DDLogVerbose(@"%s", __FUNCTION__);
+
     // прячем индикатор загрузки
-    [_activity_indicator setHidden:NO];
+    [_activity_indicator startAnimating];
 }
 
 @end

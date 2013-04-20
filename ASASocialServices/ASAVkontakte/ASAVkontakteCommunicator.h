@@ -17,7 +17,6 @@ static const NSString *kVKONTAKTE_PERMISSIONS_LIST = @"friends,status,wall,messa
 - (id)initWithWebView:(UIWebView *)webView;
 
 - (void)startOnCancelBlock:(void (^)(void))cancelBlock
-              onErrorBlock:(void (^)(NSError *))errorBlock
             onSuccessBlock:(void (^)(ASAVkontakteUserAccount *))acceptedBlock;
 
 @end

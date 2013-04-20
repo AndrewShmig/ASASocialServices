@@ -32,8 +32,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
     [_vk startOnCancelBlock:^{
         DDLogVerbose(@"Cancel");
-    } onErrorBlock:^(NSError *error) {
-        DDLogVerbose(@"Error: %@", error);
     } onSuccessBlock:^(ASAVkontakteUserAccount *account){
         DDLogVerbose(@"%@", account);
     }];
