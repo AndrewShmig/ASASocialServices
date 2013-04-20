@@ -5,16 +5,16 @@
 //
 
 #import "ASAVkontakteUserAccount.h"
+#import "ASAVkontakteCommunicator.h"
 #import "AFNetworking.h"
 #import "NSString+encodeURL.h"
 #import "DDLog.h"
 
 #define return_from_block return
+#define call_failure_block(param) if(failure!=nil){failure(param);}
+#define call_success_block(param) if(success!=nil){success(param);}
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
-
-NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
-
 
 @implementation ASAVkontakteUserAccount
 
@@ -22,6 +22,9 @@ NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
 @synthesize userId = _userId;
 @synthesize expirationTime = _expirationTime;
 
+// -----------------------------------------------------------------------------
+// Initialize VKUserAccount with accessToken, expirationTime and userId.
+// -----------------------------------------------------------------------------
 - (id)initUserAccountWithAccessToken:(NSString *)accessToken
                       expirationTime:(NSInteger)expirationTime
                               userId:(NSInteger)userId
@@ -40,6 +43,10 @@ NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
     return self;
 }
 
+// -----------------------------------------------------------------------------
+// Initialize VKUserAccount with accessToken and userId.
+// expirationTime is set to 0.
+// -----------------------------------------------------------------------------
 - (id)initUserAccountWithAccessToken:(NSString *)accessToken
                               userId:(NSInteger)userId
 {
@@ -50,6 +57,9 @@ NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
                                          userId:userId];
 }
 
+// -----------------------------------------------------------------------------
+// Standart init
+// -----------------------------------------------------------------------------
 - (id)init
 {
     DDLogVerbose(@"%s", __FUNCTION__);
@@ -57,6 +67,91 @@ NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
     @throw [NSException exceptionWithName:@"Invalid init method used."
                                    reason:@"Invalid init method used."
                                  userInfo:nil];
+}
+
+// -----------------------------------------------------------------------------
+// Obtain access_token using user login+password and init VKUserAccount.
+// This method performs request to VK server to obtain accessToken, if
+// request succeeds then success block is executed, else - failure block.
+// If request succeeds accessToken, expirationTime and userId properties are set.
+// -----------------------------------------------------------------------------
+- (id)initUserAccountWithLogin:(NSString *)login
+                      password:(NSString *)password
+                   permissions:(NSArray *)permissions
+                       success:(ASAVkontakteSuccessBlock)success
+                       failure:(ASAVkontakteFailureBlock)failure
+{
+    self = [super init];
+
+    if(self) {
+        NSMutableString *kVKOauthURL = [kVkontakteLoginPasswordOAuthURL mutableCopy];
+
+        // appending params
+        [kVKOauthURL appendFormat:@"?grant_type=password"];
+        [kVKOauthURL appendFormat:@"&client_id=%@", kVKONTAKTE_APP_ID];
+        [kVKOauthURL appendFormat:@"&client_secret=%@", kVKONTAKTE_PRIVATE_KEY];
+        [kVKOauthURL appendFormat:@"&username=%@", [login encodeURL]];
+        [kVKOauthURL appendFormat:@"&password=%@", [password encodeURL]];
+
+        if(permissions == nil)
+            [kVKOauthURL appendFormat:@"&scope=%@", kVKONTAKTE_PERMISSIONS_LIST];
+        else if([permissions count] != 0) {
+            NSMutableString *permissionList = [NSMutableString string];
+
+            for(NSString *permission in permissions) {
+                [permissionList appendFormat:@",%@", permission];
+            }
+
+            NSRange firstChar = NSMakeRange(0, 1);
+            [permissionList deleteCharactersInRange:firstChar];
+        }
+
+        NSURL *url = [NSURL URLWithString:kVKOauthURL];
+        NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+
+        AFJSONRequestOperation *operation = [AFJSONRequestOperation
+                JSONRequestOperationWithRequest:urlRequest
+                                        success:^(NSURLRequest *request,
+                                                  NSHTTPURLResponse *response,
+                                                  id JSON)
+                                        {
+                                            DDLogVerbose(@"%@", JSON);
+
+                                            if(JSON[@"error"] != nil) {
+                                                NSError *error = [NSError errorWithDomain:kVkontakteErrorDomain
+                                                                                     code:-1
+                                                                                 userInfo:@{
+                                                                                         @"Status code"     : @([response statusCode]),
+                                                                                         @"Error"           : JSON[@"error"],
+                                                                                         @"Server response" : [JSON description]}];
+
+                                                call_failure_block(error);
+
+                                                return_from_block;
+                                            }
+
+                                            _accessToken = JSON[@"access_token"];
+                                            _expirationTime = [JSON[@"expires_in"] integerValue];
+                                            _userId = [JSON[@"user_id"] integerValue];
+
+                                            call_success_block(JSON);
+                                        }
+                                        failure:^(NSURLRequest *request,
+                                                  NSHTTPURLResponse *response,
+                                                  NSError *error,
+                                                  id JSON)
+                                        {
+                                            _accessToken = nil;
+                                            _expirationTime = 0;
+                                            _userId = 0;
+
+                                            call_failure_block(error);
+                                        }];
+
+        [operation start];
+    }
+
+    return self;
 }
 
 // -----------------------------------------------------------------------------
@@ -71,7 +166,7 @@ NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
 
     // appending params to URL
     NSMutableString *fullRequestURL = [NSMutableString stringWithFormat:@"%@%@",
-                                                                        kVKONTAKTE_API_URL,
+                                                                        kVkontakteAPIURL,
                                                                         [methodName mutableCopy]];
 
     [fullRequestURL appendString:@"?"];
@@ -102,12 +197,12 @@ NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
                                                                                      @"Status code"     : @([response statusCode]),
                                                                                      @"Error code"      : JSON[@"error"][@"error_code"],
                                                                                      @"Error message"   : JSON[@"error"][@"error_msg"]}];
-                                            failure(error);
+                                            call_failure_block(error);
 
                                             return_from_block;
                                         }
 
-                                        success(JSON);
+                                        call_success_block(JSON);
                                     }
                                     failure:^(NSURLRequest *request,
                                               NSHTTPURLResponse *response,
@@ -118,7 +213,7 @@ NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
                                         DDLogError(@"Error: %@", error);
                                         DDLogError(@"JSON: %@", JSON);
 
-                                        failure(error);
+                                        call_failure_block(error);
                                     }];
 
     [operation start];
@@ -290,18 +385,18 @@ NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
                                                                              userInfo:@{
                                                                                      @"Error code"    : response[@"error"][@"error_code"],
                                                                                      @"Error message" : response[@"error"][@"error_msg"]}];
-                                            failure(error);
+                                            call_failure_block(error);
 
                                             return_from_block;
                                         }
 
-                                        success(response);
+                                        call_success_block(response);
                                     }
                                     failure:^(
                                             AFHTTPRequestOperation *operation,
                                             NSError *error)
                                     {
-                                        failure(error);
+                                        call_failure_block(error);
                                     }];
     [operation start];
 }

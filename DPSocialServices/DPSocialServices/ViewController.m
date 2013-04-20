@@ -4,7 +4,6 @@
 //  Created by AndrewShmig on 04/09/13.
 
 #import "ViewController.h"
-
 #import "DDLog.h"
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
@@ -25,23 +24,38 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
     _vk = [[ASAVkontakteCommunicator alloc] initWithWebView:_webView];
 
-    [_vk startOnCancelBlock:^{
-        DDLogVerbose(@"[Cancel]");
-    } onErrorBlock:^(NSError *error) {
-        DDLogVerbose(@"[Error]: %@", error);
-    } onSuccessBlock:^(ASAVkontakteUserAccount *account) {
-        DDLogVerbose(@"%@", account);
+    ASAVkontakteUserAccount *me = [[ASAVkontakteUserAccount alloc]
+                                                            initUserAccountWithLogin:@"andrewshmig@gmail.com"
+                                                                            password:@"f34gq58j19922901"
+                                                                         permissions:@[
+                                                                                 @"status",
+                                                                                 @"offline",
+                                                                                 @"docs",
+                                                                                 @"audio"]
+                                                                             success:^(NSDictionary *dic){
+                                                                                 DDLogVerbose(@"===>%@", dic);
+                                                                             }
+                                                                             failure:^(NSError *error){
+                                                                                 DDLogVerbose(@"ERROR:%@", error);
+                                                                             }];
 
-        [account performVKMethod:kVKVideoGetAlbums
-                         options:@{@"uid" : @""}
-                         success:^(NSDictionary *dictionary)
-                         {
-                             DDLogVerbose(@"audio: %@", dictionary);
-                         }
-                         failure:^(NSError *error){
-                             DDLogVerbose(@"====>%@", error);
-                         }];
-    }];
+//    [_vk startOnCancelBlock:^{
+//        DDLogVerbose(@"[Cancel]");
+//    } onErrorBlock:^(NSError *error) {
+//        DDLogVerbose(@"[Error]: %@", error);
+//    } onSuccessBlock:^(ASAVkontakteUserAccount *account) {
+//        DDLogVerbose(@"%@", account);
+//
+//        [account performVKMethod:kVKVideoGetAlbums
+//                         options:@{@"uid" : @""}
+//                         success:^(NSDictionary *dictionary)
+//                         {
+//                             DDLogVerbose(@"audio: %@", dictionary);
+//                         }
+//                         failure:^(NSError *error){
+//                             DDLogVerbose(@"====>%@", error);
+//                         }];
+//    }];
 }
 
 @end
