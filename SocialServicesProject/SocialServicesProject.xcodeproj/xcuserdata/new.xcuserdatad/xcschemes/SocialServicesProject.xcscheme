@@ -7,10 +7,10 @@
             buildForRunning = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7FAB44199EB852F9B132C3F4"
-               BuildableName = "DPSocialServices.app"
-               BlueprintName = "DPSocialServices"
-               ReferencedContainer = "container:DPSocialServices.xcodeproj">
+               BlueprintIdentifier = "1A9A07D4F0FE103AD239687B"
+               BuildableName = "SocialServicesProject.app"
+               BlueprintName = "SocialServicesProject"
+               ReferencedContainer = "container:SocialServicesProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -21,10 +21,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7FAB44199EB852F9B132C3F4"
-            BuildableName = "DPSocialServices.app"
-            BlueprintName = "DPSocialServices"
-            ReferencedContainer = "container:DPSocialServices.xcodeproj">
+            BlueprintIdentifier = "1A9A07D4F0FE103AD239687B"
+            BuildableName = "SocialServicesProject.app"
+            BlueprintName = "SocialServicesProject"
+            ReferencedContainer = "container:SocialServicesProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
