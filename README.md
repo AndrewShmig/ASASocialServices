@@ -1,10 +1,10 @@
 # ASASocialServices
 
 Набор классов ASASocialServices предназначен для взаимодействия с социальными сетями:
-* Twitter [status: paused]
+* Twitter
   * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPTwitterCommunicator)
   * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPTwitterUserAccount)
-* Vkontakte [status: in progress]
+* Vkontakte
   * Как работать с библиотекой?
   * Как настроить?
   * Как получить access_token пользователя ?
