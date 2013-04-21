@@ -15,7 +15,6 @@
      * [Постинг на стену](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BВконтакте%5D-Постинг-на-стену)
   * [Как загрузить документ?](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BВконтакте%5D-Как-загрузить-документ%3F)
   * [Как загрузить аудио?](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BВконтакте%5D-Как-загрузить-аудио%3F)
-  * [Как загрузить видео?](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BВконтакте%5D-Как-загрузить-видео%3F)
 * Facebook
   * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPFacebookCommunicator)
   * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPFacebookUserAccount)
