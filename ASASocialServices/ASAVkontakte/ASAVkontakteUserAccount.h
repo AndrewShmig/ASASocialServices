@@ -6,8 +6,9 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^ASAVkontakteSuccessBlock) (NSDictionary *);
-typedef void (^ASAVkontakteFailureBlock) (NSError *);
+typedef void (^ASAVkontakteSuccessBlock) (NSDictionary *JSON);
+typedef void (^ASAVkontakteFailureBlock) (NSError *error);
+typedef void (^ASAVkontakteProgressBlock) (NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite);
 
 static NSString *const kVkontakteAPIURL = @"https://api.vk.com/method/";
 static NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
@@ -67,30 +68,35 @@ static NSString *const kVkontakteLoginPasswordOAuthURL = @"https://oauth.vk.com/
                  toURL:(NSURL *)url
            withOptions:(NSDictionary *)options
                success:(ASAVkontakteSuccessBlock)success
-               failure:(ASAVkontakteFailureBlock)failure;
+               failure:(ASAVkontakteFailureBlock)failure
+              progress:(ASAVkontakteProgressBlock)progress;
 
 - (void)uploadPhoto:(NSString *)photoPath
               toURL:(NSURL *)url
         withOptions:(NSDictionary *)options
             success:(ASAVkontakteSuccessBlock)success
-            failure:(ASAVkontakteFailureBlock)failure;
+            failure:(ASAVkontakteFailureBlock)failure
+           progress:(ASAVkontakteProgressBlock)progress;
 
 - (void)uploadAlbumPhoto:(NSString *)photoPath
                    toURL:(NSURL *)url
              withOptions:(NSDictionary *)options
                  success:(ASAVkontakteSuccessBlock)success
-                 failure:(ASAVkontakteFailureBlock)failure;
+                 failure:(ASAVkontakteFailureBlock)failure
+                progress:(ASAVkontakteProgressBlock)progress;
 
 - (void)uploadAudio:(NSString *)audioPath
               toURL:(NSURL *)url
         withOptions:(NSDictionary *)options
             success:(ASAVkontakteSuccessBlock)success
-            failure:(ASAVkontakteFailureBlock)failure;
+            failure:(ASAVkontakteFailureBlock)failure
+           progress:(ASAVkontakteProgressBlock)progress;
 
 - (void)uploadVideo:(NSString *)videoPath
               toURL:(NSURL *)url
         withOptions:(NSDictionary *)options
             success:(ASAVkontakteSuccessBlock)success
-            failure:(ASAVkontakteFailureBlock)failure;
+            failure:(ASAVkontakteFailureBlock)failure
+           progress:(ASAVkontakteProgressBlock)progress;
 
 @end

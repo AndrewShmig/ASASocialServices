@@ -243,6 +243,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
            withOptions:(NSDictionary *)options
                success:(ASAVkontakteSuccessBlock)success
                failure:(ASAVkontakteFailureBlock)failure
+              progress:(ASAVkontakteProgressBlock)progress
 {
     DDLogVerbose(@"%s", __FUNCTION__);
 
@@ -252,7 +253,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                toURL:url
          withOptions:options
              success:success
-             failure:failure];
+             failure:failure
+            progress:progress];
 }
 
 - (void)uploadPhoto:(NSString *)photoPath
@@ -260,6 +262,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         withOptions:(NSDictionary *)options
             success:(ASAVkontakteSuccessBlock)success
             failure:(ASAVkontakteFailureBlock)failure
+           progress:(ASAVkontakteProgressBlock)progress
 {
     DDLogVerbose(@"%s", __FUNCTION__);
 
@@ -269,7 +272,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                toURL:url
          withOptions:options
              success:success
-             failure:failure];
+             failure:failure
+            progress:progress];
 }
 
 - (void)uploadAlbumPhoto:(NSString *)photoPath
@@ -277,6 +281,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
              withOptions:(NSDictionary *)options
                  success:(ASAVkontakteSuccessBlock)success
                  failure:(ASAVkontakteFailureBlock)failure
+                progress:(ASAVkontakteProgressBlock)progress
 {
     DDLogVerbose(@"%s", __FUNCTION__);
 
@@ -286,7 +291,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                toURL:url
          withOptions:options
              success:success
-             failure:failure];
+             failure:failure
+            progress:progress];
 }
 
 
@@ -295,6 +301,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         withOptions:(NSDictionary *)options
             success:(ASAVkontakteSuccessBlock)success
             failure:(ASAVkontakteFailureBlock)failure
+           progress:(ASAVkontakteProgressBlock)progress
 {
     DDLogVerbose(@"%s", __FUNCTION__);
 
@@ -304,7 +311,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                toURL:url
          withOptions:options
              success:success
-             failure:failure];
+             failure:failure
+            progress:progress];
 }
 
 - (void)uploadVideo:(NSString *)videoPath
@@ -312,6 +320,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         withOptions:(NSDictionary *)options
             success:(ASAVkontakteSuccessBlock)success
             failure:(ASAVkontakteFailureBlock)failure
+           progress:(ASAVkontakteProgressBlock)progress
 {
     DDLogVerbose(@"%s", __FUNCTION__);
 
@@ -321,7 +330,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                toURL:url
          withOptions:options
              success:success
-             failure:failure];
+             failure:failure
+            progress:progress];
 }
 
 - (void)uploadFile:(NSString *)filePath
@@ -331,6 +341,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
        withOptions:(NSDictionary *)options
            success:(ASAVkontakteSuccessBlock)success
            failure:(ASAVkontakteFailureBlock)failure
+          progress:(ASAVkontakteProgressBlock)progress
 {
     DDLogVerbose(@"%s", __FUNCTION__);
 
@@ -398,6 +409,10 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                                     {
                                         call_failure_block(error);
                                     }];
+
+    if(progress != nil)
+        [operation setUploadProgressBlock:progress];
+
     [operation start];
 }
 

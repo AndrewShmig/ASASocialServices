@@ -62,7 +62,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
                                                                }
                                                                failure:nil];
                                           }
-                                          failure:nil];
+                                          failure:nil
+                                         progress:nil];
                          }
                          failure:nil];
     }];

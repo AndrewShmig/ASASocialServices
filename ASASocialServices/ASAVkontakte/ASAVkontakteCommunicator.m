@@ -29,6 +29,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (id)initWithWebView:(UIWebView *)webView
 {
+    DDLogVerbose(@"%s", __FUNCTION__);
+    
     self = [super init];
 
     if (self) {
