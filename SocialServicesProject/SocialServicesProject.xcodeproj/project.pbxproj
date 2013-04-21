@@ -35,9 +35,11 @@
 		1A9A09A24179B3F3E78EC330 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A01A6AE00362964DFA506 /* image.jpg */; };
 		1A9A09FBFB92C19B904430BC /* NSData+toBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A06607C9D6D0374025EF1 /* NSData+toBase64.m */; };
 		1A9A0A39D4B48AD6E010DD2F /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A07B32E8AB8E6F430054E /* DDTTYLogger.m */; };
+		1A9A0A529EA36EADF6F36A46 /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A022292797036CB358844 /* sample.mp3 */; };
 		1A9A0A84E44C8B7923D27CF2 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0D1DCE42CF1CDC4EEEEA /* AFImageRequestOperation.m */; };
 		1A9A0AEFA0F391E11B5E0E55 /* ASAVkontakteCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A03B5940F8F0B5F50DF3E /* ASAVkontakteCommunicator.m */; };
 		1A9A0B0073C16EDEABA7E9D5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A05F1FA86A355E4BCD4E8 /* ViewController.xib */; };
+		1A9A0B2C6C67622606791689 /* document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0600755692D46F5DCDF0 /* document.pdf */; };
 		1A9A0B6EA40D36609CE4F709 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A01D862216674094DE98C /* DDLog.m */; };
 		1A9A0CED9F98C4604937ABD1 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0815B76D0D8C339202C4 /* DispatchQueueLogFormatter.m */; };
 		1A9A0CEF111F58004FF73455 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0E19535D5AB81DFFF0B3 /* AFXMLRequestOperation.m */; };
@@ -55,6 +57,7 @@
 		1A9A01A6AE00362964DFA506 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		1A9A01C09080FA76FCD3B9DD /* SocialServicesProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "SocialServicesProject-Info.plist"; sourceTree = "<group>"; };
 		1A9A01D862216674094DE98C /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		1A9A022292797036CB358844 /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
 		1A9A02401337E9C2F86AE9A1 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		1A9A0294551C8BD4C9C10F0E /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
 		1A9A029D1C996D3D232E1811 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 		1A9A054627A04645C259917D /* ASAFacebookCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAFacebookCommunicator.h; sourceTree = "<group>"; };
 		1A9A056CC4A4105F376C3781 /* SocialServicesProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialServicesProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9A05E2F3A2D6AB4FCEC0DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A9A0600755692D46F5DCDF0 /* document.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = document.pdf; sourceTree = "<group>"; };
+		1A9A060D2900D770A5F72648 /* ASASocialServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASASocialServices.h; sourceTree = "<group>"; };
 		1A9A06607C9D6D0374025EF1 /* NSData+toBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+toBase64.m"; sourceTree = "<group>"; };
 		1A9A066D501056BEBC393FC4 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
 		1A9A068B11B67C815A4E9F99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -256,6 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				1A9A01A6AE00362964DFA506 /* image.jpg */,
+				1A9A0600755692D46F5DCDF0 /* document.pdf */,
+				1A9A022292797036CB358844 /* sample.mp3 */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -268,6 +275,7 @@
 				1A9A029B1020E454A2E400A6 /* ASATwitter */,
 				1A9A0047744891898FF2233E /* ASAFacebook */,
 				1A9A09704CE62D4B14DDC8A2 /* ASAVkontakte */,
+				1A9A060D2900D770A5F72648 /* ASASocialServices.h */,
 			);
 			name = ASASocialServices;
 			path = ../ASASocialServices;
@@ -378,6 +386,8 @@
 				1A9A0B0073C16EDEABA7E9D5 /* ViewController.xib in Resources */,
 				1A9A01BEB25650D1669B413A /* README.txt in Resources */,
 				1A9A09A24179B3F3E78EC330 /* image.jpg in Resources */,
+				1A9A0B2C6C67622606791689 /* document.pdf in Resources */,
+				1A9A0A529EA36EADF6F36A46 /* sample.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

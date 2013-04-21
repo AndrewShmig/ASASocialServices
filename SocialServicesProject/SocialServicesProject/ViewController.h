@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ASAVkontakteCommunicator.h"
+#import "ASASocialServices.h"
 
 @interface ViewController : UIViewController
 

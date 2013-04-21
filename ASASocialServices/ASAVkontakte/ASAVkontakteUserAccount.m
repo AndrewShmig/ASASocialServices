@@ -173,7 +173,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
     [options enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
     {
-        [fullRequestURL appendFormat:@"%@=%@&", key, [obj encodeURL]];
+        [fullRequestURL appendFormat:@"%@=%@&", key, [[obj description] encodeURL]];
     }];
 
     [fullRequestURL appendFormat:@"access_token=%@", _accessToken];

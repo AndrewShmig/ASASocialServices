@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 #import "DDLog.h"
-#import "ASAVkontakteMethods.h"
-#import "ASAVkontakteUserAccount.h"
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
@@ -34,6 +32,39 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
         DDLogVerbose(@"Cancel");
     } onSuccessBlock:^(ASAVkontakteUserAccount *account){
         DDLogVerbose(@"%@", account);
+
+        [account performVKMethod:kVKAudioGetUploadServer
+                         options:@{}
+                         success:^(NSDictionary *dictionary)
+                         {
+                             NSString *audioPath = [[NSBundle mainBundle]
+                                                              pathForResource:@"sample"
+                                                                       ofType:@"mp3"];
+
+                             [account uploadAudio:audioPath
+                                            toURL:[NSURL URLWithString:dictionary[@"response"][@"upload_url"]]
+                                      withOptions:@{}
+                                          success:^(NSDictionary *dictionary)
+                                          {
+                                              NSString *server = dictionary[@"server"];
+                                              NSString *audio = dictionary[@"audio"];
+                                              NSString *hash = dictionary[@"hash"];
+
+                                              [account performVKMethod:kVKAudioSave
+                                                               options:@{@"server" : server,
+                                                                         @"audio"  : audio,
+                                                                         @"hash"   : hash}
+                                                               success:^(
+                                                                       NSDictionary *dictionary)
+                                                               {
+                                                                   NSLog(@"OK!");
+                                                                   NSLog(@"response: %@", dictionary);
+                                                               }
+                                                               failure:nil];
+                                          }
+                                          failure:nil];
+                         }
+                         failure:nil];
     }];
 }
 
