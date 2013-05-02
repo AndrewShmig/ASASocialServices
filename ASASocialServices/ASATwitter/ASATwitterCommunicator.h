@@ -7,10 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSData+toBase64.h"
-#import "NSString+encodeURL.h"
-#import "NSString+toBase64.h"
-#import "NSString+HMACSHA1.h"
 
 static const NSString *kTWITTER_CONSUMER_KEY = @"naInQxkf8rXsGkECwWIp4w";
 static const NSString *kTWITTER_CONSUMER_SECRET = @"YglhrCWxUg9TLBwZaDUBI4LiU2YyBbsBgIIn8FDSI";

@@ -7,6 +7,10 @@
 
 #import "ASATwitterCommunicator.h"
 #import "ASATwitterUserAccount.h"
+#import "NSData+toBase64.h"
+#import "NSString+encodeURL.h"
+#import "NSString+toBase64.h"
+#import "NSString+HMACSHA1.h"
 
 static const NSString *kTwitterCommunicatorErrorDomain = @"kTwitterCommunicatorErrorDomain";
 
