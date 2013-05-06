@@ -82,89 +82,89 @@ static NSString *const kTWITTER_ACCOUNT_UPDATE_PROFILE_BACKGROUND_IMAGE_URL = @"
 static NSString *const kTWITTER_ACCOUNT_UPDATE_PROFILE_COLORS_URL = @"https://api.twitter.com/1.1/account/update_profile_colors"; // POST
 static NSString *const kTWITTER_ACCOUNT_UPDATE_RROFILE_IMAGE_URL = @"https://api.twitter.com/1.1/account/update_profile_image"; // POST
 static NSString *const kTWTITTER_BLOCKS_LIST_URL = @"https://api.twitter.com/1.1/blocks/list"; // GET
-static NSString *const kTWITTER_BLOCKS_IDS_URL = @"$5/blocks/ids"; // GET
-static NSString *const kTWITTER_BLOCKS_CREATE_URL = @"$5/blocks/create"; // POST
-static NSString *const kTWITTER_BLOCKS_DESTROY_URL = @"$5/blocks/destroy"; // POST
-static NSString *const kTWITTER_USERS_LOOKUP_URL = @"$5/users/lookup"; // GET
-static NSString *const kTWITTER_USERS_SHOW_URL = @"$5/users/show"; // GET
-static NSString *const kTWITTER_USERS_SEARCH_URL = @"$5/users/search"; // GET
-static NSString *const kTWITTER_USERS_CONTRIBUTEES_URL = @"$5/users/contributees"; // GET
-static NSString *const kTWITTER_USERS_CONTRIBUTORS_URL = @"$5/users/contributors"; // GET
-static NSString *const kTWITTER_ACCOUNT_REMOVE_PROFILE_BANNER_URL = @"$5/account/remove_profile_banner"; // POST
-static NSString *const kTWITTER_ACCOUNT_UPDATE_PROFILE_BANNER_URL = @"$5/account/update_profile_banner"; // POST
-static NSString *const kTWITTER_USERS_PROFILE_BANNER_URL = @"$5/users/profile_banner"; // GET
+static NSString *const kTWITTER_BLOCKS_IDS_URL = @"https://api.twitter.com/1.1/blocks/ids"; // GET
+static NSString *const kTWITTER_BLOCKS_CREATE_URL = @"https://api.twitter.com/1.1/blocks/create"; // POST
+static NSString *const kTWITTER_BLOCKS_DESTROY_URL = @"https://api.twitter.com/1.1/blocks/destroy"; // POST
+static NSString *const kTWITTER_USERS_LOOKUP_URL = @"https://api.twitter.com/1.1/users/lookup"; // GET
+static NSString *const kTWITTER_USERS_SHOW_URL = @"https://api.twitter.com/1.1/users/show"; // GET
+static NSString *const kTWITTER_USERS_SEARCH_URL = @"https://api.twitter.com/1.1/users/search"; // GET
+static NSString *const kTWITTER_USERS_CONTRIBUTEES_URL = @"https://api.twitter.com/1.1/users/contributees"; // GET
+static NSString *const kTWITTER_USERS_CONTRIBUTORS_URL = @"https://api.twitter.com/1.1/users/contributors"; // GET
+static NSString *const kTWITTER_ACCOUNT_REMOVE_PROFILE_BANNER_URL = @"https://api.twitter.com/1.1/account/remove_profile_banner"; // POST
+static NSString *const kTWITTER_ACCOUNT_UPDATE_PROFILE_BANNER_URL = @"https://api.twitter.com/1.1/account/update_profile_banner"; // POST
+static NSString *const kTWITTER_USERS_PROFILE_BANNER_URL = @"https://api.twitter.com/1.1/users/profile_banner"; // GET
 
 /*
 * Suggested users
 * */
-static NSString *const kTWITTER_USERS_SUGGESTIONS_SLUG_URL = @"$5/users/suggestions/:slug"; // GET
-static NSString *const kTWITTER_USERS_SUGGESTIONS_URL = @"$5/users/suggestions"; // GET
-static NSString *const kTWITTER_USERS_SUGGESTIONS_SLUG_MEMBERS_URL = @"$5/users/suggestions/:slug/members"; // GET
+static NSString *const kTWITTER_USERS_SUGGESTIONS_SLUG_URL = @"https://api.twitter.com/1.1/users/suggestions/:slug"; // GET
+static NSString *const kTWITTER_USERS_SUGGESTIONS_URL = @"https://api.twitter.com/1.1/users/suggestions"; // GET
+static NSString *const kTWITTER_USERS_SUGGESTIONS_SLUG_MEMBERS_URL = @"https://api.twitter.com/1.1/users/suggestions/:slug/members"; // GET
 
 /*
 * Favourites
 * */
-static NSString *const kTWITTER_FAVOURITES_LIST_URL = @"$5/favourites/list"; // GET
-static NSString *const kTWITTER_FAVOURITES_DESTROY_URL = @"$5/favourites/destroy"; // POST
-static NSString *const kTWITTER_FAVOURITES_CREATE_URL = @"$5/favourites/create"; // POST
+static NSString *const kTWITTER_FAVOURITES_LIST_URL = @"https://api.twitter.com/1.1/favourites/list"; // GET
+static NSString *const kTWITTER_FAVOURITES_DESTROY_URL = @"https://api.twitter.com/1.1/favourites/destroy"; // POST
+static NSString *const kTWITTER_FAVOURITES_CREATE_URL = @"https://api.twitter.com/1.1/favourites/create"; // POST
 
 /*
 * Lists
 * */
-static NSString *const kTWITTER_LISTS_LIST_URL = @"$5/lists/list"; // GET
-static NSString *const kTWITTER_LISTS_STATUSES_URL = @"$5/lists/statuses"; // GET
-static NSString *const kTWITTER_LISTS_MEMBERS_DESTROY_URL = @"$5/lists/members/destroy"; // GET
-static NSString *const kTWITTER_LISTS_MEMBERSHIPS_URL = @"$5/lists/memberships"; // GET
-static NSString *const kTWITTER_LISTS_SUBSCRIBERS_URL = @"$5/lists/subscribers"; // GET
-static NSString *const kTWITTER_LISTS_SUBSCRIBERS_CREATE_URL = @"$5/lists/subscribers/create"; // POST
-static NSString *const kTWITTER_LISTS_SUBSCRIBERS_SHOW_URL = @"$5/lists/subscribers/show"; // GET
-static NSString *const kTWITTER_LISTS_SUBSCRIBERS_DESTROY_URL = @"$5/lists/subscribers/destroy"; // POST
-static NSString *const kTWITTER_LISTS_MEMBERS_CREATE_ALL_URL = @"$5/lists/members/create_all"; // POST
-static NSString *const kTWITTER_LISTS_MEMBERS_SHOW_URL = @"$5/lists/members/show"; // GET
-static NSString *const kTWITTER_LISTS_MEMBERS_URL = @"$5/lists/members"; // GET
-static NSString *const kTWITTER_LISTS_MEMBERS_CREATE_URL = @"$5/lists/members/create"; // POST
-static NSString *const kTWITTER_LISTS_DESTROY_URL = @"$5/lists/destroy"; // POST
-static NSString *const kTWITTER_LISTS_UPDATE_URL = @"$5/lists/update"; // POST
-static NSString *const kTWITTER_LISTS_CREATE_URL = @"$5/lists/create"; // POST
-static NSString *const kTWITTER_LISTS_SHOW_URL = @"$5/lists/show"; // GET
-static NSString *const kTWITTER_LISTS_SUBSCRIPTIONS_URL = @"$5/lists/subscriptions"; // GET
-static NSString *const kTWITTER_LISTS_MEMBERS_DESTROY_ALL_URL = @"$5/lists/members/destroy_all"; // POST
-static NSString *const kTWITTER_LISTS_OWNERSHIPS_URL = @"$5/lists/ownerships"; // GET
+static NSString *const kTWITTER_LISTS_LIST_URL = @"https://api.twitter.com/1.1/lists/list"; // GET
+static NSString *const kTWITTER_LISTS_STATUSES_URL = @"https://api.twitter.com/1.1/lists/statuses"; // GET
+static NSString *const kTWITTER_LISTS_MEMBERS_DESTROY_URL = @"https://api.twitter.com/1.1/lists/members/destroy"; // GET
+static NSString *const kTWITTER_LISTS_MEMBERSHIPS_URL = @"https://api.twitter.com/1.1/lists/memberships"; // GET
+static NSString *const kTWITTER_LISTS_SUBSCRIBERS_URL = @"https://api.twitter.com/1.1/lists/subscribers"; // GET
+static NSString *const kTWITTER_LISTS_SUBSCRIBERS_CREATE_URL = @"https://api.twitter.com/1.1/lists/subscribers/create"; // POST
+static NSString *const kTWITTER_LISTS_SUBSCRIBERS_SHOW_URL = @"https://api.twitter.com/1.1/lists/subscribers/show"; // GET
+static NSString *const kTWITTER_LISTS_SUBSCRIBERS_DESTROY_URL = @"https://api.twitter.com/1.1/lists/subscribers/destroy"; // POST
+static NSString *const kTWITTER_LISTS_MEMBERS_CREATE_ALL_URL = @"https://api.twitter.com/1.1/lists/members/create_all"; // POST
+static NSString *const kTWITTER_LISTS_MEMBERS_SHOW_URL = @"https://api.twitter.com/1.1/lists/members/show"; // GET
+static NSString *const kTWITTER_LISTS_MEMBERS_URL = @"https://api.twitter.com/1.1/lists/members"; // GET
+static NSString *const kTWITTER_LISTS_MEMBERS_CREATE_URL = @"https://api.twitter.com/1.1/lists/members/create"; // POST
+static NSString *const kTWITTER_LISTS_DESTROY_URL = @"https://api.twitter.com/1.1/lists/destroy"; // POST
+static NSString *const kTWITTER_LISTS_UPDATE_URL = @"https://api.twitter.com/1.1/lists/update"; // POST
+static NSString *const kTWITTER_LISTS_CREATE_URL = @"https://api.twitter.com/1.1/lists/create"; // POST
+static NSString *const kTWITTER_LISTS_SHOW_URL = @"https://api.twitter.com/1.1/lists/show"; // GET
+static NSString *const kTWITTER_LISTS_SUBSCRIPTIONS_URL = @"https://api.twitter.com/1.1/lists/subscriptions"; // GET
+static NSString *const kTWITTER_LISTS_MEMBERS_DESTROY_ALL_URL = @"https://api.twitter.com/1.1/lists/members/destroy_all"; // POST
+static NSString *const kTWITTER_LISTS_OWNERSHIPS_URL = @"https://api.twitter.com/1.1/lists/ownerships"; // GET
 
 /*
 * Saved searches
 * */
-static NSString *const kTWITTER_SAVED_SEARCHES_LIST_URL = @"$5/saved_searches/list"; // GET
-static NSString *const kTWITTER_SAVED_SEARCHES_SHOW_ID_URL = @"$5/saved_searches/show/:id"; // GET
-static NSString *const kTWITTER_SAVED_SEARCHES_CREATE_URL = @"$5/saved_searches/create"; // POST
-static NSString *const kTWITTER_SAVED_SEARCHES_DESTROY_ID_URL = @"$5/saved_searches/destroy/:id"; // POST
+static NSString *const kTWITTER_SAVED_SEARCHES_LIST_URL = @"https://api.twitter.com/1.1/saved_searches/list"; // GET
+static NSString *const kTWITTER_SAVED_SEARCHES_SHOW_ID_URL = @"https://api.twitter.com/1.1/saved_searches/show/:id"; // GET
+static NSString *const kTWITTER_SAVED_SEARCHES_CREATE_URL = @"https://api.twitter.com/1.1/saved_searches/create"; // POST
+static NSString *const kTWITTER_SAVED_SEARCHES_DESTROY_ID_URL = @"https://api.twitter.com/1.1/saved_searches/destroy/:id"; // POST
 
 /*
 * Places & Geo
 * */
-static NSString *const kTWITTER_GEO_ID_PLACE_ID_URL = @"$5/geo/id/:place_id"; // GET
-static NSString *const kTWITTER_GEO_REVERSE_GEOCODE_URL = @"$5/geo/reverse_geocode"; // GET
-static NSString *const kTWITTER_GEO_SEARCH_URL = @"$5/geo/search"; // GET
-static NSString *const kTWITTER_GEO_SIMILAR_PLACES_URL = @"$5/geo/similar_places"; // GET
-static NSString *const kTWITTER_GEO_PLACE_CREATE_URL = @"$5/geo/place"; // POST
+static NSString *const kTWITTER_GEO_ID_PLACE_ID_URL = @"https://api.twitter.com/1.1/geo/id/:place_id"; // GET
+static NSString *const kTWITTER_GEO_REVERSE_GEOCODE_URL = @"https://api.twitter.com/1.1/geo/reverse_geocode"; // GET
+static NSString *const kTWITTER_GEO_SEARCH_URL = @"https://api.twitter.com/1.1/geo/search"; // GET
+static NSString *const kTWITTER_GEO_SIMILAR_PLACES_URL = @"https://api.twitter.com/1.1/geo/similar_places"; // GET
+static NSString *const kTWITTER_GEO_PLACE_CREATE_URL = @"https://api.twitter.com/1.1/geo/place"; // POST
 
 /*
 * Trends
 * */
-static NSString *const kTWITTER_TRENDS_PLACES_URL = @"$5/trends/places"; // GET
-static NSString *const kTWITTER_TRENDS_AVAILABLE_URL = @"$5/trends/available"; // GET
-static NSString *const kTWITTER_TRENDS_CLOSEST_URL = @"$5/trends/closest"; // GET
+static NSString *const kTWITTER_TRENDS_PLACES_URL = @"https://api.twitter.com/1.1/trends/places"; // GET
+static NSString *const kTWITTER_TRENDS_AVAILABLE_URL = @"https://api.twitter.com/1.1/trends/available"; // GET
+static NSString *const kTWITTER_TRENDS_CLOSEST_URL = @"https://api.twitter.com/1.1/trends/closest"; // GET
 
 /*
 * Spam reporting
 * */
-static NSString *const kTWITTER_USERS_REPORT_SPAM_URL = @"$5/users/report_spam"; // POST
+static NSString *const kTWITTER_USERS_REPORT_SPAM_URL = @"https://api.twitter.com/1.1/users/report_spam"; // POST
 
 /*
 * Help
 * */
-static NSString *const kTWITTER_HELP_CONFIGURATION_URL = @"$5/help/configuration"; // GET
-static NSString *const kTWITTER_HELP_LANGUAGES_URL = @"$5/help/languages"; // GET
-static NSString *const kTWITTER_HELP_PRIVACY_URL = @"$5/help/privacy"; // GET
-static NSString *const kTWITTER_HELP_TOS_URL = @"$5/help/tos"; // GET
-static NSString *const kTWITTER_APPLICATION_RATE_LIMIT_STATUS = @"$5/application/rate_limit_status"; // GET
+static NSString *const kTWITTER_HELP_CONFIGURATION_URL = @"https://api.twitter.com/1.1/help/configuration"; // GET
+static NSString *const kTWITTER_HELP_LANGUAGES_URL = @"https://api.twitter.com/1.1/help/languages"; // GET
+static NSString *const kTWITTER_HELP_PRIVACY_URL = @"https://api.twitter.com/1.1/help/privacy"; // GET
+static NSString *const kTWITTER_HELP_TOS_URL = @"https://api.twitter.com/1.1/help/tos"; // GET
+static NSString *const kTWITTER_APPLICATION_RATE_LIMIT_STATUS = @"https://api.twitter.com/1.1/application/rate_limit_status"; // GET
