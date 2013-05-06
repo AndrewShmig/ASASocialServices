@@ -123,6 +123,7 @@
 		1A9A0E69BEAC08BF6610A4A0 /* ASATwitterCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASATwitterCommunicator.h; sourceTree = "<group>"; };
 		1A9A0EE78FD1E82784207FF3 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		1A9A0F3D2A4408825C5D3FA4 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		1A9A0F61A532D7630EBBA3DF /* ASATwitterMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASATwitterMethods.h; sourceTree = "<group>"; };
 		1A9A0F714940E759DA2CE66D /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		1A9A0FB4927E53E7C7502D46 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
 		1A9A0FBDC69E2EB0FD0832A0 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
@@ -173,6 +174,7 @@
 				1A9A0320FA750A5DB117DA0A /* ASATwitterUserAccount.m */,
 				1A9A0E69BEAC08BF6610A4A0 /* ASATwitterCommunicator.h */,
 				1A9A04C5E9529BBC3BEE5736 /* ASATwitterCommunicator.m */,
+				1A9A0F61A532D7630EBBA3DF /* ASATwitterMethods.h */,
 			);
 			path = ASATwitter;
 			sourceTree = "<group>";

@@ -7,17 +7,10 @@
 
 #import "ASATwitterCommunicator.h"
 #import "ASATwitterUserAccount.h"
+#import "ASATwitterMethods.h"
 #import "NSData+toBase64.h"
-#import "NSString+encodeURL.h"
-#import "NSString+toBase64.h"
 #import "NSString+HMACSHA1.h"
-
-static const NSString *kTwitterCommunicatorErrorDomain = @"kTwitterCommunicatorErrorDomain";
-
-enum
-{
-    TwitterCommunicatorRequestError = -1
-};
+#import "NSString+encodeURL.h"
 
 @implementation ASATwitterCommunicator
 {
@@ -53,9 +46,7 @@ enum
 
     // ---------
     void (^_cancel_block) (void);
-
     void (^_error_block) (NSError *);
-
     void (^_accepted_block) (ASATwitterUserAccount *);
 }
 
@@ -79,9 +70,9 @@ enum
         _second_oauth_token = @"";
         _twitterUserAccount = nil;
 
-        _request_token_URL = kTWITTER_REQUEST_TOKEN_URL;
-        _authorize_URL = kTWITTER_AUTHENTICATE_URL;
-        _access_token_URL = kTWITTER_ACCESS_TOKEN_URL;
+        _request_token_URL = kTWITTER_OAUTH_REQUEST_TOKEN_URL;
+        _authorize_URL = kTWITTER_OAUTH_AUTHENTICATE_URL;
+        _access_token_URL = kTWITTER_OAUTH_ACCESS_TOKEN_URL;
 
         [self setupWebView:webView];
     }
@@ -319,8 +310,8 @@ enum
 
     if ([full_response statusCode] != 200) {
         error = [NSError
-                errorWithDomain:kTwitterCommunicatorErrorDomain
-                           code:TwitterCommunicatorRequestError
+                errorWithDomain:@"ASATwitterCommunicatorErrorDomain"
+                           code:-1
                        userInfo:@{NSLocalizedDescriptionKey : response_body}];
 
         _error_block(error);
@@ -349,10 +340,9 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
         query = [url componentsSeparatedByString:@"?"][1];
 
     // allowing this redirects without processing them
-    if ([url hasPrefix:kTWITTER_AUTHENTICATE_URL] ||
-            [url hasPrefix:kTWITTER_REQUEST_TOKEN_URL] ||
-            [url hasPrefix:kTWITTER_AUTHORIZE_URL] ||
-            [url hasPrefix:kTWITTER_LOGOUT_URL])
+    if ([url hasPrefix:kTWITTER_OAUTH_AUTHENTICATE_URL] ||
+            [url hasPrefix:kTWITTER_OAUTH_REQUEST_TOKEN_URL] ||
+            [url hasPrefix:kTWITTER_OAUTH_AUTHORIZE_URL])
     {
         return YES;
     }

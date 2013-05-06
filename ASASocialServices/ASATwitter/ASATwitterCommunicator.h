@@ -8,14 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-static const NSString *kTWITTER_CONSUMER_KEY = @"naInQxkf8rXsGkECwWIp4w";
-static const NSString *kTWITTER_CONSUMER_SECRET = @"YglhrCWxUg9TLBwZaDUBI4LiU2YyBbsBgIIn8FDSI";
+/*
+* Consumer key, consumer secret
+* */
+static NSString *const kTWITTER_CONSUMER_KEY = @"naInQxkf8rXsGkECwWIp4w";
+static NSString *const kTWITTER_CONSUMER_SECRET = @"YglhrCWxUg9TLBwZaDUBI4LiU2YyBbsBgIIn8FDSI";
 
-static const NSString *kTWITTER_REQUEST_TOKEN_URL = @"https://api.twitter.com/oauth/request_token";
-static const NSString *kTWITTER_AUTHENTICATE_URL = @"https://api.twitter.com/oauth/authenticate";
-static const NSString *kTWITTER_AUTHORIZE_URL = @"https://api.twitter.com/oauth/authorize";
-static const NSString *kTWITTER_ACCESS_TOKEN_URL = @"https://api.twitter.com/oauth/access_token";
-static const NSString *kTWITTER_LOGOUT_URL = @"https://api.twitter.com/intent/session";
 
 @class ASATwitterUserAccount;
 
