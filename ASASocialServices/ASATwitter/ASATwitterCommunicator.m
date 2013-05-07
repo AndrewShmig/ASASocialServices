@@ -104,6 +104,9 @@
 {
     NSLog(@"%s", __FUNCTION__);
 
+    // TODO: вынесети весь функционал формирования запроса со всеми подписями/хэшами в отдельный метод
+    // TODO: в методах вроде obtainRequestToken оставить лишь код формирования полезной нагрузки
+
     // generating request body
     NSString *oauth_nonce = [ASATwitterCommunicator generateNonceToken:32];
     NSString *oauth_callback = _callbackURL;
@@ -299,6 +302,8 @@
 
     return response_body;
 }
+
+#pragma mark - UIWebView Delegate
 
 - (BOOL)           webView:(UIWebView *)webView
 shouldStartLoadWithRequest:(NSURLRequest *)request
