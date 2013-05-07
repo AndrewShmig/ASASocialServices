@@ -18,9 +18,9 @@
 @property (nonatomic, copy) void (^errorBlock) (NSError *);
 @property (nonatomic, copy) void (^successBlock) (NSDictionary *);
 
-- (id)initWithToken:(NSString *)token
-        tokenSecret:(NSString *)tokenSecret
-      twitterUserID:(NSString *)userId
-     userScreenName:(NSString *)screenName;
+- (instancetype)initWithToken:(NSString *)token
+                  tokenSecret:(NSString *)tokenSecret
+                twitterUserID:(NSString *)userId
+               userScreenName:(NSString *)screenName;
 
 @end

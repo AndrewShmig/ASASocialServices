@@ -17,6 +17,7 @@ static NSString *const kTWITTER_CONSUMER_SECRET = @"YglhrCWxUg9TLBwZaDUBI4LiU2Yy
 
 @class ASATwitterUserAccount;
 
+
 @interface ASATwitterCommunicator : NSObject <UIWebViewDelegate>
 
 - (id)initWithWebView:(UIWebView *)webView;
@@ -24,11 +25,5 @@ static NSString *const kTWITTER_CONSUMER_SECRET = @"YglhrCWxUg9TLBwZaDUBI4LiU2Yy
 - (void)startOnCancelBlock:(void (^)(void))cancelBlock
               onErrorBlock:(void (^)(NSError *))errorBlock
             onSuccessBlock:(void (^)(ASATwitterUserAccount *))acceptedBlock;
-
-+ (NSString *)generateNonceToken:(NSInteger)length;
-
-+ (NSString *)generateSignatureBaseString:(NSDictionary *)keyValuePairs
-                    withHTTPRequestMethod:(NSString *)requestMethod
-                            andRequestURL:(NSString *)requestURL;
 
 @end

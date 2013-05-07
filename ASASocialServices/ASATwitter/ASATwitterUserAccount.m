@@ -10,13 +10,38 @@
 #import "ASATwitterCommunicator.h"
 #import "NSString+HMACSHA1.h"
 #import "NSData+toBase64.h"
+#import "ASATwitterCommunicator+Utilities.h"
 
 
 @implementation ASATwitterUserAccount
 
 #pragma mark - Init
 
+- (instancetype)initWithToken:(NSString *)token
+                  tokenSecret:(NSString *)tokenSecret
+                twitterUserID:(NSString *)userId
+               userScreenName:(NSString *)screenName
+{
+    self = [super init];
+
+    if(self){
+        _oauthToken = [token copy];
+        _oauthTokenSecret = [tokenSecret copy];
+        _twitterUserID = [userId copy];
+        _screenName = [screenName copy];
+    }
+
+    return self;
+}
+
 #pragma mark - Public methods
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"[%@][%@]",
+                                      self.screenName,
+                                      self.twitterUserID];
+}
 
 #pragma mark - Private methods
 

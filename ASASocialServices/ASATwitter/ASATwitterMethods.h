@@ -7,10 +7,10 @@
 /*
 * Oauth
 * */
-static NSString *const kTWITTER_OAUTH_REQUEST_TOKEN_URL = @"https://api.twitter.com/1.1/1.1/oauth/request_token";
-static NSString *const kTWITTER_OAUTH_AUTHENTICATE_URL = @"https://api.twitter.com/1.1/oauth/authenticate";
-static NSString *const kTWITTER_OAUTH_AUTHORIZE_URL = @"https://api.twitter.com/1.1/oauth/authorize";
-static NSString *const kTWITTER_OAUTH_ACCESS_TOKEN_URL = @"https://api.twitter.com/1.1/oauth/access_token";
+static NSString *const kTWITTER_OAUTH_REQUEST_TOKEN_URL = @"https://api.twitter.com/oauth/request_token";
+static NSString *const kTWITTER_OAUTH_AUTHENTICATE_URL = @"https://api.twitter.com/oauth/authenticate";
+static NSString *const kTWITTER_OAUTH_AUTHORIZE_URL = @"https://api.twitter.com/oauth/authorize";
+static NSString *const kTWITTER_OAUTH_ACCESS_TOKEN_URL = @"https://api.twitter.com/oauth/access_token";
 
 /*
 * Timelines
