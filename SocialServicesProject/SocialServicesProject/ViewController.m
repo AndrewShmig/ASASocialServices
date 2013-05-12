@@ -32,7 +32,7 @@
 
                  [account performTwitterMethod:kTWITTER_GEO_ID_PLACE_ID_URL
                                     HTTPMethod:@"GET"
-                                       options:@{@":place_id": @"df51dec6f4ee2b2c"}
+                                       options:@{@":place_id": @"1"}//df51dec6f4ee2b2c
                                        success:^(id response)
                                        {
                                            NSLog(@"response: %@", response);

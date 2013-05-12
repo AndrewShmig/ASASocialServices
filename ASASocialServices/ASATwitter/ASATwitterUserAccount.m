@@ -194,8 +194,8 @@
     if (error != nil || statusCode != 200 || response == nil || [jsonResponse objectForKey:@"errors"] != nil) {
         error = [NSError errorWithDomain:@"ASATwitterUserAccountErrorDomain"
                                     code:-1
-                                userInfo:@{NSLocalizedDescriptionKey : jsonResponse,
-                                           @"HTTP Status Code"       : @(statusCode)}];
+                                userInfo:@{@"HTTP Status Code"       : @(statusCode),
+                                           @"Errors" : jsonResponse[@"errors"]}];
         call_completion_block(_failureBlock, error);
         return NO;
     }
