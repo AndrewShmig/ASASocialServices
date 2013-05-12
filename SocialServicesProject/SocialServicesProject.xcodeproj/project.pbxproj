@@ -20,6 +20,7 @@
 		1A9A042566832B6DF9224B61 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0BC5AEA65D5700E57E03 /* AFPropertyListRequestOperation.m */; };
 		1A9A04787593E4CCA1FD199D /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A00D87410E36A0E3F057D /* UIImageView+AFNetworking.m */; };
 		1A9A04951CCE0B05057DC317 /* ASATwitterUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0320FA750A5DB117DA0A /* ASATwitterUserAccount.m */; };
+		1A9A049C42854BFE19225086 /* ASATwitterCommunicator+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A00AE7D8697FA7ADBC5E4 /* ASATwitterCommunicator+Utilities.m */; };
 		1A9A05B46E5862020DF9C331 /* NSString+encodeURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0C623E63319A6C7B2AB8 /* NSString+encodeURL.m */; };
 		1A9A05FC5720952517E24FD5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A029D1C996D3D232E1811 /* Default@2x.png */; };
 		1A9A063381607FC0860654D8 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0F714940E759DA2CE66D /* AFHTTPClient.m */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		1A9A001D9E2F4F578BEFDA0B /* NSString+toBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+toBase64.m"; sourceTree = "<group>"; };
+		1A9A00AE7D8697FA7ADBC5E4 /* ASATwitterCommunicator+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASATwitterCommunicator+Utilities.m"; sourceTree = "<group>"; };
 		1A9A00D87410E36A0E3F057D /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		1A9A010378C12065B90EDC8F /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
 		1A9A01A6AE00362964DFA506 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
@@ -120,9 +122,11 @@
 		1A9A0DE6AA15E7DAB2889467 /* ASAVkontakteUserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAVkontakteUserAccount.h; sourceTree = "<group>"; };
 		1A9A0E19535D5AB81DFFF0B3 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		1A9A0E37BB0C51AE6FE73B07 /* ASAFacebookCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAFacebookCommunicator.m; sourceTree = "<group>"; };
+		1A9A0E5657163B0BC0644203 /* ASATwitterCommunicator+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASATwitterCommunicator+Utilities.h"; sourceTree = "<group>"; };
 		1A9A0E69BEAC08BF6610A4A0 /* ASATwitterCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASATwitterCommunicator.h; sourceTree = "<group>"; };
 		1A9A0EE78FD1E82784207FF3 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		1A9A0F3D2A4408825C5D3FA4 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		1A9A0F61A532D7630EBBA3DF /* ASATwitterMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASATwitterMethods.h; sourceTree = "<group>"; };
 		1A9A0F714940E759DA2CE66D /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		1A9A0FB4927E53E7C7502D46 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
 		1A9A0FBDC69E2EB0FD0832A0 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				1A9A0320FA750A5DB117DA0A /* ASATwitterUserAccount.m */,
 				1A9A0E69BEAC08BF6610A4A0 /* ASATwitterCommunicator.h */,
 				1A9A04C5E9529BBC3BEE5736 /* ASATwitterCommunicator.m */,
+				1A9A0F61A532D7630EBBA3DF /* ASATwitterMethods.h */,
+				1A9A0F5083A20CCB8AF21ECF /* Utilities */,
 			);
 			path = ASATwitter;
 			sourceTree = "<group>";
@@ -329,6 +335,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1A9A0F5083A20CCB8AF21ECF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0E5657163B0BC0644203 /* ASATwitterCommunicator+Utilities.h */,
+				1A9A00AE7D8697FA7ADBC5E4 /* ASATwitterCommunicator+Utilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,6 +442,7 @@
 				1A9A07E3F9224A9321788649 /* ASAFacebookCommunicator.m in Sources */,
 				1A9A07F7F8CDA68F18DAC7C0 /* ASAVkontakteUserAccount.m in Sources */,
 				1A9A0AEFA0F391E11B5E0E55 /* ASAVkontakteCommunicator.m in Sources */,
+				1A9A049C42854BFE19225086 /* ASATwitterCommunicator+Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

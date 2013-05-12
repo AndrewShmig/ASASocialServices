@@ -6,13 +6,16 @@
 
 #import <Foundation/Foundation.h>
 
+
 typedef void (^ASAVkontakteSuccessBlock) (NSDictionary *JSON);
 typedef void (^ASAVkontakteFailureBlock) (NSError *error);
 typedef void (^ASAVkontakteProgressBlock) (NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite);
 
+
 static NSString *const kVkontakteAPIURL = @"https://api.vk.com/method/";
 static NSString *const kVkontakteErrorDomain = @"ASAVkontakteErrorDomain";
 static NSString *const kVkontakteLoginPasswordOAuthURL = @"https://oauth.vk.com/token";
+
 
 @interface ASAVkontakteUserAccount : NSObject
 

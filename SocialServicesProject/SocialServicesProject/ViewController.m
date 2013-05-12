@@ -7,14 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "DDLog.h"
+#import "ASATwitterMethods.h"
 
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @implementation ViewController
-
-@synthesize webView = _webView;
-@synthesize vk = _vk;
 
 - (void)viewDidLoad
 {
@@ -25,48 +21,26 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     _webView = [[UIWebView alloc] initWithFrame:frame];
     [self.view addSubview:_webView];
 
-    _vk = [[ASAVkontakteCommunicator alloc]
+    _tw = [[ASATwitterCommunicator alloc]
             initWithWebView:_webView];
 
-    [_vk startOnCancelBlock:^{
-        DDLogVerbose(@"Cancel");
-    } onSuccessBlock:^(ASAVkontakteUserAccount *account){
-        DDLogVerbose(@"%@", account);
+    [_tw startOnCancelBlock:nil
+               onErrorBlock:nil
+             onSuccessBlock:^(ASATwitterUserAccount *account)
+             {
+                 NSLog(@"account: %@", account);
 
-        [account performVKMethod:kVKAudioGetUploadServer
-                         options:@{}
-                         success:^(NSDictionary *dictionary)
-                         {
-                             NSString *audioPath = [[NSBundle mainBundle]
-                                                              pathForResource:@"sample"
-                                                                       ofType:@"mp3"];
-
-                             [account uploadAudio:audioPath
-                                            toURL:[NSURL URLWithString:dictionary[@"response"][@"upload_url"]]
-                                      withOptions:@{}
-                                          success:^(NSDictionary *dictionary)
-                                          {
-                                              NSString *server = dictionary[@"server"];
-                                              NSString *audio = dictionary[@"audio"];
-                                              NSString *hash = dictionary[@"hash"];
-
-                                              [account performVKMethod:kVKAudioSave
-                                                               options:@{@"server" : server,
-                                                                         @"audio"  : audio,
-                                                                         @"hash"   : hash}
-                                                               success:^(
-                                                                       NSDictionary *dictionary)
-                                                               {
-                                                                   NSLog(@"OK!");
-                                                                   NSLog(@"response: %@", dictionary);
-                                                               }
-                                                               failure:nil];
-                                          }
-                                          failure:nil
-                                         progress:nil];
-                         }
-                         failure:nil];
-    }];
+                 [account performTwitterMethod:kTWITTER_GEO_ID_PLACE_ID_URL
+                                    HTTPMethod:@"GET"
+                                       options:@{@":place_id": @"1"}//df51dec6f4ee2b2c
+                                       success:^(id response)
+                                       {
+                                           NSLog(@"response: %@", response);
+                                       }
+                                       failure:^(NSError *error){
+                                           NSLog(@"error: %@", error);
+                                       }];
+             }];
 }
 
 @end
