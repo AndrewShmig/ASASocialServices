@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface ASATwitterUserAccount : NSObject
 
 @property (nonatomic, readonly) NSString *screenName;
