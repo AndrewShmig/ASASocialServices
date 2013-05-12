@@ -10,7 +10,9 @@ static const NSString *kFACEBOOK_APP_ID = @"179674345510190";
 static const NSString *kFACEBOOK_APP_SECRET = @"a931a310e63713512ad51f15b9ca36bc";
 static const NSString *kFACEBOOK_PERMISSIONS = @"publish_stream,email,read_mailbox,user_online_presence,friends_online_presence,offline_access";
 
+
 @class ASAFacebookUserAccount;
+
 
 @interface ASAFacebookCommunicator : NSObject <UIWebViewDelegate>
 

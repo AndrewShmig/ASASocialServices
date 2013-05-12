@@ -12,6 +12,6 @@
 @interface ViewController : UIViewController
 
 @property UIWebView *webView;
-@property ASAVkontakteCommunicator *vk;
+@property ASATwitterCommunicator *tw;
 
 @end
