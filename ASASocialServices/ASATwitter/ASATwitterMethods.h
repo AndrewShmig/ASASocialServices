@@ -24,7 +24,7 @@ static NSString *const kTWITTER_STATUSES_RETWEETS_OF_ME_URL = @"https://api.twit
 * Tweets
 * */
 static NSString *const kTWITTER_STATUSES_RETWEETS_ID_URL = @"https://api.twitter.com/1.1/statuses/retweets/:id"; // GET
-static NSString *const kTWITTER_STATUSES_SHOW_ID_URL = @"https://api.twitter.com/1.1/statuses/show/:id"; // GET
+static NSString *const kTWITTER_STATUSES_SHOW_ID_URL = @"https://api.twitter.com/1.1/statuses/show"; // GET
 static NSString *const kTWITTER_STATUSES_DESTROY_ID_URL = @"https://api.twitter.com/1.1/statuses/destroy/:id"; // POST
 static NSString *const kTWITTER_STATUSES_UPDATE_URL = @"https://api.twitter.com/1.1/statuses/update"; // POST
 static NSString *const kTWITTER_STATUSES_RETWEET_ID_URL = @"https://api.twitter.com/1.1/statuses/retweet/:id"; // POST

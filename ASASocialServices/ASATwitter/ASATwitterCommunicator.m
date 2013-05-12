@@ -14,6 +14,10 @@
 #import "ASATwitterCommunicator+Utilities.h"
 
 
+#define call_completion_block(block, value) if(block!=nil) block(value);
+#define call_cancel_block(block) if(block!=nil) block();
+
+
 @implementation ASATwitterCommunicator
 {
     ASATwitterUserAccount *_twitterUserAccount;
@@ -103,9 +107,6 @@
 - (BOOL)obtainRequestToken
 {
     NSLog(@"%s", __FUNCTION__);
-
-    // TODO: вынесети весь функционал формирования запроса со всеми подписями/хэшами в отдельный метод
-    // TODO: в методах вроде obtainRequestToken оставить лишь код формирования полезной нагрузки
 
     // generating request body
     NSString *oauth_nonce = [ASATwitterCommunicator generateNonceToken:32];
@@ -266,7 +267,7 @@
                                                  twitterUserID:_user_id
                                                 userScreenName:_user_screen_name];
 
-    _acceptedBlock(_twitterUserAccount);
+    call_completion_block(_acceptedBlock, _twitterUserAccount);
 }
 
 #pragma mark - Processing requests to Twitter
@@ -296,7 +297,7 @@
                            code:-1
                        userInfo:@{NSLocalizedDescriptionKey : response_body}];
 
-        _errorBlock(error);
+        call_completion_block(_errorBlock, error);
         return nil;
     }
 
@@ -329,7 +330,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
     // user denied access to his/her Twitter account
     if ([query hasPrefix:@"denied"]) {
-        _cancelBlock();
+        call_cancel_block(_cancelBlock);
         return NO;
     }
 
@@ -359,7 +360,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     [_activityIndicator startAnimating];
 }
 
-#pragma mark - Helpers
+#pragma mark - UIWebView setup
 
 - (void)setupWebView:(UIWebView *)webView
 {

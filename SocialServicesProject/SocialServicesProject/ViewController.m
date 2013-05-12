@@ -7,9 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "DDLog.h"
+#import "ASATwitterMethods.h"
 
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @implementation ViewController
 
@@ -25,16 +24,23 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     _tw = [[ASATwitterCommunicator alloc]
             initWithWebView:_webView];
 
-    [_tw startOnCancelBlock:^
-    {
-        NSLog(@"cancel");
-    }          onErrorBlock:^(NSError *error)
-    {
-        NSLog(@"error: %@", error);
-    }        onSuccessBlock:^(ASATwitterUserAccount *account)
-    {
-        NSLog(@"account: %@", account);
-    }];
+    [_tw startOnCancelBlock:nil
+               onErrorBlock:nil
+             onSuccessBlock:^(ASATwitterUserAccount *account)
+             {
+                 NSLog(@"account: %@", account);
+
+                 [account performTwitterMethod:kTWITTER_GEO_ID_PLACE_ID_URL
+                                    HTTPMethod:@"GET"
+                                       options:@{@":place_id": @"df51dec6f4ee2b2c"}
+                                       success:^(id response)
+                                       {
+                                           NSLog(@"response: %@", response);
+                                       }
+                                       failure:^(NSError *error){
+                                           NSLog(@"error: %@", error);
+                                       }];
+             }];
 }
 
 @end

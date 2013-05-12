@@ -23,4 +23,10 @@
                 twitterUserID:(NSString *)userId
                userScreenName:(NSString *)screenName;
 
+- (void)performTwitterMethod:(NSString *)methodName
+                  HTTPMethod:(NSString *)httpMethod
+                     options:(NSDictionary *)options
+                     success:(void (^)(id))success
+                     failure:(void (^)(NSError *))failure;
+
 @end
