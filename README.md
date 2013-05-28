@@ -5,7 +5,7 @@
   * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/Как-настроить%3F)
   * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/Как-осуществлять-запросы%3F)
   * Примеры запросов
-     * [Получение списка фолловеров](https://github.com/AndrewShmig/ASASocialServices/wiki/GettingTwitterFollowers)
+     * [Получение списка фолловеров](https://github.com/AndrewShmig/ASASocialServices/wiki/Получение-списка-фолловеров-пользователя)
      * [Отправка личного сообщения](https://github.com/AndrewShmig/ASASocialServices/wiki/SendingPrivateMessageTwitter)
      * [Получение информации о твитте по его идентификатору](https://github.com/AndrewShmig/ASASocialServices/wiki/GettingTweetInfoById)
      * [Запрос информации о пользователе](https://github.com/AndrewShmig/ASASocialServices/wiki/GettingTweeterUserInfo)
