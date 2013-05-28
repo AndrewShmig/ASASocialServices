@@ -2,8 +2,14 @@
 
 Набор классов ASASocialServices предназначен для взаимодействия с социальными сетями:
 * New Twitter iOS SDK
-  * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPTwitterCommunicator)
-  * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/DPTwitterUserAccount)
+  * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/ASATwitterCommunicator)
+  * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/ASATwitterUserAccount)
+  * Примеры запросов
+     * [Получение списка фолловеров](https://github.com/AndrewShmig/ASASocialServices/wiki/GettingTwitterFollowers)
+     * [Отправка личного сообщения](https://github.com/AndrewShmig/ASASocialServices/wiki/SendingPrivateMessageTwitter)
+     * [Получение информации о твитте по его идентификатору](https://github.com/AndrewShmig/ASASocialServices/wiki/GettingTweetInfoById)
+     * [Запрос информации о пользователе](https://github.com/AndrewShmig/ASASocialServices/wiki/GettingTweeterUserInfo)
+     * и т.д.
 * New Vkontakte iOS SDK
   * [Как работать с библиотекой?](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BВконтакте%5D-Как-работать-с-библиотекой%3F)
   * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BВконтакте%5D-Как-настроить%3F)
