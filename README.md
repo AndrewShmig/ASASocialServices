@@ -7,7 +7,7 @@
   * Примеры запросов
      * [Получение списка фолловеров](https://github.com/AndrewShmig/ASASocialServices/wiki/Получение-списка-фолловеров-пользователя)
      * [Отправка личного сообщения](https://github.com/AndrewShmig/ASASocialServices/wiki/Отправка-личного-сообщения)
-     * [Получение информации о твитте по его идентификатору](https://github.com/AndrewShmig/ASASocialServices/wiki/GettingTweetInfoById)
+     * [Получение информации о твитте по его идентификатору](https://github.com/AndrewShmig/ASASocialServices/wiki/Получение-информации-о-твитте-по-его-идентификатору)
      * [Запрос информации о пользователе](https://github.com/AndrewShmig/ASASocialServices/wiki/GettingTweeterUserInfo)
      * и т.д.
 * New Vkontakte iOS SDK
