@@ -11,8 +11,9 @@
 /*
 * Consumer key, consumer secret
 * */
-static NSString *const kTWITTER_CONSUMER_KEY = @"naInQxkf8rXsGkECwWIp4w";
-static NSString *const kTWITTER_CONSUMER_SECRET = @"YglhrCWxUg9TLBwZaDUBI4LiU2YyBbsBgIIn8FDSI";
+
+extern NSString *const kTWITTER_CONSUMER_KEY;
+extern NSString *const kTWITTER_CONSUMER_SECRET;
 
 
 @class ASATwitterUserAccount;

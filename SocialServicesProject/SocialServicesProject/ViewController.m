@@ -7,7 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "ASATwitterMethods.h"
+
+
+NSString *const kTWITTER_CONSUMER_KEY = @"v8146mdwpo05uEroMnhozg";
+NSString *const kTWITTER_CONSUMER_SECRET = @"5AFkvjCKxqGBRId2fpSQFLClJLKtGcPGS1DzK7o";
 
 
 @implementation ViewController
@@ -15,32 +18,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 
+    // устанавливает WebView в нужной позиции и с нужными размерами
     CGRect frame = [[UIScreen mainScreen] bounds];
     _webView = [[UIWebView alloc] initWithFrame:frame];
     [self.view addSubview:_webView];
 
+    // создаем TwitterCommunicator для получения токенов
     _tw = [[ASATwitterCommunicator alloc]
             initWithWebView:_webView];
 
-    [_tw startOnCancelBlock:nil
-               onErrorBlock:nil
-             onSuccessBlock:^(ASATwitterUserAccount *account)
-             {
-                 NSLog(@"account: %@", account);
+    // инициируем запрос по получению доступа к пользовательскому аккаунту
+    [_tw startOnCancelBlock:^{
+        NSLog(@"User canceled app authorization...");
+    } onErrorBlock:^(NSError *error) {
+        NSLog(@"error during app authorization...%@", error);
+    } onSuccessBlock:^(ASATwitterUserAccount *account) {
 
-                 [account performTwitterMethod:kTWITTER_GEO_ID_PLACE_ID_URL
-                                    HTTPMethod:@"GET"
-                                       options:@{@":place_id": @"1"}//df51dec6f4ee2b2c
-                                       success:^(id response)
-                                       {
-                                           NSLog(@"response: %@", response);
-                                       }
-                                       failure:^(NSError *error){
-                                           NSLog(@"error: %@", error);
-                                       }];
-             }];
+        [account performTwitterMethod:kTWITTER_USERS_SHOW_URL
+                           HTTPMethod:@"GET"
+                              options:@{@"screen_name": @"AndrewShmig"}
+                              success:^(id response) {
+                                  NSLog(@"response: %@", response);
+                              } failure:^(NSError *error) {
+                                  NSLog(@"error: %@", error);
+                              }];
+        
+    }];
 }
 
 @end

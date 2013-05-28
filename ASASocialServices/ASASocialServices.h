@@ -13,3 +13,4 @@
 
 #import "ASATwitterCommunicator.h"
 #import "ASATwitterUserAccount.h"
+#import "ASATwitterMethods.h"
