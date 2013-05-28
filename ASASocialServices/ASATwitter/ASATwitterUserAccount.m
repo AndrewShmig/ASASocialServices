@@ -61,12 +61,13 @@
         NSString *keyObject = (NSString *)key;
         NSString *valueObject = (NSString *)obj;
 
-        [finalMethodName replaceOccurrencesOfString:keyObject
-                                         withString:valueObject
-                                            options:NSCaseInsensitiveSearch
-                                              range:NSMakeRange(0, finalMethodName.length)];
-
-        if(![keyObject hasPrefix:@":"]){ // if placeholder - do not add it to options
+        if([keyObject hasPrefix:@":"]){ // if placeholder - do not add it to options
+            
+            [finalMethodName replaceOccurrencesOfString:keyObject
+                                             withString:valueObject
+                                                options:NSCaseInsensitiveSearch
+                                                  range:NSMakeRange(0, finalMethodName.length)];
+        } else {
             finalOptions[keyObject] = valueObject;
         }
     }];
