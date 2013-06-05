@@ -9,6 +9,7 @@
      * [Отправка личного сообщения](https://github.com/AndrewShmig/ASASocialServices/wiki/Отправка-личного-сообщения)
      * [Получение информации о твитте по его идентификатору](https://github.com/AndrewShmig/ASASocialServices/wiki/Получение-информации-о-твитте-по-его-идентификатору)
      * [Запрос информации о пользователе](https://github.com/AndrewShmig/ASASocialServices/wiki/GettingTweeterUserInfo)
+     * [Обновление статуса пользователя](https://github.com/AndrewShmig/ASASocialServices/wiki/Обновление-статуса-пользователя)
      * и т.д.
 * New Vkontakte iOS SDK
   * [Как работать с библиотекой?](https://github.com/AndrewShmig/ASASocialServices/wiki/%5BВконтакте%5D-Как-работать-с-библиотекой%3F)
