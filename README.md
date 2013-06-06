@@ -3,6 +3,7 @@
 Набор классов ASASocialServices предназначен для взаимодействия с социальными сетями:
 * New Twitter iOS SDK
   * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/Как-настроить%3F)
+  * [Стандартные шаги формирования запроса](https://github.com/AndrewShmig/ASASocialServices/Стандартные-шаги-формирования-запроса)
   * [Как осуществлять запросы?](https://github.com/AndrewShmig/ASASocialServices/wiki/Как-осуществлять-запросы%3F)
   * Примеры запросов
      * [Получение списка фолловеров](https://github.com/AndrewShmig/ASASocialServices/wiki/Получение-списка-фолловеров-пользователя)
