@@ -1,7 +1,5 @@
 # ASASocialServices
 
-Мы переехали сюда: https://bitbucket.org/AndrewShmig/asasocialservices
-
 Набор классов ASASocialServices предназначен для взаимодействия с социальными сетями:
 * New Twitter iOS SDK
   * [Как настроить?](https://github.com/AndrewShmig/ASASocialServices/wiki/Как-настроить%3F)
